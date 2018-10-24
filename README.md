@@ -44,7 +44,6 @@ Examples | 相关示例
 + 交易数据中缩写的含义文档编写(Wan Kelan)
 + cites分类标准以及相关含义的汇总资料文档(Wan Kelan)
 + 国家代码缩写表格(Wang Feng)
-+ D3视图模块demo(Yang kai)
++ D3视图模块demo。 Chord Diagram, D3 Choropleth, US Trade Deficit, WorldBank Contract Awards(Yang kai)
 + 读取csv\excel表格的结构(Guo Zhiyi)
 + python后台与网页联动验证(Guo Zhiyi)
-  
