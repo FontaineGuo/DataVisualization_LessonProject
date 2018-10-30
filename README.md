@@ -41,9 +41,16 @@ Examples | 相关示例
 
 ## 第二阶段
 ### 第八周(截至2018.10.29)
-+ 交易数据中缩写的含义文档编写(Wan Kelan)
-+ cites分类标准以及相关含义的汇总资料文档(Wan Kelan)
-+ 国家代码缩写表格(Wang Feng)
-+ D3视图模块demo。 Chord Diagram, D3 Choropleth, US Trade Deficit, WorldBank Contract Awards(Yang kai)
++ ~~交易数据中缩写的含义文档编写(Wan Kelan)~~
++ ~~cites分类标准以及相关含义的汇总资料文档(Wan Kelan)~~
++ ~~国家代码缩写表格(Wang Feng)~~
++ ~~D3视图模块demo。 Chord Diagram, D3 Choropleth, US Trade Deficit, WorldBank Contract Awards(Yang kai)~~
 + 读取csv\excel表格的结构(Guo Zhiyi)
 + python后台与网页联动验证(Guo Zhiyi)
+
+### 第九周(截至2018.11.4)
+```
+重要改动：
+经过组内负责d3模块demo实现的同学的技术评估，项目的库由d3转为echarts以适应全组在之前对于
+网页开发的熟悉程度
+```
