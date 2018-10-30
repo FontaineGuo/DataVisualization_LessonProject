@@ -54,3 +54,4 @@ Examples | 相关示例
 经过组内负责d3模块demo实现的同学的技术评估，项目的库由d3转为echarts以适应全组在之前对于
 网页开发的熟悉程度
 ```
+[echarts官网](http://echarts.baidu.com/index.html)
