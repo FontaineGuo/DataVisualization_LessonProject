@@ -18,6 +18,7 @@ Examples | 相关示例
 - [第一阶段](#第一阶段)
 - [第二阶段](#第二阶段)
     - [第八周](#第八周(截至2018.10.29))
+    - [第九周](#第九周(截至2018.11.4))
 
 
 
@@ -46,7 +47,7 @@ Examples | 相关示例
 + ~~国家代码缩写表格(Wang Feng)~~
 + ~~D3视图模块demo。 Chord Diagram, D3 Choropleth, US Trade Deficit, WorldBank Contract Awards(Yang kai)~~
 + 读取csv\excel表格的结构(Guo Zhiyi)
-+ python后台与网页联动验证(Guo Zhiyi)
++ ~~python后台与网页联动验证(Guo Zhiyi)~~
 
 ### 第九周(截至2018.11.4)
 ```
@@ -54,4 +55,15 @@ Examples | 相关示例
 经过组内负责d3模块demo实现的同学的技术评估，项目的库由d3转为echarts以适应全组在之前对于
 网页开发的熟悉程度
 ```
+
+### 第十周(截至2018.11.11)
++ 设计项目(预计延续到第十一周)(Wan Kelan, Wang Feng)
+    + 选择可视化的表达方式
+    + 敲定需要整合或者关联的数据
++ 前后端数据接口对接(Guo Zhiyi, YangKai)
++ 核对数据表导出(交易、国家代码)(Guo Zhiyi)
+
+### 第十一周(截至2018.11.18)
++ 预留时间给组员做论文研读的准备
+
 [echarts官网](http://echarts.baidu.com/index.html)
