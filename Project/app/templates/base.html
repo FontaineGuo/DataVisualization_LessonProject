@@ -35,25 +35,34 @@
                     <li class="text-center user-image-back">
                         <img src="{{ url_for('static', filename='img/find_user.png')}}" class="img-responsive" />
                     </li>
-
-
                     <li>
-                        <a href="index.html"><i class="fa fa-desktop "></i>Season View</a>
+                        <a href="/"><i class="fa fa-desktop "></i>总览</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-table "></i>Round Result</span></a>
-                    </li>
-
-                    <li>
-                        <a href="#"><i class="fa fa-table "></i>Single Game</a>
+                        <a href="#"><i class="fa fa-table "></i>交易地图</span></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-table "></i>Team Season Game</a>
+                        <a href="#"><i class="fa fa-table "></i>S进出口纲目统计</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-table "></i>动植物交易关键字</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-table "></i>动植物分布</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-table "></i>纲目物种分类</a>
                     </li>
                 </ul>
 
             </div>
 
         </nav>
+{% endblock %}
+
+{% block content %}
+    <div class="my-charts">
+        {{ myechart|safe }}
+    </div>
 {% endblock %}
 
