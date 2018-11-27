@@ -5,7 +5,7 @@ def create_charts():
     page = Page()
 
     style = Style(
-        width=1100, height=600
+        width=800, height=600
     )
 
 

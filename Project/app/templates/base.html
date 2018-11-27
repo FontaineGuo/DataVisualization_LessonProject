@@ -67,9 +67,10 @@
 {% endblock %}
 
 {% block content %}
-
-    <div class="my-charts" style="width:1024px;height:768px;margin: auto;  position: absolute;  top: 0; left: 0; bottom: 0; right: 0; ">
-        {{ myechart|safe }}
-    </div>
+    <body>
+        <div class="my-charts" style="width:800px;height:600px;margin: auto;  position: absolute;  top: 20; left: 0; bottom: 0; right: 0; ">
+            {{ myechart|safe }}
+        </div>
+    </body>
 {% endblock %}
 
