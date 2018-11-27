@@ -93,4 +93,5 @@ def create_charts():
               datazoom_range=[10, 60])
     page.add(chart)
 
+
     return page
