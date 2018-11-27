@@ -10,7 +10,11 @@ from . import app
 
 @app.route("/")
 def hello():
-    return render_template('index.html')
+    _map = charts.map.create_charts()
+    return render_template('index.html',
+                            source_file='map',
+                            myechart=_map.render_embed(),
+                            script_list=_map.get_js_dependencies())
 
 @app.route('/bar')
 def bar():
@@ -22,6 +26,51 @@ def bar():
                            script_list=_bar.get_js_dependencies())
 
 
+@app.route('/parallel')
+def parallel():
+    _parallel = charts.parallel.create_charts()
+    return render_template('base.html',
+                           title='平行坐标系',
+                           source_file='parallel',
+                           myechart=_parallel.render_embed(),
+                           script_list=_parallel.get_js_dependencies())
 
 
 
+@app.route('/wordcloud')
+def wordcloud():
+    _wordcloud = charts.wordcloud.create_charts()
+    return render_template('base.html',
+                           title='词云图',
+                           source_file='wordcloud',
+                           myechart=_wordcloud.render_embed(),
+                           script_list=_wordcloud.get_js_dependencies())
+
+
+@app.route('/map')
+def map():
+    _map = charts.map.create_charts()
+    return render_template('base.html',
+                           title='地图',
+                           source_file='map',
+                           myechart=_map.render_embed(),
+                           script_list=_map.get_js_dependencies())
+
+                           
+@app.route('/geolines')
+def geolines():
+    _geolines = charts.geolines.create_charts()
+    return render_template('base.html',
+                           title='地理坐标系线图',
+                           source_file='geolines',
+                           myechart=_geolines.render_embed(),
+                           script_list=_geolines.get_js_dependencies())
+
+@app.route('/sankey')
+def sankey():
+    _sankey = charts.sankey.create_charts()
+    return render_template('base.html',
+                           title='桑基图',
+                           source_file='sankey',
+                           myechart=_sankey.render_embed(),
+                           script_list=_sankey.get_js_dependencies())

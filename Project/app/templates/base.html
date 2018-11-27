@@ -16,6 +16,7 @@
     <!-- GOOGLE FONTS-->
     <link href="{{ url_for('static', filename='css/OpenSans.css')}}" rel='stylesheet' />
 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}" type="text/css">
     <!-- JQUERY SCRIPTS -->
     <script src="{{ url_for('static', filename='js/jquery-1.10.2.js')}}"></script>
     <!-- BOOTSTRAP SCRIPTS -->
@@ -54,10 +55,10 @@
                         <a href="{{ url_for('wordcloud') }}"><i class="fa fa-table "></i>Test2</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-table "></i>Test3</a>
+                        <a href="{{ url_for('geolines') }}"><i class="fa fa-table "></i>Test3</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-table "></i>Test4</a>
+                        <a href="{{ url_for('sankey') }}"><i class="fa fa-table "></i>Test4</a>
                     </li>
                 </ul>
 
