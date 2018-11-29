@@ -1,0 +1,14 @@
+0 ID
+1 Kingdom
+2 Phylum
+3 Class
+4 Order
+5 Family
+6 Genus
+7 Species
+9 Scientific Name
+12 Listing
+18 All_Distribution ISO Codes
+19 Native Distribution Full Names
+20 Introduced_Distribution
+24 Extinct_Distribution
