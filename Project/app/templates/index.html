@@ -1,8 +1,527 @@
-﻿{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% block content %}
-
-    <div class="my-charts" style="width:1024px;height:768px;margin: auto;  position: absolute;  top: 0; left: 0; bottom: 0; right: 0; ">
-        {{ myechart|safe }}
+    <title>CITES贸易探索系统</title>
+    <link rel="shortcut icon" href=" {{ url_for('static', filename='img/topicon.ico')}}" />
+    <script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/echarts/echarts.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/echarts/dark.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/echarts/vintage.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/map/world.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/system/menu.css')}}" type="text/css">
+</head>
+<body>
+    <!-- 表格分区示例 -->
+    <!-- 标题栏 -->
+    <div id="menu" class="menuHolder">
+        <div class="menuWindow">
+            <ul class="p1">
+                <li class="s1"><a href="#url">导航菜单</a>
+                    <ul class="p2">
+                        <li class="s2"><a href="#"><span>首页</span></a></li>
+                        <li class="s2"><a href="#url"><span>服务</span></a>
+                            <ul class="p3 a3">
+                                <li><a href="#">打印</a></li>
+                                <li><a href="#">编辑</a></li>
+                                <li><a href="#">保管</a></li>
+                            </ul>
+                        </li>
+                        <li class="s2"><a href="#url"><span>联系</span></a>
+                            <ul class="p3 a6">
+                                <li><a href="#">支持</a></li>
+                                <li><a href="#">销售</a></li>
+                                <li><a href="#">购买</a></li>
+                                <li><a href="#">摄影师</a></li>
+                                <li><a href="#">零售商</a></li>
+                                <li><a href="#">常规</a></li>
+                            </ul>
+                        </li>
+                        <li class="s2"><a href="#url"><span>商店</span></a>
+                            <ul class="p3 a3">
+                                <li><a href="#">南区</a></li>
+                                <li><a href="#">北区</a></li>
+                                <li><a href="#">中心区</a></li>
+                            </ul>
+                        </li>
+                        <li class="s2"><a href="#url"><span>联系我们</span></a>
+                            <ul class="p3 a3">
+                                <li><a href="#">邮箱</a></li>
+                                <li><a href="#">邮递</a></li>
+                                <li><a href="#">电话</a></li>
+                            </ul>
+                        </li>
+                        <li class="s2 b6"><a href="#url"><span>销量</span></a>
+                            <ul class="p3 a5">
+                                <li><a href="#">数码单反机身</a></li>
+                                <li><a href="#">镜头</a></li>
+                                <li><a href="#">闪光枪</a></li>
+                                <li><a href="#">三角架</a></li>
+                                <li><a href="#">过滤器</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-{% endblock %}
+
+    <!-- 各种图表集中区域 -->
+    <div id="main" class="sheet1"></div>
+    <div id="chart2" class="sheet2"></div>
+    <div id="chart3" class="sheet3"></div>
+    <div id="chart4" class="sheet4"></div>
+    <div id="chart5" class="sheet5"></div>
+    <div id="chart6" class="sheet6"></div>
+    <!-- <div id="chart7" class="sheet7"></div> -->
+    <script type="text/javascript">
+
+        window.onresize = function(){
+            MainChart.resize();
+            Chart2.resize();
+            Chart3.resize();
+            Chart4.resize();
+            Chart5.resize();
+            Chart6.resize();
+            //若有多个图表变动，可多写（表格虽窗口变化自适应缩放）
+        };
+
+        /* 总表（世界贸易）*/
+        var MainChart = echarts.init(document.getElementById("main"));
+        var geoCoordMap = {
+            '南宁': [108.479, 23.1152],
+            '广州': [113.5107, 23.2196],
+            '重庆': [107.7539, 30.1904],
+            '芬兰': [24.909912, 60.169095],
+            '美国': [-100.696295, 33.679979],
+            '日本': [139.710164, 35.706962],
+            '韩国': [126.979208, 37.53875],
+            '瑞士': [7.445147, 46.956241],
+            '东南亚': [117.53244, 5.300343],
+            '澳大利亚': [135.193845, -25.304039],
+            '德国': [13.402393, 52.518569],
+            '英国': [-0.126608, 51.208425],
+            '加拿大': [-102.646409, 59.994255]
+        };
+
+        /*
+            记录下起点城市和终点城市的名称，以及权重
+            数组第一位为终点城市，数组第二位为起点城市，以及该城市的权重，就是图上圆圈的大小
+        */
+
+        // 重庆
+        var CQData = [
+            [{name: '重庆'}, {name: "芬兰",value: 30}],
+            [{name: '重庆'}, {name: "德国",value: 90}],
+            [{name: '重庆'}, {name: "英国",value: 30}],
+            [{name: '重庆'}, {name: "韩国",value: 30}]
+        ];
+
+        // 广州
+        var GZData = [
+            [{name: '广州'}, {name: "日本",value: 30}],
+            [{name: '广州'}, {name: "东南亚",value: 30}]
+        ];
+
+        // 南宁
+        var NNData = [
+            [{name: '南宁'}, {name: "加拿大",value: 30}],
+            [{name: '南宁'}, {name: "美国",value: 100}],
+            [{name: '南宁'}, {name: "澳大利亚",value: 95}],
+            [{name: '南宁'}, {name: "瑞士",value: 30}]
+        ];
+
+        // 小飞机的图标，可以用其他图形替换
+        var planePath = 'path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z';
+
+        // 获取地图中起点和终点的坐标，以数组形式保存下来
+        var convertData = function(data) {
+            var res = [];
+            for(var i = 0; i < data.length; i++) {
+                var dataItem = data[i];
+                var fromCoord = geoCoordMap[dataItem[1].name];
+                var toCoord = geoCoordMap[dataItem[0].name];
+                if(fromCoord && toCoord) {
+                    res.push([{
+                        coord: fromCoord // 起点坐标
+                    }, {
+                        coord: toCoord // 终点坐标
+                    }])
+                }
+            }
+            return res;
+        };
+
+        var color  = ['#9ae5fc', '#dcbf71'];	// 自定义图中要用到的颜色
+        var series = [];						// 用来存储地图数据
+
+        /*
+            图中一共用到三种效果，分别为航线特效图、飞机航线图以及城市图标涟漪图。
+            要用到setOption中的series属性，并且对每个城市都要进行三次设置。
+        */
+        [['重庆', CQData],['广州', GZData],['南宁', NNData]].forEach(function(item, i) {
+            series.push({
+                // 白色航线特效图
+                type: 'lines',
+                zlevel: 1,                    // 用于分层，z-index的效果
+                effect: {
+                    show: true,               // 动效是否显示
+                    period: 6,                // 特效动画时间
+                    trailLength: 0.7,         // 特效尾迹的长度
+                    color: '#fff',            // 特效颜色
+                    symbolSize: 3             // 特效大小
+                },
+                lineStyle: {
+                    normal: {                 // 正常情况下的线条样式
+                        color: color[0],
+                        width: 0,             // 因为是叠加效果，要是有宽度，线条会变粗，白色航线特效不明显
+                        curveness: -0.2       // 线条曲度
+                    }
+                },
+                data: convertData(item[1])    // 特效的起始、终点位置
+            }, {  // 小飞机航线效果
+                type: 'lines',
+                zlevel: 2,
+                //symbol: ['none', 'arrow'],   // 用于设置箭头
+                symbolSize: 10,
+                effect: {
+                    show: true,
+                    period: 6,
+                    trailLength: 0,
+                    symbol: planePath,         // 特效形状，可以用其他svg pathdata路径代替
+                    symbolSize: 15
+                },
+                lineStyle: {
+                    normal: {
+                        color: color[0],
+                        width: 1,
+                        opacity: 0.6,
+                        curveness: -0.2
+                    }
+                },
+                data: convertData(item[1])     // 特效的起始、终点位置，一个二维数组，相当于coords: convertData(item[1])
+            }, { // 散点效果
+                type: 'effectScatter',
+                coordinateSystem: 'geo',       // 表示使用的坐标系为地理坐标系
+                zlevel: 3,
+                rippleEffect: {
+                    brushType: 'stroke'        // 波纹绘制效果
+                },
+                label: {
+                    normal: {                  // 默认的文本标签显示样式
+                        show: true,
+                        position: 'left',      // 标签显示的位置
+                        formatter: '{b}'       // 标签内容格式器
+                    }
+                },
+                itemStyle: {
+                    normal: {
+                        color: color[0]
+                    }
+                },
+                data: item[1].map(function(dataItem) {
+                    return {
+                        name: dataItem[1].name,
+                        value: geoCoordMap[dataItem[1].name],  // 起点的位置
+                        symbolSize: dataItem[1].value / 8,  // 散点的大小，通过之前设置的权重来计算，val的值来自data返回的value
+                    };
+                })
+            });
+        });
+
+        // 显示终点位置,类似于上面最后一个效果，放在外面写，是为了防止被循环执行多次
+        series.push({
+            type: 'effectScatter',
+            coordinateSystem: 'geo',
+            zlevel: 3,
+            rippleEffect: {
+                brushType: 'stroke'
+            },
+            label: {
+                normal: {
+                    show: true,
+                    position: 'left',
+                    formatter: '{b}'
+                }
+            },
+            symbolSize: function(val) {
+                return val[2] / 8;
+            },
+            itemStyle: {
+                normal: {
+                    color: color[1]
+                }
+            },
+            data: [{
+                // 这里面的数据，由于一开始就知道终点位置是什么，所以直接写死，如果通过ajax来获取数据的话，还要进行相应的处理
+                name: "重庆",
+                value: [107.7539, 30.1904, 30],
+                label: {
+                    normal: {
+                        position: 'top'
+                    }
+                }
+            }, {
+                name: '广州',
+                value: [113.5107, 23.2196, 30],
+                label: {
+                    normal: {
+                        position: 'right'
+                    }
+                }
+            }, {
+                name: '南宁',
+                value: [108.479, 23.1152, 30]
+            }]
+        });
+
+        // 最后初始化世界地图中的相关数据
+        MainChart.setOption({
+            geo: {
+                map: 'world',       // 与引用进来的地图js名字一致
+                roam: true,        // 开启缩放平移
+                itemStyle: {        // 每个区域的样式
+                    normal: {
+                        areaColor: '#323c48'
+                    },
+                    emphasis: {
+                        areaColor: '#488ab6'
+                    }
+                },
+                regions: [{        // 选中的区域
+                    name: 'China',
+                    selected: true,
+                    itemStyle: {   // 高亮时候的样式
+                        emphasis: {
+                            areaColor: '#45607d'
+                        }
+                    },
+                    label: {    // 高亮的时候不显示标签
+                        emphasis: {
+                            show: false
+                        }
+                    }
+                }]
+            },
+            series: series,   // 将之前处理的数据放到这里
+            textStyle: {
+                fontSize: 12
+            },
+            /*timeline:{
+                data:[
+                    '2002-01-01'
+                ],
+                label : {
+                    formatter : function(s) {
+                        return s.slice(0, 4);
+                    }
+                },
+                autoPlay : true,
+                playInterval : 1000
+            }*/
+        });
+
+        <!-- 数据变化（交互）表 -->
+        var Chart2 = echarts.init(document.getElementById('chart2'));
+        var option2 = {
+            legend: {
+                data:['销量']
+            },
+            xAxis: {
+                data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+            },
+            yAxis: {},
+            series: [{
+                name: '销量',
+                type: 'bar',
+                data: [5, 20, 36, 10, 10, 20]
+            }]
+        };
+        Chart2.setOption(option2);
+
+        <!-- 包含附录等级变化表 -->
+        var Chart3 = echarts.init(document.getElementById("chart3"));
+        var option3 = {
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['I','II','III']
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : ['2011','2012','2013','2014','2015','2016','2017']
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'I',
+                    type:'line',
+                    stack: '总量',
+                    data:[120, 132, 101, 134, 90, 230, 210]
+                },
+                {
+                    name:'II',
+                    type:'line',
+                    stack: '总量',
+                    data:[220, 182, 191, 234, 290, 330, 310]
+                },
+                {
+                    name:'III',
+                    type:'line',
+                    stack: '总量',
+                    data:[150, 232, 201, 154, 190, 330, 410]
+                }
+            ]
+        };
+        Chart3.setOption(option3);
+
+        <!-- 地理分布 -->
+        var Chart4 = echarts.init(document.getElementById("chart4"));
+        Chart4.setOption({
+            geo: {
+                map: 'world',       // 与引用进来的地图js名字一致
+                roam: true,        // 开启缩放平移
+                itemStyle: {        // 每个区域的样式
+                    normal: {
+                        areaColor: 'rgb(255,255,255,0.01)'
+                    },
+                    emphasis: {
+                        areaColor: '#82a4b6'
+                    }
+                },
+                regions: [{        // 选中的区域
+                    name: 'Canada',
+                    selected: true,
+                    itemStyle: {   // 高亮时候的样式
+                        emphasis: {
+                            areaColor: '#f8a2aa'
+                        }
+                    }
+                },
+                {
+                    name: 'China',
+                    selected: true,
+                    itemStyle: {   // 高亮时候的样式
+                        emphasis: {
+                            areaColor: '#f8bf93'
+                        }
+                    }
+                }],
+            }
+        });
+
+        <!-- 关系 -->
+        var Chart5 = echarts.init(document.getElementById("chart5"));
+        var option5 = {
+            series: {
+                type: 'sankey',
+                layout:'none',
+                data: [{
+                    name: 'a'
+                }, {
+                    name: 'b'
+                }, {
+                    name: 'a1'
+                }, {
+                    name: 'a2'
+                }, {
+                    name: 'b1'
+                }, {
+                    name: 'c'
+                }],
+                links: [{
+                    source: 'a',
+                    target: 'a1',
+                    value: 5
+                }, {
+                    source: 'a',
+                    target: 'a2',
+                    value: 3
+                }, {
+                    source: 'b',
+                    target: 'b1',
+                    value: 8
+                }, {
+                    source: 'a',
+                    target: 'b1',
+                    value: 3
+                }, {
+                    source: 'b1',
+                    target: 'a1',
+                    value: 1
+                }, {
+                    source: 'b1',
+                    target: 'c',
+                    value: 2
+                }]
+            }
+        };
+        Chart5.setOption(option5);
+
+        <!-- 交易目的表 -->
+        var Chart6 = echarts.init(document.getElementById('chart6'));
+        var option6 = {
+            tooltip : {
+                trigger: 'item',
+                formatter: "{b}: {c}"
+            },
+            calculable : false,
+            series : [
+                {
+                    name: "purpose",
+                    type:'treemap',
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                formatter: "{b}"
+                            },
+                            borderWidth: 0.5
+                        },
+                    },
+                    data:[
+                        {
+                            name: 'horm',
+                            value: 6
+                        },
+                        {
+                            name: 'live',
+                            value: 2
+                        },
+                        {
+                            name: 'medicial',
+                            value: 2
+                        },
+                        {
+                            name: 'zoo',
+                            value: 2
+                        },
+                        {
+                            name: 'other',
+                            value: 2
+                        },
+                        {
+                            name: 'else',
+                            value: 1
+                        },
+                    ]
+                }
+            ]
+        };
+        Chart6.setOption(option6);
+
+    </script>
+</body>
+</html>
