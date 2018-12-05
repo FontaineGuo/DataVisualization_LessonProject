@@ -1,0 +1,22 @@
+0 Year
+1 App.
+2 Taxon
+3 Importer
+7 Exporter
+8 Importer reported quantity 
+11 Exporter reported quantity
+12 Term
+14 Purpose 
+15 Source
+
+after edit
+0 Year
+1 App.
+2 Taxon
+3 Class
+4 Importer
+5 Exporter
+6 Exporter reported quantity
+7 Term
+8 Purpose
+9 Source

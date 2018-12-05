@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--表单提交操作JS-->
+    <script>
+        var count = 0;
+        var selected = false;
+        function check() {
+            count += 1;
+            selected = count % 2 === 1;
+        }
+        function flogin(){
+            var oName = document.getElementById("username");
+            var oPass = document.getElementById("password");
+            if(oName.value === "vp" && oPass.value === "123" && selected) {
+                window.location.href = "html/system.html"
+            }
+        }
+    </script>
+
+    <title>Login</title>
+    <link rel="shortcut icon" href="img/topicon.ico" />
+    <link rel="stylesheet" href="css/login/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/login/fontawesome-all.css">
+    <link href="http://maxcdn.bootstrapcdn.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- 背景效果 -->
+    <div id="bg">
+        <canvas></canvas>
+        <canvas></canvas>
+        <canvas></canvas>
+    </div>
+
+    <!-- 表单 -->
+    <div class="sub-main-w3">
+        <form action="#" method="post">
+            <div>
+                <img src="img/user.png" class="round_icon"/>
+                <h2>Welcome U</h2>
+            </div>
+            <div class="form-style-agile">
+                <label>Username</label>
+                <input id="username" placeholder="Username" name="Name" type="text" required="">
+            </div>
+            <div class="form-style-agile">
+                <label>Password</label>
+                <input id="password" placeholder="Password" name="Password" type="password" required="">
+            </div>
+            <!-- 选择框 -->
+            <div class="wthree-text">
+                <ul>
+                    <li>
+                        <label class="anim">
+                            <input type="checkbox" class="checkbox" required="" onmousedown="check()">
+                            <span>Stay Signed In</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class = "login">
+                <h2 class="btn from-middle" style="cursor: pointer" onmousedown="flogin()">Log In</h2>
+            </div>
+        </form>
+    </div>
+
+    <!-- Jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- 效果 -->
+    <script src="js/login/canva_moving_effect.js"></script>
+</body>
+
+</html>
