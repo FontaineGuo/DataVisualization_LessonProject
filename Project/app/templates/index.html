@@ -12,57 +12,22 @@
     <script src="{{ url_for('static', filename='js/echarts/dark.js') }}"></script>
     <script src="{{ url_for('static', filename='js/echarts/vintage.js') }}"></script>
     <script src="{{ url_for('static', filename='js/map/world.js') }}"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/system/menu.css')}}" type="text/css">
+    {% for jsfile_name in script_list %}
+        <script src="static/bootstrap/{{ jsfile_name }}.js"></script>
+    {% endfor %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" type="text/css">
 </head>
-<body>
-    <!-- 表格分区示例 -->
+<body bgcolor="#131824">
     <!-- 标题栏 -->
     <div id="menu" class="menuHolder">
         <div class="menuWindow">
             <ul class="p1">
-                <li class="s1"><a href="#url">导航菜单</a>
+                <li class="s1"><a class="a1" href="">VP TEAM</a>
                     <ul class="p2">
-                        <li class="s2"><a href="#"><span>首页</span></a></li>
-                        <li class="s2"><a href="#url"><span>服务</span></a>
-                            <ul class="p3 a3">
-                                <li><a href="#">打印</a></li>
-                                <li><a href="#">编辑</a></li>
-                                <li><a href="#">保管</a></li>
-                            </ul>
-                        </li>
-                        <li class="s2"><a href="#url"><span>联系</span></a>
-                            <ul class="p3 a6">
-                                <li><a href="#">支持</a></li>
-                                <li><a href="#">销售</a></li>
-                                <li><a href="#">购买</a></li>
-                                <li><a href="#">摄影师</a></li>
-                                <li><a href="#">零售商</a></li>
-                                <li><a href="#">常规</a></li>
-                            </ul>
-                        </li>
-                        <li class="s2"><a href="#url"><span>商店</span></a>
-                            <ul class="p3 a3">
-                                <li><a href="#">南区</a></li>
-                                <li><a href="#">北区</a></li>
-                                <li><a href="#">中心区</a></li>
-                            </ul>
-                        </li>
-                        <li class="s2"><a href="#url"><span>联系我们</span></a>
-                            <ul class="p3 a3">
-                                <li><a href="#">邮箱</a></li>
-                                <li><a href="#">邮递</a></li>
-                                <li><a href="#">电话</a></li>
-                            </ul>
-                        </li>
-                        <li class="s2 b6"><a href="#url"><span>销量</span></a>
-                            <ul class="p3 a5">
-                                <li><a href="#">数码单反机身</a></li>
-                                <li><a href="#">镜头</a></li>
-                                <li><a href="#">闪光枪</a></li>
-                                <li><a href="#">三角架</a></li>
-                                <li><a href="#">过滤器</a></li>
-                            </ul>
-                        </li>
+                        <li class="s2"><a class="a2" href="#"><span>郭智溢</span></a></li>
+                        <li class="s2"><a class="a2" href="#"><span>万珂蓝</span></a></li>
+                        <li class="s2"><a class="a2" href="#"><span>王枫</span></a></li>
+                        <li class="s2"><a class="a2" href="#"><span>杨凯</span></a></li>
                     </ul>
                 </li>
             </ul>
@@ -76,9 +41,9 @@
     <div id="chart4" class="sheet4"></div>
     <div id="chart5" class="sheet5"></div>
     <div id="chart6" class="sheet6"></div>
-    <!-- <div id="chart7" class="sheet7"></div> -->
-    <script type="text/javascript">
+    <div id="chart7" class="sheet7"></div>
 
+    <script type="text/javascript">
         window.onresize = function(){
             MainChart.resize();
             Chart2.resize();
@@ -86,20 +51,25 @@
             Chart4.resize();
             Chart5.resize();
             Chart6.resize();
-            //若有多个图表变动，可多写（表格虽窗口变化自适应缩放）
+            Chart7.resize();
         };
-
-        /* 总表（世界贸易）*/
+            
+        //航线图
         var MainChart = echarts.init(document.getElementById("main"));
         var geoCoordMap = {
-            '美国': [-97, 38],
-            '日本': [138, 36],
-            '德国': [9, 51],
-            '中国': [105, 35],
-            '瑞士': [8, 47],
-            '印度尼西亚':[120, -5],
-            '意大利': [12.8, 42.8],
-            '俄罗斯': [100,60]
+            '南宁': [108.479, 23.1152],
+            '广州': [113.5107, 23.2196],
+            '重庆': [107.7539, 30.1904],
+            '芬兰': [24.909912, 60.169095],
+            '美国': [-100.696295, 33.679979],
+            '日本': [139.710164, 35.706962],
+            '韩国': [126.979208, 37.53875],
+            '瑞士': [7.445147, 46.956241],
+            '东南亚': [117.53244, 5.300343],
+            '澳大利亚': [135.193845, -25.304039],
+            '德国': [13.402393, 52.518569],
+            '英国': [-0.126608, 51.208425],
+            '加拿大': [-102.646409, 59.994255]
         };
 
         /*
@@ -109,24 +79,24 @@
 
         // 重庆
         var CQData = [
-            [{name: '中国'}, {name: "美国",value: 30}],
-            [{name: '中国'}, {name: "瑞士",value: 90}],
-            [{name: '中国'}, {name: "印度尼西亚",value: 30}],
-            [{name: '中国'}, {name: "俄罗斯",value: 30}]
+            [{name: '重庆'}, {name: "芬兰",value: 30}],
+            [{name: '重庆'}, {name: "德国",value: 90}],
+            [{name: '重庆'}, {name: "英国",value: 30}],
+            [{name: '重庆'}, {name: "韩国",value: 30}]
         ];
 
         // 广州
         var GZData = [
-            [{name: '印度尼西亚'}, {name: "日本",value: 30}],
-            [{name: '印度尼西亚'}, {name: "中国",value: 100}]
+            [{name: '广州'}, {name: "日本",value: 30}],
+            [{name: '广州'}, {name: "东南亚",value: 30}]
         ];
 
         // 南宁
         var NNData = [
-            [{name: '瑞士'}, {name: "日本",value: 30}],
-            [{name: '瑞士'}, {name: "俄罗斯",value: 100}],
-            [{name: '瑞士'}, {name: "德国",value: 95}],
-            [{name: '瑞士'}, {name: "意大利",value: 30}]
+            [{name: '南宁'}, {name: "加拿大",value: 30}],
+            [{name: '南宁'}, {name: "美国",value: 100}],
+            [{name: '南宁'}, {name: "澳大利亚",value: 95}],
+            [{name: '南宁'}, {name: "瑞士",value: 30}]
         ];
 
         // 小飞机的图标，可以用其他图形替换
@@ -150,14 +120,14 @@
             return res;
         };
 
-        var color  = ['#9ae5fc', '#dcbf71'];	// 自定义图中要用到的颜色
+        var color  = ['#11ccf1', '#fbc459'];	// 自定义图中要用到的颜色
         var series = [];						// 用来存储地图数据
 
         /*
             图中一共用到三种效果，分别为航线特效图、飞机航线图以及城市图标涟漪图。
             要用到setOption中的series属性，并且对每个城市都要进行三次设置。
         */
-        [['中国', CQData],['印度尼西亚', GZData],['瑞士', NNData]].forEach(function(item, i) {
+        [['重庆', CQData],['广州', GZData],['南宁', NNData]].forEach(function(item, i) {
             series.push({
                 // 白色航线特效图
                 type: 'lines',
@@ -229,6 +199,7 @@
 
         // 显示终点位置,类似于上面最后一个效果，放在外面写，是为了防止被循环执行多次
         series.push({
+            name:'two',
             type: 'effectScatter',
             coordinateSystem: 'geo',
             zlevel: 3,
@@ -275,23 +246,54 @@
 
         // 最后初始化世界地图中的相关数据
         MainChart.setOption({
+            //选择标签
+            legend: {
+                orient: 'vertical',
+                left: 'right',
+                data:['two'],   //要跟series中的name属性一致(可以用于交互选择)
+                textStyle: {
+                    color: '#fff'
+                }
+            },
+            //地图
             geo: {
                 map: 'world',       // 与引用进来的地图js名字一致
                 roam: true,        // 开启缩放平移
+                //center:[115.97, 29.71],  //视角中心(随便写的位置——可用于交互定位)
+                zoom:1.15,           //当前视角的缩放比例（可用于交互定位后放大）
+                nameMap: {
+                    //地名映射（需要就往上加即可）
+                    'China' : '中国',
+                    'United States' : '美国',
+                    'Canada' : '加拿大',
+                },
                 itemStyle: {        // 每个区域的样式
                     normal: {
-                        areaColor: '#323c48'
+                        areaColor: 'rgb(255,255,255,0.01)',
+                        borderColor: '#fff',
+                        borderWidth: 0.3
                     },
                     emphasis: {
-                        areaColor: '#488ab6'
+                        areaColor: '#80c5ff',
+                    },
+                },
+                label: {
+                    normal: {
+                        textStyle: {
+                            fontSize: 15,
+                            fontWeight: 'bold',
+                        }
+                    },
+                    emphasis: {
+                        color: '#fff'
                     }
                 },
                 regions: [{        // 选中的区域
-                    name: 'China',
+                    name: '中国',    //已经经过映射，直接使用中文即可
                     selected: true,
                     itemStyle: {   // 高亮时候的样式
                         emphasis: {
-                            areaColor: '#45607d'
+                            areaColor: '#1eb4ff'
                         }
                     },
                     label: {    // 高亮的时候不显示标签
@@ -302,9 +304,6 @@
                 }]
             },
             series: series,   // 将之前处理的数据放到这里
-            textStyle: {
-                fontSize: 12
-            },
             /*timeline:{
                 data:[
                     '2002-01-01'
@@ -319,203 +318,363 @@
             }*/
         });
 
-        <!-- 数据变化（交互）表 -->
+        //前20进口情况占比
         var Chart2 = echarts.init(document.getElementById('chart2'));
         var option2 = {
+            title : {
+                text: '总量前20进口国家',
+                textStyle: {
+                    color: '#fff',
+                    fontSize:15
+                },
+                x:'center'
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b}: {c} ({d}%)"
+            },
             legend: {
-                data:['销量']
+                orient: 'vertical',
+                x: 'left',
+                itemGap: 2,
+                itemWidth: 10,
+                itemHeight: 5,
+                textStyle: {
+                    color: '#fff',
+                    fontSize:10
+                },
+                data:['中国','美国','加拿大','英国','俄国']
             },
-            xAxis: {
-                data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
-            },
-            yAxis: {},
-            series: [{
-                name: '销量',
-                type: 'bar',
-                data: [5, 20, 36, 10, 10, 20]
-            }]
+            series: [
+                {
+                    name:'访问来源',
+                    type:'pie',
+                    radius: ['50%', '70%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'center'
+                        },
+                        emphasis: {
+                            show: true,
+                            textStyle: {
+                                fontSize: '20',
+                                fontWeight: 'bold'
+                            }
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            show: false
+                        }
+                    },
+                    data:[
+                        {value:335, name:'中国'},
+                        {value:310, name:'美国'},
+                        {value:234, name:'加拿大'},
+                        {value:135, name:'英国'},
+                        {value:1548, name:'俄国'}
+                    ]
+                }
+            ]
         };
         Chart2.setOption(option2);
 
-        <!-- 包含附录等级变化表 -->
+        //前20出口情况占比
         var Chart3 = echarts.init(document.getElementById("chart3"));
         var option3 = {
-            tooltip : {
-                trigger: 'axis'
+            title : {
+                text: '总量前20出口国家',
+                textStyle: {
+                    color: '#fff',
+                    fontSize:15
+                },
+                x:'center'
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b}: {c} ({d}%)"
             },
             legend: {
-                data:['I','II','III']
+                orient: 'vertical',
+                x: 'left',
+                itemGap: 2,
+                itemWidth: 10,
+                itemHeight: 5,
+                textStyle: {
+                    color: '#fff',
+                    fontSize:10
+                },
+                data:['中国','美国','加拿大','英国','俄国']
             },
-            calculable : true,
-            xAxis : [
+            series: [
                 {
-                    type : 'category',
-                    boundaryGap : false,
-                    data : ['2011','2012','2013','2014','2015','2016','2017']
-                }
-            ],
-            yAxis : [
-                {
-                    type : 'value'
-                }
-            ],
-            series : [
-                {
-                    name:'I',
-                    type:'line',
-                    stack: '总量',
-                    data:[120, 132, 101, 134, 90, 230, 210]
-                },
-                {
-                    name:'II',
-                    type:'line',
-                    stack: '总量',
-                    data:[220, 182, 191, 234, 290, 330, 310]
-                },
-                {
-                    name:'III',
-                    type:'line',
-                    stack: '总量',
-                    data:[150, 232, 201, 154, 190, 330, 410]
+                    name:'访问来源',
+                    type:'pie',
+                    radius: ['50%', '70%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'center'
+                        },
+                        emphasis: {
+                            show: true,
+                            textStyle: {
+                                fontSize: '20',
+                                fontWeight: 'bold'
+                            }
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            show: false
+                        }
+                    },
+                    data:[
+                        {value:365, name:'中国'},
+                        {value:445, name:'美国'},
+                        {value:234, name:'加拿大'},
+                        {value:665, name:'英国'},
+                        {value:168, name:'俄国'}
+                    ]
                 }
             ]
         };
         Chart3.setOption(option3);
 
-        <!-- 地理分布 -->
+        //出口进口总量前20情况占比
         var Chart4 = echarts.init(document.getElementById("chart4"));
-        Chart4.setOption({
-            geo: {
-                map: 'world',       // 与引用进来的地图js名字一致
-                roam: true,        // 开启缩放平移
-                itemStyle: {        // 每个区域的样式
-                    normal: {
-                        areaColor: 'rgb(255,255,255,0.01)'
-                    },
-                    emphasis: {
-                        areaColor: '#82a4b6'
-                    }
-                },
-                regions: [{        // 选中的区域
-                    name: 'Canada',
-                    selected: true,
-                    itemStyle: {   // 高亮时候的样式
-                        emphasis: {
-                            areaColor: '#f8a2aa'
-                        }
-                    }
-                },
-                {
-                    name: 'China',
-                    selected: true,
-                    itemStyle: {   // 高亮时候的样式
-                        emphasis: {
-                            areaColor: '#f8bf93'
-                        }
-                    }
-                }],
-            }
-        });
-
-        <!-- 关系 -->
-        var Chart5 = echarts.init(document.getElementById("chart5"));
-        var option5 = {
-            series: {
-                type: 'sankey',
-                layout:'none',
-                data: [{
-                    name: 'a'
-                }, {
-                    name: 'b'
-                }, {
-                    name: 'a1'
-                }, {
-                    name: 'a2'
-                }, {
-                    name: 'b1'
-                }, {
-                    name: 'c'
-                }],
-                links: [{
-                    source: 'a',
-                    target: 'a1',
-                    value: 5
-                }, {
-                    source: 'a',
-                    target: 'a2',
-                    value: 3
-                }, {
-                    source: 'b',
-                    target: 'b1',
-                    value: 8
-                }, {
-                    source: 'a',
-                    target: 'b1',
-                    value: 3
-                }, {
-                    source: 'b1',
-                    target: 'a1',
-                    value: 1
-                }, {
-                    source: 'b1',
-                    target: 'c',
-                    value: 2
-                }]
-            }
-        };
-        Chart5.setOption(option5);
-
-        <!-- 交易目的表 -->
-        var Chart6 = echarts.init(document.getElementById('chart6'));
-        var option6 = {
+        var option4 = {
+            title: {
+                text: '进出口总量前20国家',
+                left: 'center',
+                textStyle: {
+                    color: '#fff',
+                    fontSize:15
+                }
+            },
             tooltip : {
                 trigger: 'item',
-                formatter: "{b}: {c}"
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
             },
-            calculable : false,
+
+            visualMap: {
+                show: false,
+                min: 80,
+                max: 600,
+                inRange: {
+                    colorLightness: [0, 1]
+                }
+            },
             series : [
                 {
-                    name: "purpose",
-                    type:'treemap',
+                    name:'访问来源',
+                    type:'pie',
+                    radius : '48%',
+                    center: ['50%', '50%'],
+                    data:[
+                        {value:335, name:'中国'},
+                        {value:310, name:'美国'},
+                        {value:274, name:'加拿大'},
+                        {value:235, name:'英国'},
+                        {value:400, name:'俄国'}
+                    ].sort(function (a, b) { return a.value - b.value; }),
+                    roseType: 'radius',
+                    label: {
+                        normal: {
+                            textStyle: {
+                                color: 'rgba(255, 255, 255, 0.3)'
+                            }
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            lineStyle: {
+                                color: 'rgba(255, 255, 255, 0.3)'
+                            },
+                            smooth: 0.2,
+                            length: 3,
+                            length2: 3
+                        }
+                    },
                     itemStyle: {
                         normal: {
-                            label: {
-                                show: true,
-                                formatter: "{b}"
-                            },
-                            borderWidth: 0.5
-                        },
+                            color: '#c23531',
+                            shadowBlur: 200,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
                     },
-                    data:[
-                        {
-                            name: 'horm',
-                            value: 6
+
+                    animationType: 'scale',
+                    animationEasing: 'elasticOut',
+                    animationDelay: function (idx) {
+                        return Math.random() * 200;
+                    }
+                }
+            ]
+        };
+        Chart4.setOption(option4);
+
+        //每年前10进出口总量国家变化占比（可以加时间轴动态变化）
+        var Chart5 = echarts.init(document.getElementById("chart5"));
+        var option5 = {
+            legend: {
+                textStyle: {
+                    color:'#fff'
+                }
+            },
+            tooltip: {
+                trigger: 'axis',
+                showContent: false
+            },
+            dataset: {
+                source: [
+                    ['product', '2012', '2013', '2014', '2015', '2016', '2017'],
+                    ['Matcha Latte', 41.1, 30.4, 65.1, 53.3, 83.8, 98.7],
+                    ['Milk Tea', 86.5, 92.1, 85.7, 83.1, 73.4, 55.1],
+                    ['Cheese Cocoa', 24.1, 67.2, 79.5, 86.4, 65.2, 82.5],
+                    ['Walnut Brownie', 55.2, 67.1, 69.2, 72.4, 53.9, 39.1]
+                ]
+            },
+            xAxis: {type: 'category',axisLine:{lineStyle:{color:'#fff'}}},
+            yAxis: {gridIndex: 0, axisLine:{lineStyle:{color:'#fff'}}},
+            grid: {top: '55%'},
+            series: [
+                {type: 'line', smooth: true, seriesLayoutBy: 'row'},
+                {type: 'line', smooth: true, seriesLayoutBy: 'row'},
+                {type: 'line', smooth: true, seriesLayoutBy: 'row'},
+                {type: 'line', smooth: true, seriesLayoutBy: 'row'},
+                {
+                    type: 'pie',
+                    id: 'pie',
+                    radius: '30%',
+                    center: ['50%', '25%'],
+                    label: {
+                        formatter: '{b}: {@2012} ({d}%)',
+                    },
+                    encode: {
+                        itemName: 'product',
+                        value: '2012',
+                        tooltip: '2012'
+                    }
+                }
+            ]
+        };
+        Chart5.on('updateAxisPointer', function (event) {
+            var xAxisInfo = event.axesInfo[0];
+            if (xAxisInfo) {
+                var dimension = xAxisInfo.value + 1;
+                Chart5.setOption({
+                    series: {
+                        id: 'pie',
+                        label: {
+                            formatter: '{b}: {@[' + dimension + ']} ({d}%)'
                         },
-                        {
-                            name: 'live',
-                            value: 2
-                        },
-                        {
-                            name: 'medicial',
-                            value: 2
-                        },
-                        {
-                            name: 'zoo',
-                            value: 2
-                        },
-                        {
-                            name: 'other',
-                            value: 2
-                        },
-                        {
-                            name: 'else',
-                            value: 1
-                        },
-                    ]
+                        encode: {
+                            value: dimension,
+                            tooltip: dimension
+                        }
+                    }
+                });
+            }
+        });
+        Chart5.setOption(option5);
+
+        //前20总量国家中进出口总量数前20的动植物
+        var Chart6 = echarts.init(document.getElementById("chart6"));
+        var option6 = {
+            tooltip : {
+                trigger: 'axis',
+                axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                    type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                }
+            },
+            legend: {
+                data:['出口', '进口'],
+                textStyle:{
+                    color:'#fff'
+                }
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis : [
+                {
+                    type : 'value',
+                    axisLine:{lineStyle:{color:'#fff'}}
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'category',
+                    axisTick : {show: false},
+                    axisLine:{lineStyle:{color:'#fff'}},
+                    data : ['鳄鱼','大象','杉树','袋鼠','虎','海马','鲸鱼']
+                }
+            ],
+            series : [
+                {
+                    name:'进口',
+                    type:'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true
+                        }
+                    },
+                    data:[320, 302, 341, 374, 390, 450, 420]
+                },
+                {
+                    name:'出口',
+                    type:'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'left'
+                        }
+                    },
+                    data:[-120, -132, -101, -134, -190, -230, -210]
                 }
             ]
         };
         Chart6.setOption(option6);
+
+        //总交易中前20种交易目的占比
+        var Chart7 = echarts.init(document.getElementById("chart7"));
+        var option7 = {
+            series: [{
+                type: 'treemap',
+                data: [{
+                    name: 'part',            // First tree
+                    value: 10,
+                    children: [{
+                        name: 'skin',       // First leaf of first tree
+                        value: 4
+                    }, {
+                        name: 'fresh',       // Second leaf of first tree
+                        value: 6
+                    }]
+                }, {
+                    name: 'live',            // Second tree
+                    value: 20,
+                    children: [{
+                        name: 'live',       // Son of first tree
+                        value: 20,
+                        children: [{
+                            name: 'zoo',  // Granson of first tree
+                            value: 20
+                        }]
+                    }]
+                }]
+            }]
+        };
+        Chart7.setOption(option7);
 
     </script>
 </body>

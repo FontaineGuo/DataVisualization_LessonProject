@@ -7,9 +7,11 @@ from . import app
 
 
 
-
 @app.route("/")
 def hello():
     # print(countryInfo.get_country_location('US'))
     return render_template('index.html')
+
+
+
 
