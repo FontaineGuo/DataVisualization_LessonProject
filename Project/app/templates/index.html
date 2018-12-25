@@ -264,7 +264,7 @@
                 nameMap: {
                     //地名映射（需要就往上加即可）
                     'China' : '中国',
-                    'United States' : '美国',
+                    'United States' : 'United States of America',
                     'Canada' : '加拿大',
                 },
                 itemStyle: {        // 每个区域的样式
@@ -316,6 +316,9 @@
                 autoPlay : true,
                 playInterval : 1000
             }*/
+        });
+        MainChart.on('click', function (params) {
+            console.log(params.name)
         });
 
         //前20进口情况占比
