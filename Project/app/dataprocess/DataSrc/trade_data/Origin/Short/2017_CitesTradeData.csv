@@ -1,4 +1,4 @@
-Year,App.,Taxon,Class,Importer,Exporter,Exporter_reported_quantity,Term,Purpose,Source
+Year,App,Taxon,Class,Importer,Exporter,Exporter_reported_quantity,Term,Purpose,Source
 2017,I,Haliaeetus albicilla,Aves,CZ,KZ,1,live,B,C
 2017,I,Haliaeetus albicilla,Aves,DE,CH,,live,T,C
 2017,I,Haliaeetus albicilla,Aves,DE,KZ,4,live,T,C

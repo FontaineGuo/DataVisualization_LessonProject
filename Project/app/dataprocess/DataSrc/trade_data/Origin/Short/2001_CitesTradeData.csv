@@ -1,4 +1,4 @@
-Year,App.,Taxon,Class,Importer,Exporter,Exporter_reported_quantity,Term,Purpose,Source
+Year,App,Taxon,Class,Importer,Exporter,Exporter_reported_quantity,Term,Purpose,Source
 2001,I,Aquila spp.,Aves,FR,CA,,feathers,Q,O
 2001,I,Aquila heliaca,Aves,BE,AE,,live,P,C
 2001,I,Aquila heliaca,Aves,BE,KZ,,bodies,E,C

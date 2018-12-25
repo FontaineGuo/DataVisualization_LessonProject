@@ -1,4 +1,4 @@
-Year,App.,Taxon,Class,Importer,Exporter,Exporter_reported_quantity,Term,Purpose,Source
+Year,App,Taxon,Class,Importer,Exporter,Exporter_reported_quantity,Term,Purpose,Source
 2000,I,Aquila heliaca,Aves,BE,AE,1,live,P,C
 2000,I,Aquila heliaca,Aves,BE,AE,2,live,T,C
 2000,I,Aquila heliaca,Aves,FR,RU,1,live,Z,F

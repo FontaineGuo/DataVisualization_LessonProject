@@ -1,4 +1,4 @@
-Year,App.,Taxon,Class,Importer,Exporter,Exporter_reported_quantity,Term,Purpose,Source
+Year,App,Taxon,Class,Importer,Exporter,Exporter_reported_quantity,Term,Purpose,Source
 2003,I,Aquila heliaca,Aves,AT,HU,1,live,B,W
 2003,I,Aquila heliaca,Aves,GB,AE,,bodies,S,W
 2003,I,Aquila heliaca,Aves,HU,BG,3,feathers,S,W

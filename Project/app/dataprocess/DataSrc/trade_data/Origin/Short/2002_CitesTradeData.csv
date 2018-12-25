@@ -1,4 +1,4 @@
-Year,App.,Taxon,Class,Importer,Exporter,Exporter_reported_quantity,Term,Purpose,Source
+Year,App,Taxon,Class,Importer,Exporter,Exporter_reported_quantity,Term,Purpose,Source
 2002,I,Aquila adalberti,Aves,ES,US,9,specimens,S,O
 2002,I,Aquila heliaca,Aves,AT,HU,1,live,B,W
 2002,I,Aquila heliaca,Aves,BE,RU,1,live,Z,F
