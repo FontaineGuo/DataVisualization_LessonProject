@@ -1,6 +1,6 @@
 import csv  
 
-exportCountry = 'CN'
+exportCountry = 'US'
 
 
 import_country = dict()

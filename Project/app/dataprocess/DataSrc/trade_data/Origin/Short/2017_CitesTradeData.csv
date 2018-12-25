@@ -1,4 +1,4 @@
-Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,Source
+Year,App.,Taxon,Class,Importer,Exporter,Exporter_reported_quantity,Term,Purpose,Source
 2017,I,Haliaeetus albicilla,Aves,CZ,KZ,1,live,B,C
 2017,I,Haliaeetus albicilla,Aves,DE,CH,,live,T,C
 2017,I,Haliaeetus albicilla,Aves,DE,KZ,4,live,T,C
@@ -167,7 +167,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,I,Vicugna vicugna,Mammalia,PE,IT,18,cloth,T,W
 2017,I,Vicugna vicugna,Mammalia,RU,IT,1,garments,P,W
 2017,I,Vicugna vicugna,Mammalia,TR,DE,1,live,Z,C
-2017,I,Vicugna vicugna,Mammalia,TR,IT,36.30,cloth,T,W
+2017,I,Vicugna vicugna,Mammalia,TR,IT,36.3,cloth,T,W
 2017,I,Canis lupus,Mammalia,PL,UA,,skulls,,
 2017,I,Canis lupus,Mammalia,VN,KZ,2,skins,P,U
 2017,I,Speothos venaticus,Mammalia,PA,GB,3,live,T,C
@@ -818,7 +818,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,I,Loxodonta africana,Mammalia,CN,BE,2,tusks,T,O
 2017,I,Loxodonta africana,Mammalia,CN,DE,0.4,ivory carvings,T,O
 2017,I,Loxodonta africana,Mammalia,CN,DE,400,ivory carvings,P,O
-2017,I,Loxodonta africana,Mammalia,CN,DE,10.90,ivory carvings,T,O
+2017,I,Loxodonta africana,Mammalia,CN,DE,10.9,ivory carvings,T,O
 2017,I,Loxodonta africana,Mammalia,CN,FR,1,ivory carvings,P,O
 2017,I,Loxodonta africana,Mammalia,CN,FR,104,piano keys,T,O
 2017,I,Loxodonta africana,Mammalia,CN,GB,3,ivory carvings,Q,O
@@ -1711,7 +1711,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,I,Dalbergia nigra,,US,DE,0.9,carvings,T,O
 2017,I,Dalbergia nigra,,US,DK,51,carvings,T,O
 2017,I,Dalbergia nigra,,US,ES,2,carvings,T,O
-2017,I,Dalbergia nigra,,US,FI,1.60,wood product,T,O
+2017,I,Dalbergia nigra,,US,FI,1.6,wood product,T,O
 2017,I,Dalbergia nigra,,US,FR,1,wood product,T,O
 2017,I,Dalbergia nigra,,US,FR,1,carvings,T,O
 2017,I,Dalbergia nigra,,US,FR,4,wood product,T,O
@@ -2927,13 +2927,13 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,AE,DE,161.784,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,AE,DE,0.098,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,AE,FR,13.88,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,AE,FR,27.50,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,AE,FR,1.50,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,AE,FR,27.5,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,AE,FR,1.5,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,AE,FR,0.12,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,AE,FR,216.509,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,AE,FR,16.350,cosmetics,T,C
+2017,II,Acipenser baerii,Actinopteri,AE,FR,16.35,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,AE,FR,1.53,derivatives,T,C
-2017,II,Acipenser baerii,Actinopteri,AE,FR,29.930,meat,T,C
+2017,II,Acipenser baerii,Actinopteri,AE,FR,29.93,meat,T,C
 2017,II,Acipenser baerii,Actinopteri,AE,GB,0.0414,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,AE,IT,21.875,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,AE,NL,7,caviar,T,C
@@ -2950,7 +2950,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,AM,FR,0.143,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,AM,LV,2,caviar,,
 2017,II,Acipenser baerii,Actinopteri,AM,LV,45,meat,,
-2017,II,Acipenser baerii,Actinopteri,AN,DE,1.14980,extract,T,C
+2017,II,Acipenser baerii,Actinopteri,AN,DE,1.1498,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,AN,DE,40.531,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,AR,DE,0.049,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,AR,DE,38.85813,extract,T,C
@@ -2993,7 +2993,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,BE,TR,,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,BG,US,,coral sand,T,C
 2017,II,Acipenser baerii,Actinopteri,BH,DE,0.026,extract,T,C
-2017,II,Acipenser baerii,Actinopteri,BH,DE,5.260,extract,T,C
+2017,II,Acipenser baerii,Actinopteri,BH,DE,5.26,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,BH,FR,1.334,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,BL,FR,7.22,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,BL,FR,1.025,caviar,T,C
@@ -3017,9 +3017,9 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,CA,DE,5.669,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,CA,DE,0.0005,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,CA,EE,0.036,cosmetics,T,C
-2017,II,Acipenser baerii,Actinopteri,CA,FR,0.90,cosmetics,T,C
+2017,II,Acipenser baerii,Actinopteri,CA,FR,0.9,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,CA,FR,0.216,cosmetics,T,C
-2017,II,Acipenser baerii,Actinopteri,CA,FR,7.450,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,CA,FR,7.45,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,CA,FR,1053.43,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,CA,IT,94.823,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,CA,LV,2.12,caviar,,
@@ -3033,7 +3033,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,CH,DE,62.048,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,CH,DE,1205.891,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,CH,DE,357.47162,extract,T,C
-2017,II,Acipenser baerii,Actinopteri,CH,DE,46.210,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,CH,DE,46.21,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,CH,DE,271.90828,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,CH,DE,1.61205,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,CH,DE,100,meat,T,C
@@ -3052,7 +3052,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,CH,FR,3600,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,CH,FR,400.1,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,CH,FR,83.5,genitalia,T,C
-2017,II,Acipenser baerii,Actinopteri,CH,FR,2559.40,meat,T,C
+2017,II,Acipenser baerii,Actinopteri,CH,FR,2559.4,meat,T,C
 2017,II,Acipenser baerii,Actinopteri,CH,GB,0.96,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,CH,GB,1.92,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,CH,IT,131.742,caviar,T,C
@@ -3062,7 +3062,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,CH,LV,2.425,meat,,
 2017,II,Acipenser baerii,Actinopteri,CH,NL,0.01039634,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,CH,NL,1.5,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,CH,PL,57.50,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,CH,PL,57.5,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,CI,FR,7.2,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,CI,FR,35.735,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,CI,FR,0.114,cosmetics,T,C
@@ -3071,7 +3071,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,CL,DE,0.4221,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,CL,DE,126.709,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,CL,ES,1.45,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,CL,IT,8.70,eggs,T,C
+2017,II,Acipenser baerii,Actinopteri,CL,IT,8.7,eggs,T,C
 2017,II,Acipenser baerii,Actinopteri,CL,IT,70000,eggs (live),B,C
 2017,II,Acipenser baerii,Actinopteri,CM,FR,1.21,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,CM,FR,0.06,cosmetics,T,C
@@ -3083,13 +3083,13 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,CN,DE,859211.9304,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,CN,DE,78.797,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,CN,DE,11.25,eggs (live),T,C
-2017,II,Acipenser baerii,Actinopteri,CN,DE,877.98660,extract,T,C
+2017,II,Acipenser baerii,Actinopteri,CN,DE,877.9866,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,CN,DE,0.21145,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,CN,EE,0.1416,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,CN,FR,2.7,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,CN,FR,3.791,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,CN,FR,1.32,extract,T,C
-2017,II,Acipenser baerii,Actinopteri,CN,FR,47.490,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,CN,FR,47.49,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,CN,FR,4715.305,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,CN,FR,108.008,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,CN,FR,100000,eggs (live),T,C
@@ -3120,7 +3120,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,DE,US,,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,DE,UY,,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,DO,DE,4.82,extract,T,C
-2017,II,Acipenser baerii,Actinopteri,DO,DE,104.500,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,DO,DE,104.5,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,DO,DE,0.35453,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,DO,FR,0.96,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,DO,FR,16.29,caviar,T,C
@@ -3151,19 +3151,19 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,GE,AT,145,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,GE,BY,1.5,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,GE,DE,0.675,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,GE,DE,4.88760,extract,T,C
+2017,II,Acipenser baerii,Actinopteri,GE,DE,4.8876,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,GE,FR,2.91,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,GE,FR,0.651,derivatives,T,C
 2017,II,Acipenser baerii,Actinopteri,GE,IT,13.75,caviar,S,C
 2017,II,Acipenser baerii,Actinopteri,GE,IT,50.372,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,GE,IT,2000,meat,T,C
-2017,II,Acipenser baerii,Actinopteri,GT,DE,5.260,extract,T,C
+2017,II,Acipenser baerii,Actinopteri,GT,DE,5.26,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,GT,DE,0.059,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,HK,AT,5081.66,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,HK,EE,0.0759,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,HK,ES,145.443,derivatives,T,C
 2017,II,Acipenser baerii,Actinopteri,HK,FI,6.35,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,HK,FR,31.610,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,HK,FR,31.61,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,HK,FR,1.796,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,HK,FR,25.01,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,HK,FR,19.698,cosmetics,T,C
@@ -3182,10 +3182,10 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,ID,DE,3.604,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,ID,DE,9.99952,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,ID,DE,10.905,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,ID,FR,84.800,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,ID,FR,84.8,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,ID,FR,0.1,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,ID,IT,5,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,IL,AT,1121.50,cosmetics,T,C
+2017,II,Acipenser baerii,Actinopteri,IL,AT,1121.5,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,IL,DE,1.02,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,IL,DE,59.902,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,IL,DE,0.75,eggs (live),T,C
@@ -3212,7 +3212,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,IT,CH,,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,JM,DE,42.836,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,JO,BY,12,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,JO,DE,10.110,extract,T,C
+2017,II,Acipenser baerii,Actinopteri,JO,DE,10.11,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,JO,DE,0.039,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,JO,FR,7.275,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,JO,FR,0.168,derivatives,T,C
@@ -3220,9 +3220,9 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,JO,IT,0.08,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,JP,BE,10,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,JP,DE,10.8654,extract,T,C
-2017,II,Acipenser baerii,Actinopteri,JP,DE,809.24540,extract,T,C
+2017,II,Acipenser baerii,Actinopteri,JP,DE,809.2454,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,JP,DE,198.72,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,JP,DE,1.10,eggs (live),T,C
+2017,II,Acipenser baerii,Actinopteri,JP,DE,1.1,eggs (live),T,C
 2017,II,Acipenser baerii,Actinopteri,JP,DE,18.46,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,JP,DE,500,live,T,C
 2017,II,Acipenser baerii,Actinopteri,JP,ES,11.55,caviar,T,C
@@ -3242,7 +3242,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,KG,FR,0.02,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,KH,DE,0.075,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,KH,DE,1.264,extract,T,C
-2017,II,Acipenser baerii,Actinopteri,KH,FR,4.580,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,KH,FR,4.58,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,KP,DE,12.074,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,KR,AT,10,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,KR,BE,28.44,caviar,T,C
@@ -3258,13 +3258,13 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,KR,FR,22.779,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,KR,FR,10.77,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,KR,FR,8.828,derivatives,T,C
-2017,II,Acipenser baerii,Actinopteri,KR,FR,10.80,meat,T,C
+2017,II,Acipenser baerii,Actinopteri,KR,FR,10.8,meat,T,C
 2017,II,Acipenser baerii,Actinopteri,KR,GB,0.7594,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,KR,IT,0.3,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,KW,DE,50.930,extract,T,C
-2017,II,Acipenser baerii,Actinopteri,KW,FR,8.370,cosmetics,T,C
+2017,II,Acipenser baerii,Actinopteri,KW,DE,50.93,extract,T,C
+2017,II,Acipenser baerii,Actinopteri,KW,FR,8.37,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,KW,FR,2.283,cosmetics,T,C
-2017,II,Acipenser baerii,Actinopteri,KW,NL,0.04688310,extract,T,C
+2017,II,Acipenser baerii,Actinopteri,KW,NL,0.0468831,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,KY,AT,2.04,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,KY,DE,0.72,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,KY,DE,1.782,extract,T,C
@@ -3300,7 +3300,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,LV,CH,,extract,,
 2017,II,Acipenser baerii,Actinopteri,LV,CN,,caviar,,
 2017,II,Acipenser baerii,Actinopteri,LV,IL,,medicine,,
-2017,II,Acipenser baerii,Actinopteri,MA,DE,0.230,extract,T,C
+2017,II,Acipenser baerii,Actinopteri,MA,DE,0.23,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,MA,FR,13.666,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,MA,FR,9.07,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,MA,FR,2.065,cosmetics,T,C
@@ -3312,7 +3312,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,MC,FR,3.525,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,MC,FR,3,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,MC,FR,6.87,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,MC,FR,90.070,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,MC,FR,90.07,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,MC,FR,600,meat,T,C
 2017,II,Acipenser baerii,Actinopteri,MD,BY,6.3,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,MD,DE,56.3175,extract,T,C
@@ -3322,7 +3322,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,MD,FR,1.113,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,MD,FR,0.038,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,MD,IT,12.084,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,ME,EE,0.0900,cosmetics,T,C
+2017,II,Acipenser baerii,Actinopteri,ME,EE,0.09,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,MF,FR,3.1,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,MF,FR,1.2,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,MN,AT,123,cosmetics,T,C
@@ -3330,7 +3330,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,MN,ES,3.546,derivatives,T,C
 2017,II,Acipenser baerii,Actinopteri,MR,DE,2.076,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,MU,BY,10,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,MU,DE,9.62770,extract,T,C
+2017,II,Acipenser baerii,Actinopteri,MU,DE,9.6277,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,MU,DE,26.987,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,MU,FR,0.3,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,MU,FR,0.294,caviar,T,C
@@ -3361,7 +3361,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,MY,FR,300,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,MY,FR,5,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,MY,FR,30,meat,T,C
-2017,II,Acipenser baerii,Actinopteri,NA,DE,0.30,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,NA,DE,0.3,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,NA,DE,0.00503,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,NC,DE,4.572,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,NC,FR,3.6,caviar,T,C
@@ -3369,20 +3369,20 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,NL,CN,,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,NL,US,,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,NO,AT,27049.6404,cosmetics,T,C
-2017,II,Acipenser baerii,Actinopteri,NO,BE,37.80,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,NO,BE,37.8,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,NO,BE,16.51,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,NO,DE,15.51279,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,NO,DE,0.068,extract,T,C
-2017,II,Acipenser baerii,Actinopteri,NO,DE,0.00880,extract,T,C
+2017,II,Acipenser baerii,Actinopteri,NO,DE,0.0088,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,NO,EE,0.02254,cosmetics,T,C
-2017,II,Acipenser baerii,Actinopteri,NO,FI,39.830,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,NO,FI,39.83,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,NO,FR,7.11,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,NO,FR,1.422,derivatives,T,C
 2017,II,Acipenser baerii,Actinopteri,NO,FR,1.345,meat,T,C
 2017,II,Acipenser baerii,Actinopteri,NO,NL,0.15935932,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,NZ,BY,24,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,NZ,DE,32.064,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,NZ,FR,16.090,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,NZ,FR,16.09,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,NZ,FR,8.148,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,NZ,FR,0.24,derivatives,T,C
 2017,II,Acipenser baerii,Actinopteri,OM,DE,0.023,extract,T,C
@@ -3407,17 +3407,17 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,PH,FR,4.05,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,PH,FR,2.71,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,PL,BY,10.56,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,PY,DE,9.840,extract,T,C
+2017,II,Acipenser baerii,Actinopteri,PY,DE,9.84,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,PY,FR,1.111,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,QA,DE,0.044,extract,T,C
-2017,II,Acipenser baerii,Actinopteri,QA,DE,64.060,extract,T,C
+2017,II,Acipenser baerii,Actinopteri,QA,DE,64.06,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,QA,DE,70.495,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,QA,EE,0.017,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,QA,FR,60,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,QA,FR,1.675,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,QA,FR,3.698,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,RS,DE,0.00621,extract,T,C
-2017,II,Acipenser baerii,Actinopteri,RS,EE,1.5760,cosmetics,T,C
+2017,II,Acipenser baerii,Actinopteri,RS,EE,1.576,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,RS,FR,2.355,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,RS,FR,2.08,derivatives,T,C
 2017,II,Acipenser baerii,Actinopteri,RS,HU,10000,fingerlings,T,C
@@ -3443,7 +3443,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,RU,IT,1503.15,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,RU,LV,21099.63,extract,,
 2017,II,Acipenser baerii,Actinopteri,SA,DE,9.15,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,SA,FR,1.460,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,SA,FR,1.46,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,SA,FR,5.456,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,SA,FR,5.5,derivatives,T,C
 2017,II,Acipenser baerii,Actinopteri,SA,FR,3.99,caviar,T,C
@@ -3455,15 +3455,15 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,SE,UY,,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,SG,AT,743,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,SG,BE,2.51,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,SG,DE,61.2410,extract,T,C
+2017,II,Acipenser baerii,Actinopteri,SG,DE,61.241,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,SG,DE,468.221,extract,T,C
-2017,II,Acipenser baerii,Actinopteri,SG,DE,71.510,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,SG,DE,71.51,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,SG,DE,4.072,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,SG,ES,1.5,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,SG,FI,32.245,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,SG,FR,22.385,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,SG,FR,21.28,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,SG,FR,113.010,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,SG,FR,113.01,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,SG,FR,0.672,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,SG,FR,67.2,derivatives,T,C
 2017,II,Acipenser baerii,Actinopteri,SG,FR,0.05,derivatives,T,C
@@ -3473,7 +3473,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,SG,HU,80,live,T,C
 2017,II,Acipenser baerii,Actinopteri,SG,HU,80,meat,T,C
 2017,II,Acipenser baerii,Actinopteri,SG,IT,22.029,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,SG,PL,2.90,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,SG,PL,2.9,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,SK,BY,10.125,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,SN,FR,0.71,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,SN,FR,0.052,cosmetics,T,C
@@ -3495,7 +3495,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,TH,FR,1.15,derivatives,T,C
 2017,II,Acipenser baerii,Actinopteri,TH,FR,406.81,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,TH,FR,1.08,meat,T,C
-2017,II,Acipenser baerii,Actinopteri,TH,IT,13.040,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,TH,IT,13.04,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,TH,IT,1.08,eggs,T,C
 2017,II,Acipenser baerii,Actinopteri,TM,AT,8.19,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,TN,DE,171.3555,extract,T,C
@@ -3513,9 +3513,9 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,TR,FR,3657.46,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,TW,AT,689.4,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,TW,DE,244.528,extract,T,C
-2017,II,Acipenser baerii,Actinopteri,TW,DE,652.29110,extract,T,C
+2017,II,Acipenser baerii,Actinopteri,TW,DE,652.2911,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,TW,DE,53.17429,extract,T,C
-2017,II,Acipenser baerii,Actinopteri,TW,DE,0.04220,extract,T,C
+2017,II,Acipenser baerii,Actinopteri,TW,DE,0.0422,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,TW,EE,0.0627,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,TW,ES,0.32,derivatives,T,C
 2017,II,Acipenser baerii,Actinopteri,TW,ES,202.035,derivatives,T,C
@@ -3557,7 +3557,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,US,DE,0.21304,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,US,EE,0.033,cosmetics,T,C
 2017,II,Acipenser baerii,Actinopteri,US,FI,416.215,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,US,FR,254.970,caviar,T,C
+2017,II,Acipenser baerii,Actinopteri,US,FR,254.97,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,US,FR,96.474,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,US,FR,99.128,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,US,FR,9.46,extract,T,C
@@ -3579,13 +3579,13 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii,Actinopteri,US,NL,15.1,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,US,PL,714,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,UY,DE,2.885,extract,T,C
-2017,II,Acipenser baerii,Actinopteri,UY,DE,89.08660,extract,T,C
+2017,II,Acipenser baerii,Actinopteri,UY,DE,89.0866,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,UY,DE,4,caviar,T,C
 2017,II,Acipenser baerii,Actinopteri,UZ,DE,0.0037,extract,T,C
-2017,II,Acipenser baerii,Actinopteri,VA,DE,0.640,extract,T,C
+2017,II,Acipenser baerii,Actinopteri,VA,DE,0.64,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,VE,DE,1.827,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,VG,FR,0.8,caviar,T,C
-2017,II,Acipenser baerii,Actinopteri,VN,DE,95.950,extract,T,C
+2017,II,Acipenser baerii,Actinopteri,VN,DE,95.95,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,VN,DE,55.75,eggs (live),T,C
 2017,II,Acipenser baerii,Actinopteri,VN,DE,5.64,extract,T,C
 2017,II,Acipenser baerii,Actinopteri,VN,FR,1.79,caviar,T,C
@@ -3646,13 +3646,13 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser baerii x naccarii,Actinopteri,TR,FR,0.65,cosmetics,T,C
 2017,II,Acipenser baerii x naccarii,Actinopteri,TR,FR,619.83,cosmetics,T,C
 2017,II,Acipenser baerii x naccarii,Actinopteri,TW,ES,202.035,derivatives,T,C
-2017,II,Acipenser baerii x naccarii,Actinopteri,US,ES,6.920,caviar,T,C
+2017,II,Acipenser baerii x naccarii,Actinopteri,US,ES,6.92,caviar,T,C
 2017,II,Acipenser baerii x naccarii,Actinopteri,US,FR,0.168,derivatives,T,C
 2017,II,Acipenser baerii x naccarii,Actinopteri,US,IT,20.235,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,AD,FR,3.06,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,AD,FR,4.990,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,AD,FR,4.99,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,AD,FR,1.075,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,AE,DE,7.710,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,AE,DE,7.71,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,AE,DE,21.102,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,AE,DE,25.24785,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,AE,DE,0.16,caviar,T,C
@@ -3666,7 +3666,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser gueldenstaedtii,Actinopteri,AL,IT,0.75,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,AN,DE,0.00559,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,AN,DE,1.22,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,AR,DE,3.070,extract,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,AR,DE,3.07,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,AR,DE,1.911,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,AU,DE,3.807,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,AU,DE,4647,extract,T,C
@@ -3691,23 +3691,23 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser gueldenstaedtii,Actinopteri,BH,DE,0.321,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,BH,DE,0.437,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,BL,FR,4,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,BL,FR,2.850,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,BL,FR,2.85,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,BL,FR,0.86,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,BL,FR,11.625,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,BR,DE,3.133,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,BR,DE,0.307,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,BR,IT,5.6,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,BS,DE,3.80,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,BS,DE,3.8,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,BS,FR,0.84,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,BS,FR,0.75,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,BS,IT,9.76,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,BY,DE,4235,bodies,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,CA,BE,2.04,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,CA,DE,6.39380,extract,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,CA,DE,6.3938,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,CA,DE,21.03342,extract,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,CA,DE,43.140,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,CA,DE,43.14,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,CA,FR,28.44,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,CA,FR,3.30,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,CA,FR,3.3,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,CA,IT,36.4,caviar,T,A
 2017,II,Acipenser gueldenstaedtii,Actinopteri,CA,IT,99.85,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,CD,FR,3,caviar,T,C
@@ -3733,8 +3733,8 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser gueldenstaedtii,Actinopteri,CH,LU,1.25,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,CH,LU,5.27,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,CH,NL,45.5,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,CH,PL,258.50,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,CI,FR,2.560,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,CH,PL,258.5,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,CI,FR,2.56,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,CI,FR,12.225,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,CI,FR,0.5,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,CI,FR,0.25,caviar,T,C
@@ -3751,7 +3751,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser gueldenstaedtii,Actinopteri,CN,DE,7253.36959,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,CN,DE,49424.249,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,CN,DE,30603.97686,extract,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,CN,DE,94692.210,extract,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,CN,DE,94692.21,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,CN,DE,6.455,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,CN,FR,1.94,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,CN,FR,0.645,caviar,T,C
@@ -3811,7 +3811,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser gueldenstaedtii,Actinopteri,HK,FR,123.684,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,HK,FR,3.6,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,HK,FR,21.97,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,HK,FR,67.670,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,HK,FR,67.67,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,HK,LV,0.672,caviar,,
 2017,II,Acipenser gueldenstaedtii,Actinopteri,HK,NL,2,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,ID,DE,0.0925,extract,T,C
@@ -3837,9 +3837,9 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser gueldenstaedtii,Actinopteri,JP,DE,25.26625,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,JP,DE,24.49368,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,JP,DE,95.52,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,JP,DE,0.70,eggs (live),T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,JP,DE,0.7,eggs (live),T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,JP,DE,650,live,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,JP,FR,362.190,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,JP,FR,362.19,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,JP,FR,2.7,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,JP,FR,0.32,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,JP,FR,6,caviar,T,C
@@ -3858,7 +3858,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser gueldenstaedtii,Actinopteri,KR,DE,0.84,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,KR,FR,0.1,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,KR,FR,14.52,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,KR,IT,722.760,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,KR,IT,722.76,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,KW,DE,0.241,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,KW,DE,6.785,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,KW,DE,5.783,extract,T,C
@@ -3870,7 +3870,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser gueldenstaedtii,Actinopteri,KZ,DE,2,eggs (live),T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,KZ,RU,,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,LB,BE,2.5,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,LB,DE,0.270,extract,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,LB,DE,0.27,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,LB,DE,0.132,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,LB,DE,2.86153,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,LB,FR,0.6,caviar,T,C
@@ -3888,17 +3888,17 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser gueldenstaedtii,Actinopteri,MC,DE,0.042,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,MC,DE,0.59827,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,MC,DE,0.741,extract,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,MC,FR,14.510,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,MC,FR,101.440,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,MC,FR,14.51,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,MC,FR,101.44,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,MC,FR,2.574,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,MC,FR,23.555,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,MC,FR,3.6,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,MD,DE,0.14780,extract,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,MD,DE,0.1478,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,MD,FR,1.628,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,MD,IT,73.5,meat,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,MF,FR,0.1,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,MF,FR,7.95,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,MF,FR,2.50,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,MF,FR,2.5,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,MO,DE,0.184,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,MR,DE,0.128,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,MU,DE,0.031,extract,T,C
@@ -3923,7 +3923,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser gueldenstaedtii,Actinopteri,MY,FR,21.82,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,MY,FR,5.95,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,MY,IT,132.67,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,NA,DE,0.30,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,NA,DE,0.3,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,NC,DE,1.272,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,NL,CN,,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,NL,DE,25,caviar,T,C
@@ -3979,28 +3979,28 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser gueldenstaedtii,Actinopteri,SG,DE,22.332,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,SG,DE,0.336,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,SG,DE,15.554,extract,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,SG,DE,1.820,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,SG,DE,1.82,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,SG,FR,1.17,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,SG,FR,83.75,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,SG,FR,1.59,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,SG,FR,26.810,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,SG,FR,26.81,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,SG,IT,25.447,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,SG,IT,2.52,meat,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,SG,PL,2.90,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,SG,PL,2.9,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,SN,FR,0.59,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,SV,DE,0.048,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,SV,DE,0.367,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,SX,FR,0.4,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,SX,FR,15.20,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,SX,FR,15.2,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,SX,FR,4.1,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,TH,DE,1.140,extract,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,TH,DE,1.14,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,TH,DE,9.213,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,TH,DE,12.33266,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,TH,FR,0.28,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,TH,FR,63.725,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,TH,FR,0.26,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,TH,FR,1.2,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,TH,FR,10.100,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,TH,FR,10.1,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,TH,IT,10.715,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,TN,DE,0.50659,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,TN,DE,0.047,extract,T,C
@@ -4009,11 +4009,11 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser gueldenstaedtii,Actinopteri,TR,DE,0.00335,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,TR,DE,10.00803,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,TW,DE,0.8,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,TW,DE,1.090,extract,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,TW,DE,1.09,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,TW,DE,28.217,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,TW,DE,19.478,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,TW,FR,5.59,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,TW,FR,58.60,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,TW,FR,58.6,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,TW,FR,1.125,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,TW,IT,30.495,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,TW,NL,11.7,caviar,T,C
@@ -4026,15 +4026,15 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser gueldenstaedtii,Actinopteri,UA,IT,4078.8,meat,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,UA,NL,6750,meat,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,US,BE,110,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,US,BG,1319.600,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,US,BG,1319.6,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,US,BG,40,meat,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,US,DE,129.738,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,US,DE,3.31688,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,US,DE,39.46902,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,US,DE,515.736,extract,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,US,DE,1066.14920,extract,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,US,DE,1066.1492,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,US,DE,1557.065,extract,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,US,DE,1303.880,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,US,DE,1303.88,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,US,DE,0.75,eggs (live),T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,US,FR,18.256,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,US,FR,183.478,caviar,T,C
@@ -4047,7 +4047,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser gueldenstaedtii,Actinopteri,US,NL,143.5,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,US,PL,612,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,UY,DE,0.034,extract,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,UY,DE,3.73260,extract,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,UY,DE,3.7326,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,UY,DE,2.27895,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,UY,FR,0.48,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,UY,PL,200000,eggs (live),T,C
@@ -4057,14 +4057,14 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser gueldenstaedtii,Actinopteri,VC,DE,0.006,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,VE,DE,0.102,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,VN,FR,1.35,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,VN,FR,4.370,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,VN,FR,4.37,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,XX,BG,190,live,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,ZA,DE,0.108,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,ZA,DE,0.53319,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,ZA,DE,3.47433,extract,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,ZA,DE,0.1234,unspecified,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,ZA,FR,0.33,caviar,T,C
-2017,II,Acipenser gueldenstaedtii,Actinopteri,ZA,FR,5.50,caviar,T,C
+2017,II,Acipenser gueldenstaedtii,Actinopteri,ZA,FR,5.5,caviar,T,C
 2017,II,Acipenser gueldenstaedtii,Actinopteri,ZA,IT,7.8,caviar,T,C
 2017,II,Acipenser gueldenstaedtii x baerii,Actinopteri,AE,IT,18.22,caviar,T,C
 2017,II,Acipenser gueldenstaedtii x baerii,Actinopteri,AU,IT,0.48,caviar,T,C
@@ -4079,10 +4079,10 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser gueldenstaedtii x baerii,Actinopteri,SG,BE,2.58,caviar,T,C
 2017,II,Acipenser gueldenstaedtii x baerii,Actinopteri,SG,IT,0.36,caviar,T,C
 2017,II,Acipenser gueldenstaedtii x baerii,Actinopteri,US,BE,140,caviar,T,C
-2017,II,Acipenser gueldenstaedtii x baerii,Actinopteri,US,IT,57.120,caviar,T,C
-2017,II,Acipenser hybrid,Actinopteri,AE,DE,65.250,caviar,T,C
+2017,II,Acipenser gueldenstaedtii x baerii,Actinopteri,US,IT,57.12,caviar,T,C
+2017,II,Acipenser hybrid,Actinopteri,AE,DE,65.25,caviar,T,C
 2017,II,Acipenser hybrid,Actinopteri,AE,FR,50.775,caviar,T,C
-2017,II,Acipenser hybrid,Actinopteri,BB,DE,15.500,caviar,T,C
+2017,II,Acipenser hybrid,Actinopteri,BB,DE,15.5,caviar,T,C
 2017,II,Acipenser hybrid,Actinopteri,BL,FR,1.356,caviar,T,C
 2017,II,Acipenser hybrid,Actinopteri,BY,DE,1587.6,bodies,T,C
 2017,II,Acipenser hybrid,Actinopteri,CA,DE,3,caviar,T,C
@@ -4095,7 +4095,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser hybrid,Actinopteri,CN,DE,3,caviar,T,C
 2017,II,Acipenser hybrid,Actinopteri,CN,DE,0.0741,extract,T,C
 2017,II,Acipenser hybrid,Actinopteri,CR,DE,6,caviar,T,C
-2017,II,Acipenser hybrid,Actinopteri,DO,DE,85.750,caviar,T,C
+2017,II,Acipenser hybrid,Actinopteri,DO,DE,85.75,caviar,T,C
 2017,II,Acipenser hybrid,Actinopteri,FR,CN,,caviar,T,C
 2017,II,Acipenser hybrid,Actinopteri,FR,CN,,skins,T,C
 2017,II,Acipenser hybrid,Actinopteri,FR,FR,,caviar,T,C
@@ -4125,7 +4125,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser hybrid,Actinopteri,NZ,DE,5,caviar,T,C
 2017,II,Acipenser hybrid,Actinopteri,PF,FR,13.358,caviar,T,C
 2017,II,Acipenser hybrid,Actinopteri,PF,FR,0.388,derivatives,T,C
-2017,II,Acipenser hybrid,Actinopteri,PH,FR,1.60,caviar,T,C
+2017,II,Acipenser hybrid,Actinopteri,PH,FR,1.6,caviar,T,C
 2017,II,Acipenser hybrid,Actinopteri,QA,FR,0.183,caviar,T,C
 2017,II,Acipenser hybrid,Actinopteri,RS,DE,0.0227,extract,T,C
 2017,II,Acipenser hybrid,Actinopteri,SA,DE,0.75,eggs (live),T,C
@@ -4135,7 +4135,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser hybrid,Actinopteri,SX,FR,1.6,caviar,T,C
 2017,II,Acipenser hybrid,Actinopteri,TH,FR,19.065,caviar,T,C
 2017,II,Acipenser hybrid,Actinopteri,TR,DE,50.75099,extract,T,C
-2017,II,Acipenser hybrid,Actinopteri,TW,FR,50.480,caviar,T,C
+2017,II,Acipenser hybrid,Actinopteri,TW,FR,50.48,caviar,T,C
 2017,II,Acipenser hybrid,Actinopteri,UA,DE,6.70329,extract,T,C
 2017,II,Acipenser hybrid,Actinopteri,US,DE,117.635,caviar,T,C
 2017,II,Acipenser hybrid,Actinopteri,US,DE,584.117,caviar,T,C
@@ -4185,7 +4185,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser naccarii,Actinopteri,CN,FR,0.1,caviar,T,C
 2017,II,Acipenser naccarii,Actinopteri,DO,IT,0.1,caviar,T,C
 2017,II,Acipenser naccarii,Actinopteri,HK,FR,0.7,caviar,T,C
-2017,II,Acipenser naccarii,Actinopteri,JP,ES,19.20,caviar,T,C
+2017,II,Acipenser naccarii,Actinopteri,JP,ES,19.2,caviar,T,C
 2017,II,Acipenser naccarii,Actinopteri,JP,ES,6.611,derivatives,T,C
 2017,II,Acipenser naccarii,Actinopteri,JP,ES,0.05,extract,T,C
 2017,II,Acipenser naccarii,Actinopteri,JP,IT,36.494,caviar,T,C
@@ -4230,7 +4230,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser ruthenus,Actinopteri,RU,DE,31.227,caviar,T,C
 2017,II,Acipenser ruthenus,Actinopteri,SG,BE,2.81,caviar,T,C
 2017,II,Acipenser ruthenus,Actinopteri,SG,HU,148,caviar,T,C
-2017,II,Acipenser ruthenus,Actinopteri,US,BE,6.70,caviar,T,C
+2017,II,Acipenser ruthenus,Actinopteri,US,BE,6.7,caviar,T,C
 2017,II,Acipenser ruthenus,Actinopteri,US,HU,10000,eggs (live),T,C
 2017,II,Acipenser ruthenus,Actinopteri,US,IT,0.2,eggs (live),B,C
 2017,II,Acipenser ruthenus x huso huso,Actinopteri,US,BG,4,caviar,T,C
@@ -4286,10 +4286,10 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser stellatus,Actinopteri,US,DE,57.681,caviar,T,C
 2017,II,Acipenser stellatus,Actinopteri,US,DE,1,eggs (live),T,C
 2017,II,Acipenser stellatus,Actinopteri,US,FR,0.168,caviar,T,C
-2017,II,Acipenser stellatus,Actinopteri,US,FR,0.840,caviar,T,C
+2017,II,Acipenser stellatus,Actinopteri,US,FR,0.84,caviar,T,C
 2017,II,Acipenser stellatus,Actinopteri,US,IT,89.447,caviar,T,C
 2017,II,Acipenser transmontanus,Actinopteri,AD,FR,2.85,caviar,T,C
-2017,II,Acipenser transmontanus,Actinopteri,AE,DE,243.700,extract,T,C
+2017,II,Acipenser transmontanus,Actinopteri,AE,DE,243.7,extract,T,C
 2017,II,Acipenser transmontanus,Actinopteri,AE,FR,34.71,caviar,T,C
 2017,II,Acipenser transmontanus,Actinopteri,AE,FR,11.037,cosmetics,T,C
 2017,II,Acipenser transmontanus,Actinopteri,AE,FR,3423.412,cosmetics,T,C
@@ -4330,7 +4330,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser transmontanus,Actinopteri,CN,DE,13971.8382,extract,T,C
 2017,II,Acipenser transmontanus,Actinopteri,CN,DE,4032,extract,T,C
 2017,II,Acipenser transmontanus,Actinopteri,CN,FR,0.3,caviar,T,C
-2017,II,Acipenser transmontanus,Actinopteri,CN,IT,1266.180,caviar,T,C
+2017,II,Acipenser transmontanus,Actinopteri,CN,IT,1266.18,caviar,T,C
 2017,II,Acipenser transmontanus,Actinopteri,CN,IT,126.506,meat,T,C
 2017,II,Acipenser transmontanus,Actinopteri,CO,DE,18.619,extract,T,C
 2017,II,Acipenser transmontanus,Actinopteri,CR,ES,16.698,derivatives,T,C
@@ -4366,7 +4366,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser transmontanus,Actinopteri,JP,DE,144.512,extract,T,C
 2017,II,Acipenser transmontanus,Actinopteri,JP,FR,343.12,caviar,T,C
 2017,II,Acipenser transmontanus,Actinopteri,JP,FR,0.27,caviar,T,F
-2017,II,Acipenser transmontanus,Actinopteri,JP,IT,458.800,caviar,T,C
+2017,II,Acipenser transmontanus,Actinopteri,JP,IT,458.8,caviar,T,C
 2017,II,Acipenser transmontanus,Actinopteri,KH,DE,0.588,extract,T,C
 2017,II,Acipenser transmontanus,Actinopteri,KR,DE,532.296,extract,T,C
 2017,II,Acipenser transmontanus,Actinopteri,KR,ES,76,derivatives,T,C
@@ -4381,7 +4381,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser transmontanus,Actinopteri,LB,IT,1,meat,T,C
 2017,II,Acipenser transmontanus,Actinopteri,MA,DE,0.179,extract,T,C
 2017,II,Acipenser transmontanus,Actinopteri,MA,IT,0.848,eggs,T,C
-2017,II,Acipenser transmontanus,Actinopteri,MC,FR,9.140,caviar,T,C
+2017,II,Acipenser transmontanus,Actinopteri,MC,FR,9.14,caviar,T,C
 2017,II,Acipenser transmontanus,Actinopteri,MD,IT,50.6,meat,T,C
 2017,II,Acipenser transmontanus,Actinopteri,MN,ES,3.546,derivatives,T,C
 2017,II,Acipenser transmontanus,Actinopteri,MU,DE,0.679,extract,T,C
@@ -4395,20 +4395,20 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser transmontanus,Actinopteri,MY,FR,22.84,caviar,T,C
 2017,II,Acipenser transmontanus,Actinopteri,MY,IT,1.65,caviar,T,C
 2017,II,Acipenser transmontanus,Actinopteri,NL,US,,caviar,T,F
-2017,II,Acipenser transmontanus,Actinopteri,NO,DE,29.050,extract,T,C
+2017,II,Acipenser transmontanus,Actinopteri,NO,DE,29.05,extract,T,C
 2017,II,Acipenser transmontanus,Actinopteri,OM,DE,10.046,extract,T,C
 2017,II,Acipenser transmontanus,Actinopteri,PA,DE,29.612,extract,T,C
 2017,II,Acipenser transmontanus,Actinopteri,PA,FR,1.001,derivatives,T,C
 2017,II,Acipenser transmontanus,Actinopteri,PA,IT,0.272,caviar,T,C
 2017,II,Acipenser transmontanus,Actinopteri,PE,IT,0.397,caviar,T,C
-2017,II,Acipenser transmontanus,Actinopteri,PF,FR,3.210,caviar,T,C
+2017,II,Acipenser transmontanus,Actinopteri,PF,FR,3.21,caviar,T,C
 2017,II,Acipenser transmontanus,Actinopteri,PF,IT,15,caviar,T,C
 2017,II,Acipenser transmontanus,Actinopteri,PH,DE,45.241,extract,T,C
 2017,II,Acipenser transmontanus,Actinopteri,PH,FR,1.39,caviar,T,C
-2017,II,Acipenser transmontanus,Actinopteri,PY,DE,13.680,extract,T,C
+2017,II,Acipenser transmontanus,Actinopteri,PY,DE,13.68,extract,T,C
 2017,II,Acipenser transmontanus,Actinopteri,QA,DE,42.382,extract,T,C
 2017,II,Acipenser transmontanus,Actinopteri,QA,FR,60,caviar,T,C
-2017,II,Acipenser transmontanus,Actinopteri,RU,DE,174.850,extract,T,C
+2017,II,Acipenser transmontanus,Actinopteri,RU,DE,174.85,extract,T,C
 2017,II,Acipenser transmontanus,Actinopteri,RU,IT,843.775,caviar,T,C
 2017,II,Acipenser transmontanus,Actinopteri,RU,LV,20534.184,extract,,
 2017,II,Acipenser transmontanus,Actinopteri,SA,FR,1.4,caviar,T,C
@@ -4417,7 +4417,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser transmontanus,Actinopteri,SC,IT,5.355,meat,T,C
 2017,II,Acipenser transmontanus,Actinopteri,SG,DE,209.118,extract,T,C
 2017,II,Acipenser transmontanus,Actinopteri,SG,DE,0.392,caviar,T,C
-2017,II,Acipenser transmontanus,Actinopteri,SG,FR,18.530,caviar,T,C
+2017,II,Acipenser transmontanus,Actinopteri,SG,FR,18.53,caviar,T,C
 2017,II,Acipenser transmontanus,Actinopteri,SG,IT,1064.555,caviar,T,C
 2017,II,Acipenser transmontanus,Actinopteri,SG,IT,2.52,meat,T,C
 2017,II,Acipenser transmontanus,Actinopteri,SV,DE,3.379,extract,T,C
@@ -4454,7 +4454,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Acipenser transmontanus,Actinopteri,UY,DE,80.734,extract,T,C
 2017,II,Acipenser transmontanus,Actinopteri,UY,FR,0.3,caviar,T,F
 2017,II,Acipenser transmontanus,Actinopteri,VA,DE,1.511,extract,T,C
-2017,II,Acipenser transmontanus,Actinopteri,VN,FR,11.10,caviar,T,C
+2017,II,Acipenser transmontanus,Actinopteri,VN,FR,11.1,caviar,T,C
 2017,II,Acipenser transmontanus,Actinopteri,VN,FR,1.6,meat,T,C
 2017,II,Acipenser transmontanus,Actinopteri,ZA,DE,41.6278,extract,T,C
 2017,II,Acipenser transmontanus,Actinopteri,ZA,FR,0.33,caviar,T,C
@@ -4489,7 +4489,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Huso dauricus x acipenser schrenckii,Actinopteri,NO,BE,43.55,caviar,T,C
 2017,II,Huso dauricus x acipenser schrenckii,Actinopteri,NO,DK,15,caviar,T,C
 2017,II,Huso dauricus x acipenser schrenckii,Actinopteri,NO,DK,35,caviar,T,C
-2017,II,Huso dauricus x acipenser schrenckii,Actinopteri,QA,GB,2125.40,caviar,T,C
+2017,II,Huso dauricus x acipenser schrenckii,Actinopteri,QA,GB,2125.4,caviar,T,C
 2017,II,Huso dauricus x acipenser schrenckii,Actinopteri,US,BE,6,caviar,T,C
 2017,II,Huso huso,Actinopteri,AD,FR,0.15,caviar,T,C
 2017,II,Huso huso,Actinopteri,AD,FR,0.2,caviar,T,C
@@ -4517,7 +4517,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Huso huso,Actinopteri,CA,IT,15.332,caviar,T,C
 2017,II,Huso huso,Actinopteri,CH,BE,19.33,caviar,T,C
 2017,II,Huso huso,Actinopteri,CH,BE,0.16,caviar,T,C
-2017,II,Huso huso,Actinopteri,CH,BG,20.400,caviar,T,C
+2017,II,Huso huso,Actinopteri,CH,BG,20.4,caviar,T,C
 2017,II,Huso huso,Actinopteri,CH,BG,754,meat,T,C
 2017,II,Huso huso,Actinopteri,CH,DE,50.015,caviar,T,C
 2017,II,Huso huso,Actinopteri,CH,DE,6.64,caviar,T,C
@@ -4526,7 +4526,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Huso huso,Actinopteri,CH,FR,8.79,caviar,T,C
 2017,II,Huso huso,Actinopteri,CH,FR,0.5,caviar,T,C
 2017,II,Huso huso,Actinopteri,CH,FR,0.74,caviar,T,C
-2017,II,Huso huso,Actinopteri,CH,IT,0.340,caviar,T,C
+2017,II,Huso huso,Actinopteri,CH,IT,0.34,caviar,T,C
 2017,II,Huso huso,Actinopteri,CI,FR,0.55,caviar,T,C
 2017,II,Huso huso,Actinopteri,CL,IT,0.5,caviar,T,C
 2017,II,Huso huso,Actinopteri,CL,IT,10000,eggs (live),B,O
@@ -4552,7 +4552,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Huso huso,Actinopteri,GB,CN,,caviar,T,C
 2017,II,Huso huso,Actinopteri,GB,IR,,caviar,T,C
 2017,II,Huso huso,Actinopteri,GE,FR,0.3,caviar,T,C
-2017,II,Huso huso,Actinopteri,HK,BG,3.300,caviar,T,C
+2017,II,Huso huso,Actinopteri,HK,BG,3.3,caviar,T,C
 2017,II,Huso huso,Actinopteri,HK,FR,8.885,caviar,T,C
 2017,II,Huso huso,Actinopteri,HK,FR,5.87,caviar,T,C
 2017,II,Huso huso,Actinopteri,HK,FR,2.735,caviar,T,C
@@ -4567,22 +4567,22 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Huso huso,Actinopteri,JP,DE,6.18,caviar,T,C
 2017,II,Huso huso,Actinopteri,JP,DE,450,live,T,C
 2017,II,Huso huso,Actinopteri,JP,FR,9.365,caviar,T,C
-2017,II,Huso huso,Actinopteri,JP,FR,2.70,caviar,T,C
+2017,II,Huso huso,Actinopteri,JP,FR,2.7,caviar,T,C
 2017,II,Huso huso,Actinopteri,JP,IT,0.1,caviar,T,C
 2017,II,Huso huso,Actinopteri,KR,FR,4.28,caviar,T,C
 2017,II,Huso huso,Actinopteri,KR,IT,0.9,caviar,T,C
-2017,II,Huso huso,Actinopteri,KY,DE,6.10,caviar,T,C
+2017,II,Huso huso,Actinopteri,KY,DE,6.1,caviar,T,C
 2017,II,Huso huso,Actinopteri,KY,FR,0.35,caviar,T,C
 2017,II,Huso huso,Actinopteri,KZ,DE,2,eggs (live),T,C
 2017,II,Huso huso,Actinopteri,LB,BE,1,caviar,T,C
 2017,II,Huso huso,Actinopteri,LB,DE,2.25,caviar,T,C
 2017,II,Huso huso,Actinopteri,LB,FR,0.3,caviar,T,C
 2017,II,Huso huso,Actinopteri,LB,FR,0.75,caviar,T,C
-2017,II,Huso huso,Actinopteri,LB,IT,0.10,caviar,T,C
+2017,II,Huso huso,Actinopteri,LB,IT,0.1,caviar,T,C
 2017,II,Huso huso,Actinopteri,MA,FR,41.675,caviar,T,C
 2017,II,Huso huso,Actinopteri,MA,FR,231.875,caviar,T,C
 2017,II,Huso huso,Actinopteri,MA,FR,1.586,caviar,T,C
-2017,II,Huso huso,Actinopteri,MC,FR,3.430,caviar,T,C
+2017,II,Huso huso,Actinopteri,MC,FR,3.43,caviar,T,C
 2017,II,Huso huso,Actinopteri,MC,FR,2.275,caviar,T,C
 2017,II,Huso huso,Actinopteri,MC,FR,0.64,caviar,T,C
 2017,II,Huso huso,Actinopteri,MD,FR,0.1,caviar,T,C
@@ -4603,7 +4603,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Huso huso,Actinopteri,PF,FR,0.625,caviar,T,C
 2017,II,Huso huso,Actinopteri,PH,FR,0.24,caviar,T,C
 2017,II,Huso huso,Actinopteri,PL,RU,,meat,,
-2017,II,Huso huso,Actinopteri,QA,DE,4.620,caviar,T,C
+2017,II,Huso huso,Actinopteri,QA,DE,4.62,caviar,T,C
 2017,II,Huso huso,Actinopteri,QA,FR,0.09,caviar,T,C
 2017,II,Huso huso,Actinopteri,RO,MD,,caviar,T,C
 2017,II,Huso huso,Actinopteri,RU,DE,15.078,caviar,T,C
@@ -4625,7 +4625,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Huso huso,Actinopteri,UA,DE,14,live,T,C
 2017,II,Huso huso,Actinopteri,US,FR,0.03,caviar,T,C
 2017,II,Huso huso,Actinopteri,VN,FR,0.03,caviar,T,C
-2017,II,Huso huso,Actinopteri,ZA,IT,2.90,caviar,T,C
+2017,II,Huso huso,Actinopteri,ZA,IT,2.9,caviar,T,C
 2017,II,Huso huso x acipenser baerii,Actinopteri,AU,IT,31.126,caviar,T,C
 2017,II,Huso huso x acipenser baerii,Actinopteri,BR,IT,8.15,caviar,T,C
 2017,II,Huso huso x acipenser baerii,Actinopteri,CA,IT,11.573,caviar,T,C
@@ -4639,7 +4639,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Huso huso x acipenser baerii,Actinopteri,MY,IT,3.25,caviar,T,C
 2017,II,Huso huso x acipenser baerii,Actinopteri,SG,IT,2.85,caviar,T,C
 2017,II,Huso huso x acipenser baerii,Actinopteri,SG,IT,2.52,meat,T,C
-2017,II,Huso huso x acipenser baerii,Actinopteri,TH,IT,7.370,caviar,T,C
+2017,II,Huso huso x acipenser baerii,Actinopteri,TH,IT,7.37,caviar,T,C
 2017,II,Huso huso x acipenser baerii,Actinopteri,TR,FR,0.65,cosmetics,T,C
 2017,II,Huso huso x acipenser baerii,Actinopteri,TR,FR,619.83,cosmetics,T,C
 2017,II,Huso huso x acipenser baerii,Actinopteri,TW,IT,14.095,caviar,T,C
@@ -5642,7 +5642,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Alligator mississippiensis,Reptilia,LB,FR,11,garments,T,W
 2017,II,Alligator mississippiensis,Reptilia,LB,FR,2,jewellery,T,W
 2017,II,Alligator mississippiensis,Reptilia,LB,FR,4,leather products (small),T,C
-2017,II,Alligator mississippiensis,Reptilia,LB,FR,192.50,leather products (small),T,W
+2017,II,Alligator mississippiensis,Reptilia,LB,FR,192.5,leather products (small),T,W
 2017,II,Alligator mississippiensis,Reptilia,LB,FR,1,skins,T,W
 2017,II,Alligator mississippiensis,Reptilia,LB,FR,11,skin pieces,T,W
 2017,II,Alligator mississippiensis,Reptilia,LB,IT,1,garments,T,W
@@ -11770,7 +11770,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Vicugna vicugna,Mammalia,BR,IT,1,cloth,T,W
 2017,II,Vicugna vicugna,Mammalia,BR,IT,2,garments,P,W
 2017,II,Vicugna vicugna,Mammalia,CA,IT,0.222,cloth,T,C
-2017,II,Vicugna vicugna,Mammalia,CA,IT,1.950,cloth,T,W
+2017,II,Vicugna vicugna,Mammalia,CA,IT,1.95,cloth,T,W
 2017,II,Vicugna vicugna,Mammalia,CA,IT,1,garments,T,W
 2017,II,Vicugna vicugna,Mammalia,CA,IT,100.315,cloth,T,W
 2017,II,Vicugna vicugna,Mammalia,CA,IT,7,fibres,T,W
@@ -11789,7 +11789,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Vicugna vicugna,Mammalia,CH,IT,236,garments,T,W
 2017,II,Vicugna vicugna,Mammalia,CN,FR,1,garments,T,W
 2017,II,Vicugna vicugna,Mammalia,CN,FR,59,garments,T,W
-2017,II,Vicugna vicugna,Mammalia,CN,GB,0.9150,cloth,T,W
+2017,II,Vicugna vicugna,Mammalia,CN,GB,0.915,cloth,T,W
 2017,II,Vicugna vicugna,Mammalia,CN,GB,1,leather products (small),T,W
 2017,II,Vicugna vicugna,Mammalia,CN,IT,574,cloth,T,W
 2017,II,Vicugna vicugna,Mammalia,CN,IT,7,garments,P,W
@@ -11838,7 +11838,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Vicugna vicugna,Mammalia,IN,GB,1.473,cloth,T,W
 2017,II,Vicugna vicugna,Mammalia,IN,GB,0.9038,cloth,T,W
 2017,II,Vicugna vicugna,Mammalia,IN,IT,3,cloth,T,W
-2017,II,Vicugna vicugna,Mammalia,IN,IT,50.710,cloth,T,W
+2017,II,Vicugna vicugna,Mammalia,IN,IT,50.71,cloth,T,W
 2017,II,Vicugna vicugna,Mammalia,IN,IT,1,garments,T,W
 2017,II,Vicugna vicugna,Mammalia,IT,AR,,fibres,T,W
 2017,II,Vicugna vicugna,Mammalia,IT,CH,,garments,T,W
@@ -11884,7 +11884,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Vicugna vicugna,Mammalia,KR,IT,21,garments,T,W
 2017,II,Vicugna vicugna,Mammalia,KR,IT,236,cloth,T,W
 2017,II,Vicugna vicugna,Mammalia,KR,IT,8,garments,T,W
-2017,II,Vicugna vicugna,Mammalia,KR,IT,710.50,cloth,T,W
+2017,II,Vicugna vicugna,Mammalia,KR,IT,710.5,cloth,T,W
 2017,II,Vicugna vicugna,Mammalia,KR,IT,17,cloth,T,W
 2017,II,Vicugna vicugna,Mammalia,KR,IT,23,garments,T,W
 2017,II,Vicugna vicugna,Mammalia,KW,IT,2,garments,P,W
@@ -11919,7 +11919,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Vicugna vicugna,Mammalia,NZ,IT,7,cloth,T,W
 2017,II,Vicugna vicugna,Mammalia,OM,IT,1,garments,P,W
 2017,II,Vicugna vicugna,Mammalia,PE,GB,1.378,cloth,T,W
-2017,II,Vicugna vicugna,Mammalia,PE,IT,229.90,cloth,T,W
+2017,II,Vicugna vicugna,Mammalia,PE,IT,229.9,cloth,T,W
 2017,II,Vicugna vicugna,Mammalia,PE,IT,650,garments,T,W
 2017,II,Vicugna vicugna,Mammalia,QA,FR,1,garments,T,W
 2017,II,Vicugna vicugna,Mammalia,QA,IT,18.59,cloth,T,W
@@ -11980,7 +11980,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Vicugna vicugna,Mammalia,US,IT,152,garments,T,W
 2017,II,Vicugna vicugna,Mammalia,US,IT,3.3,cloth,T,W
 2017,II,Vicugna vicugna,Mammalia,US,IT,2,garments,T,W
-2017,II,Vicugna vicugna,Mammalia,US,IT,140.950,cloth,T,W
+2017,II,Vicugna vicugna,Mammalia,US,IT,140.95,cloth,T,W
 2017,II,Vicugna vicugna,Mammalia,US,IT,9,garments,P,W
 2017,II,Vicugna vicugna,Mammalia,US,IT,2,garments,T,R
 2017,II,Vicugna vicugna,Mammalia,US,IT,701,garments,T,W
@@ -12185,7 +12185,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Vulpes zerda,Mammalia,VN,SD,10,live,,C
 2017,II,Vulpes zerda,Mammalia,ZA,SD,30,live,,W
 2017,II,Carcharhinus falciformis,Elasmobranchii,HK,CR,946,fins,T,W
-2017,II,Carcharhinus falciformis,Elasmobranchii,MX,CR,22998.50,bodies,,
+2017,II,Carcharhinus falciformis,Elasmobranchii,MX,CR,22998.5,bodies,,
 2017,II,Carcharhinus longimanus,Elasmobranchii,SV,CR,4,specimens,S,W
 2017,II,Carettochelys insculpta,Reptilia,ES,SG,,live,Z,U
 2017,II,Catalaphyllia jardinei,Anthozoa,AT,AU,,live,T,W
@@ -12693,7 +12693,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Macaca fascicularis,Mammalia,CH,DE,0.016,specimens,M,C
 2017,II,Macaca fascicularis,Mammalia,CH,DE,0.002,specimens,T,C
 2017,II,Macaca fascicularis,Mammalia,CH,DE,378.7,specimens,M,C
-2017,II,Macaca fascicularis,Mammalia,CH,DE,267.70,specimens,T,C
+2017,II,Macaca fascicularis,Mammalia,CH,DE,267.7,specimens,T,C
 2017,II,Macaca fascicularis,Mammalia,CH,DE,266,specimens,M,C
 2017,II,Macaca fascicularis,Mammalia,CH,DE,486,specimens,T,C
 2017,II,Macaca fascicularis,Mammalia,CH,DE,32,specimens,M,W
@@ -12718,7 +12718,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Macaca fascicularis,Mammalia,CH,FR,2,live,M,F
 2017,II,Macaca fascicularis,Mammalia,CH,FR,30962.04,specimens,M,F
 2017,II,Macaca fascicularis,Mammalia,CH,FR,57,specimens,M,F
-2017,II,Macaca fascicularis,Mammalia,CH,FR,91.50,specimens,M,F
+2017,II,Macaca fascicularis,Mammalia,CH,FR,91.5,specimens,M,F
 2017,II,Macaca fascicularis,Mammalia,CH,FR,2984.66,specimens,M,F
 2017,II,Macaca fascicularis,Mammalia,CH,FR,20,specimens,S,F
 2017,II,Macaca fascicularis,Mammalia,CH,FR,170,specimens,M,C
@@ -12931,7 +12931,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Macaca fascicularis,Mammalia,US,DE,215,specimens,M,C
 2017,II,Macaca fascicularis,Mammalia,US,DK,68,specimens,S,F
 2017,II,Macaca fascicularis,Mammalia,US,ES,6,specimens,M,F
-2017,II,Macaca fascicularis,Mammalia,US,ES,0.240,specimens,T,C
+2017,II,Macaca fascicularis,Mammalia,US,ES,0.24,specimens,T,C
 2017,II,Macaca fascicularis,Mammalia,US,ES,200,specimens,N,C
 2017,II,Macaca fascicularis,Mammalia,US,ES,1814,specimens,T,C
 2017,II,Macaca fascicularis,Mammalia,US,FR,2700,specimens,M,F
@@ -12958,7 +12958,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Macaca fascicularis,Mammalia,US,GB,138,specimens,T,C
 2017,II,Macaca fascicularis,Mammalia,US,IT,14,live,S,C
 2017,II,Macaca fascicularis,Mammalia,US,IT,1332,specimens,S,C
-2017,II,Macaca fascicularis,Mammalia,US,IT,0.060,specimens,M,F
+2017,II,Macaca fascicularis,Mammalia,US,IT,0.06,specimens,M,F
 2017,II,Macaca fascicularis,Mammalia,US,IT,366.95,specimens,M,F
 2017,II,Macaca fuscata,Mammalia,AT,US,,specimens,S,C
 2017,II,Macaca fuscata,Mammalia,AT,US,,specimens,S,W
@@ -14918,7 +14918,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Crocodylus porosus,Reptilia,AT,AU,,leather products (small),T,C
 2017,II,Crocodylus porosus,Reptilia,AT,AU,,leather products (small),T,C
 2017,II,Crocodylus porosus,Reptilia,AU,FR,1,carvings,T,R
-2017,II,Crocodylus porosus,Reptilia,AU,FR,1.50,leather products (small),T,C
+2017,II,Crocodylus porosus,Reptilia,AU,FR,1.5,leather products (small),T,C
 2017,II,Crocodylus porosus,Reptilia,AU,FR,36,leather products (small),T,R
 2017,II,Crocodylus porosus,Reptilia,AU,FR,3,garments,T,C
 2017,II,Crocodylus porosus,Reptilia,AU,FR,7,leather products (small),T,C
@@ -15320,8 +15320,8 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Crocodylus porosus,Reptilia,LB,FR,2,leather products (small),T,C
 2017,II,Crocodylus porosus,Reptilia,LB,FR,3,skin pieces,T,C
 2017,II,Crocodylus porosus,Reptilia,LB,IT,1,leather products (small),P,C
-2017,II,Crocodylus porosus,Reptilia,MA,FR,0.50,leather products (small),T,C
-2017,II,Crocodylus porosus,Reptilia,MA,FR,0.50,leather products (small),T,R
+2017,II,Crocodylus porosus,Reptilia,MA,FR,0.5,leather products (small),T,C
+2017,II,Crocodylus porosus,Reptilia,MA,FR,0.5,leather products (small),T,R
 2017,II,Crocodylus porosus,Reptilia,MC,BE,1,leather products (small),T,R
 2017,II,Crocodylus porosus,Reptilia,MC,FR,2,garments,T,R
 2017,II,Crocodylus porosus,Reptilia,MC,FR,1,jewellery,T,R
@@ -15383,7 +15383,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Crocodylus porosus,Reptilia,QA,IT,1,leather products (small),P,C
 2017,II,Crocodylus porosus,Reptilia,RU,FR,21.66,garments,T,C
 2017,II,Crocodylus porosus,Reptilia,RU,FR,27.33,garments,T,R
-2017,II,Crocodylus porosus,Reptilia,RU,FR,18.50,leather products (small),T,C
+2017,II,Crocodylus porosus,Reptilia,RU,FR,18.5,leather products (small),T,C
 2017,II,Crocodylus porosus,Reptilia,RU,FR,53,leather products (small),T,R
 2017,II,Crocodylus porosus,Reptilia,RU,FR,1,skin pieces,T,C
 2017,II,Crocodylus porosus,Reptilia,RU,FR,1,skin pieces,T,R
@@ -15510,7 +15510,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Crocodylus porosus,Reptilia,US,FR,0.5,carvings,T,C
 2017,II,Crocodylus porosus,Reptilia,US,FR,1.5,carvings,T,R
 2017,II,Crocodylus porosus,Reptilia,US,FR,2,garments,T,C
-2017,II,Crocodylus porosus,Reptilia,US,FR,24.50,garments,T,R
+2017,II,Crocodylus porosus,Reptilia,US,FR,24.5,garments,T,R
 2017,II,Crocodylus porosus,Reptilia,US,FR,2,jewellery,T,R
 2017,II,Crocodylus porosus,Reptilia,US,FR,1.5,leather products (large),T,C
 2017,II,Crocodylus porosus,Reptilia,US,FR,2,leather products (large),T,R
@@ -18725,7 +18725,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Dalbergia baronii,,US,ES,0.009,sawn wood,T,O
 2017,II,Dalbergia baronii,,US,ES,0.017,veneer,T,O
 2017,II,Dalbergia baronii,,US,ES,535.4,carvings,T,O
-2017,II,Dalbergia baronii,,US,ES,0.010,carvings,T,O
+2017,II,Dalbergia baronii,,US,ES,0.01,carvings,T,O
 2017,II,Dalbergia baronii,,US,ES,6,carvings,T,O
 2017,II,Dalbergia baronii,,US,ES,3,carvings,T,W
 2017,II,Dalbergia baronii,,US,ES,0.068,veneer,T,O
@@ -18765,7 +18765,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Dalbergia cearensis,,GB,US,,wood product,T,O
 2017,II,Dalbergia cearensis,,HK,FR,4,wood product,T,O
 2017,II,Dalbergia cearensis,,IS,ES,85.8,carvings,T,O
-2017,II,Dalbergia cearensis,,JP,ES,0.120,sawn wood,T,O
+2017,II,Dalbergia cearensis,,JP,ES,0.12,sawn wood,T,O
 2017,II,Dalbergia cearensis,,JP,ES,0.042,veneer,T,O
 2017,II,Dalbergia cearensis,,JP,FR,3,wood product,T,O
 2017,II,Dalbergia cearensis,,KR,FR,2,wood product,T,O
@@ -18850,7 +18850,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Dalbergia latifolia,,AM,NL,93,wood product,T,O
 2017,II,Dalbergia latifolia,,AN,ES,0.005,carvings,T,O
 2017,II,Dalbergia latifolia,,AO,AE,,wood product,T,I
-2017,II,Dalbergia latifolia,,AR,DE,33.760,carvings,T,O
+2017,II,Dalbergia latifolia,,AR,DE,33.76,carvings,T,O
 2017,II,Dalbergia latifolia,,AR,ES,0.195,carvings,T,O
 2017,II,Dalbergia latifolia,,AR,ES,76,carvings,T,O
 2017,II,Dalbergia latifolia,,AR,ES,0.017,sawn wood,T,O
@@ -18872,7 +18872,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Dalbergia latifolia,,AT,US,,wood product,T,O
 2017,II,Dalbergia latifolia,,AU,CZ,32,carvings,T,O
 2017,II,Dalbergia latifolia,,AU,CZ,24,carvings,T,W
-2017,II,Dalbergia latifolia,,AU,DE,1.040,carvings,T,O
+2017,II,Dalbergia latifolia,,AU,DE,1.04,carvings,T,O
 2017,II,Dalbergia latifolia,,AU,DE,787,carvings,T,O
 2017,II,Dalbergia latifolia,,AU,DE,13.3753,carvings,T,O
 2017,II,Dalbergia latifolia,,AU,DE,181,carvings,T,O
@@ -18880,7 +18880,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Dalbergia latifolia,,AU,DE,21,carvings,T,O
 2017,II,Dalbergia latifolia,,AU,DK,1,carvings,T,W
 2017,II,Dalbergia latifolia,,AU,ES,0.072,carvings,T,O
-2017,II,Dalbergia latifolia,,AU,ES,0.150,carvings,T,O
+2017,II,Dalbergia latifolia,,AU,ES,0.15,carvings,T,O
 2017,II,Dalbergia latifolia,,AU,ES,32,carvings,T,O
 2017,II,Dalbergia latifolia,,AU,ES,0.001,sawn wood,T,O
 2017,II,Dalbergia latifolia,,AU,ES,2689.55,veneer,T,O
@@ -18958,7 +18958,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Dalbergia latifolia,,CA,DE,17.51008,carvings,T,O
 2017,II,Dalbergia latifolia,,CA,DE,20,carvings,T,O
 2017,II,Dalbergia latifolia,,CA,ES,42.5,carvings,T,O
-2017,II,Dalbergia latifolia,,CA,ES,0.340,carvings,T,O
+2017,II,Dalbergia latifolia,,CA,ES,0.34,carvings,T,O
 2017,II,Dalbergia latifolia,,CA,ES,61,carvings,T,O
 2017,II,Dalbergia latifolia,,CA,ES,0.17,carvings,T,O
 2017,II,Dalbergia latifolia,,CA,ES,0.002,carvings,T,O
@@ -19005,7 +19005,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Dalbergia latifolia,,CH,ES,4,carvings,T,O
 2017,II,Dalbergia latifolia,,CH,ES,110,veneer,T,O
 2017,II,Dalbergia latifolia,,CH,ES,0.025,veneer,T,O
-2017,II,Dalbergia latifolia,,CH,FI,0.30,wood product,T,O
+2017,II,Dalbergia latifolia,,CH,FI,0.3,wood product,T,O
 2017,II,Dalbergia latifolia,,CH,FI,0.15,wood product,T,O
 2017,II,Dalbergia latifolia,,CH,FR,176,wood product,T,A
 2017,II,Dalbergia latifolia,,CH,FR,357,wood product,T,O
@@ -19016,7 +19016,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Dalbergia latifolia,,CH,GB,86.106,wood product,T,O
 2017,II,Dalbergia latifolia,,CH,GB,28,wood product,T,O
 2017,II,Dalbergia latifolia,,CH,IE,1.796,carvings,T,O
-2017,II,Dalbergia latifolia,,CH,IT,34.390,sawn wood,T,O
+2017,II,Dalbergia latifolia,,CH,IT,34.39,sawn wood,T,O
 2017,II,Dalbergia latifolia,,CH,IT,1,carvings,T,O
 2017,II,Dalbergia latifolia,,CH,IT,395,timber,T,O
 2017,II,Dalbergia latifolia,,CH,NL,818,wood product,T,A
@@ -19670,7 +19670,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Dalbergia latifolia,,PA,ES,0.019,carvings,T,O
 2017,II,Dalbergia latifolia,,PA,ES,52,carvings,T,O
 2017,II,Dalbergia latifolia,,PA,FR,1,wood product,T,O
-2017,II,Dalbergia latifolia,,PE,ES,0.020,carvings,T,O
+2017,II,Dalbergia latifolia,,PE,ES,0.02,carvings,T,O
 2017,II,Dalbergia latifolia,,PH,DE,100.67,carvings,T,O
 2017,II,Dalbergia latifolia,,PL,CA,,wood product,T,O
 2017,II,Dalbergia latifolia,,PL,CH,,wood product,T,O
@@ -19748,7 +19748,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Dalbergia latifolia,,RU,DE,116,carvings,T,O
 2017,II,Dalbergia latifolia,,RU,ES,0.738,carvings,T,O
 2017,II,Dalbergia latifolia,,RU,ES,20,carvings,T,O
-2017,II,Dalbergia latifolia,,RU,ES,0.040,carvings,T,O
+2017,II,Dalbergia latifolia,,RU,ES,0.04,carvings,T,O
 2017,II,Dalbergia latifolia,,RU,FR,1,wood product,T,O
 2017,II,Dalbergia latifolia,,RU,FR,52,wood product,T,O
 2017,II,Dalbergia latifolia,,RU,NL,6184,wood product,T,A
@@ -19824,7 +19824,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Dalbergia latifolia,,TH,CZ,21,carvings,T,O
 2017,II,Dalbergia latifolia,,TH,DE,1,carvings,T,O
 2017,II,Dalbergia latifolia,,TH,DE,7.28355,carvings,T,O
-2017,II,Dalbergia latifolia,,TH,ES,0.110,carvings,T,O
+2017,II,Dalbergia latifolia,,TH,ES,0.11,carvings,T,O
 2017,II,Dalbergia latifolia,,TH,ES,3,carvings,T,O
 2017,II,Dalbergia latifolia,,TH,FR,5,wood product,T,A
 2017,II,Dalbergia latifolia,,TH,FR,7,wood product,T,O
@@ -19914,13 +19914,13 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Dalbergia latifolia,,US,ES,0.074,veneer,T,O
 2017,II,Dalbergia latifolia,,US,ES,24,wood product,T,O
 2017,II,Dalbergia latifolia,,US,ES,776,carvings,T,O
-2017,II,Dalbergia latifolia,,US,ES,0.530,carvings,T,O
+2017,II,Dalbergia latifolia,,US,ES,0.53,carvings,T,O
 2017,II,Dalbergia latifolia,,US,ES,0.074,carvings,T,U
 2017,II,Dalbergia latifolia,,US,ES,34,carvings,T,O
 2017,II,Dalbergia latifolia,,US,ES,2,carvings,T,W
 2017,II,Dalbergia latifolia,,US,ES,0.062,veneer,T,O
 2017,II,Dalbergia latifolia,,US,FI,5,wood product,T,O
-2017,II,Dalbergia latifolia,,US,FI,0.30,wood product,T,O
+2017,II,Dalbergia latifolia,,US,FI,0.3,wood product,T,O
 2017,II,Dalbergia latifolia,,US,FR,286,wood product,T,A
 2017,II,Dalbergia latifolia,,US,FR,14,wood product,T,O
 2017,II,Dalbergia latifolia,,US,FR,31,wood product,T,O
@@ -20047,11 +20047,11 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Dalbergia melanoxylon,,CN,DE,2.729,sawn wood,T,O
 2017,II,Dalbergia melanoxylon,,CN,DE,40.128,carvings,T,O
 2017,II,Dalbergia melanoxylon,,CN,DE,1535.63,sawn wood,T,O
-2017,II,Dalbergia melanoxylon,,CN,DE,41.470,carvings,T,O
+2017,II,Dalbergia melanoxylon,,CN,DE,41.47,carvings,T,O
 2017,II,Dalbergia melanoxylon,,CN,DE,1,carvings,T,O
 2017,II,Dalbergia melanoxylon,,CN,DE,26.04,sawn wood,T,O
 2017,II,Dalbergia melanoxylon,,CN,ES,0.002,sawn wood,T,O
-2017,II,Dalbergia melanoxylon,,CN,FR,9.10,wood product,T,O
+2017,II,Dalbergia melanoxylon,,CN,FR,9.1,wood product,T,O
 2017,II,Dalbergia melanoxylon,,CN,FR,4452,wood product,T,O
 2017,II,Dalbergia melanoxylon,,CN,GB,224,wood product,T,O
 2017,II,Dalbergia melanoxylon,,CN,GB,6,wood product,T,O
@@ -20340,7 +20340,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Dalbergia retusa,,CA,GB,5.49,wood product,T,W
 2017,II,Dalbergia retusa,,CH,CR,1,carvings,P,W
 2017,II,Dalbergia retusa,,CH,DE,2.976,carvings,T,O
-2017,II,Dalbergia retusa,,CH,DE,4.960,carvings,T,O
+2017,II,Dalbergia retusa,,CH,DE,4.96,carvings,T,O
 2017,II,Dalbergia retusa,,CH,ES,2,carvings,T,O
 2017,II,Dalbergia retusa,,CH,ES,0.001,carvings,T,O
 2017,II,Dalbergia retusa,,CH,ES,611.4,veneer,T,O
@@ -20450,7 +20450,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Dalbergia retusa,,US,ES,1,carvings,T,O
 2017,II,Dalbergia retusa,,US,ES,0.993,sawn wood,T,W
 2017,II,Dalbergia retusa,,US,ES,590,carvings,T,O
-2017,II,Dalbergia retusa,,US,ES,0.020,carvings,T,O
+2017,II,Dalbergia retusa,,US,ES,0.02,carvings,T,O
 2017,II,Dalbergia retusa,,US,ES,0.027,carvings,T,U
 2017,II,Dalbergia retusa,,US,ES,0.004,sawn wood,T,O
 2017,II,Dalbergia retusa,,US,FR,0.5,wood product,T,O
@@ -20586,7 +20586,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Dalbergia stevensonii,,AU,DE,49.48,carvings,T,W
 2017,II,Dalbergia stevensonii,,AU,DE,13.04,carvings,T,W
 2017,II,Dalbergia stevensonii,,AU,DE,227,carvings,T,O
-2017,II,Dalbergia stevensonii,,AU,DE,2.3000,carvings,T,O
+2017,II,Dalbergia stevensonii,,AU,DE,2.3,carvings,T,O
 2017,II,Dalbergia stevensonii,,AU,FR,1,wood product,T,W
 2017,II,Dalbergia stevensonii,,AU,GB,1,wood product,T,W
 2017,II,Dalbergia stevensonii,,AU,GB,2,wood product,T,O
@@ -20612,7 +20612,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Dalbergia stevensonii,,CN,DE,1.851,carvings,T,O
 2017,II,Dalbergia stevensonii,,CN,FR,1,wood product,T,O
 2017,II,Dalbergia stevensonii,,CN,GB,2,wood product,T,W
-2017,II,Dalbergia stevensonii,,CN,NL,0.63298600,carvings,T,O
+2017,II,Dalbergia stevensonii,,CN,NL,0.632986,carvings,T,O
 2017,II,Dalbergia stevensonii,,CO,NL,0.02532266,carvings,T,O
 2017,II,Dalbergia stevensonii,,DE,CH,,carvings,T,W
 2017,II,Dalbergia stevensonii,,DE,GT,,sawn wood,T,W
@@ -20761,7 +20761,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Guibourtia demeusei,,CH,DE,153.87,carvings,T,O
 2017,II,Guibourtia demeusei,,CH,DE,3,carvings,T,O
 2017,II,Guibourtia demeusei,,CH,ES,0.004,carvings,T,O
-2017,II,Guibourtia demeusei,,CH,ES,0.010,carvings,T,O
+2017,II,Guibourtia demeusei,,CH,ES,0.01,carvings,T,O
 2017,II,Guibourtia demeusei,,CH,FR,600,wood product,T,O
 2017,II,Guibourtia demeusei,,CH,FR,1950,wood product,T,O
 2017,II,Guibourtia demeusei,,CH,IT,27.5,carvings,T,O
@@ -20983,7 +20983,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Guibourtia tessmannii,,CH,DE,1,carvings,T,O
 2017,II,Guibourtia tessmannii,,CH,IT,0.22,sawn wood,T,O
 2017,II,Guibourtia tessmannii,,CH,NL,3,wood product,T,O
-2017,II,Guibourtia tessmannii,,CN,DE,16.020,carvings,T,O
+2017,II,Guibourtia tessmannii,,CN,DE,16.02,carvings,T,O
 2017,II,Guibourtia tessmannii,,CZ,CH,,carvings,T,O
 2017,II,Guibourtia tessmannii,,DE,CH,,carvings,T,O
 2017,II,Guibourtia tessmannii,,DE,CM,,sawn wood,T,O
@@ -21041,7 +21041,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Guibourtia tessmannii,,SK,CH,,carvings,T,O
 2017,II,Guibourtia tessmannii,,TR,IT,3.961,sawn wood,T,O
 2017,II,Guibourtia tessmannii,,UA,ES,0.517,sawn wood,T,O
-2017,II,Guibourtia tessmannii,,US,DE,21.350,carvings,T,O
+2017,II,Guibourtia tessmannii,,US,DE,21.35,carvings,T,O
 2017,II,Guibourtia tessmannii,,US,IT,76.396,sawn wood,T,O
 2017,II,Pericopsis elata,,AE,CD,324.69,logs,T,W
 2017,II,Pericopsis elata,,BE,AE,,sawn wood,T,W
@@ -21344,7 +21344,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Aloe ferox,,AT,ZA,,cosmetics,T,W
 2017,II,Aloe ferox,,AT,ZA,,medicine,T,W
 2017,II,Aloe ferox,,AU,DE,140,powder,T,W
-2017,II,Aloe ferox,,AU,IT,607.400,extract,T,W
+2017,II,Aloe ferox,,AU,IT,607.4,extract,T,W
 2017,II,Aloe ferox,,AW,NL,186,live,,A
 2017,II,Aloe ferox,,BA,NL,122,live,,A
 2017,II,Aloe ferox,,BE,CH,,extract,T,W
@@ -23904,7 +23904,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Cycnoches cooperi,,DE,US,,live,T,A
 2017,II,Cycnoches cooperi,,FR,EC,,live,T,A
 2017,II,Cycnoches cooperi,,FR,PE,,live,T,A
-2017,II,Cycnoches cooperi,,ID,DE,0.040,extract,T,A
+2017,II,Cycnoches cooperi,,ID,DE,0.04,extract,T,A
 2017,II,Cycnoches cooperi,,IL,DE,0.068,extract,T,A
 2017,II,Cycnoches cooperi,,IR,DE,0.405,extract,T,A
 2017,II,Cycnoches cooperi,,JP,FR,3.75,cosmetics,T,A
@@ -24181,7 +24181,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Dendrobium chrysanthum,,DE,JP,,live,T,A
 2017,II,Dendrobium chrysanthum,,DE,TH,,live,T,A
 2017,II,Dendrobium chryseum,,FR,TH,,cultures,T,A
-2017,II,Dendrobium chrysotoxum,,CH,FR,126.090,cosmetics,T,A
+2017,II,Dendrobium chrysotoxum,,CH,FR,126.09,cosmetics,T,A
 2017,II,Dendrobium chrysotoxum,,CN,FR,2820.2,cosmetics,T,A
 2017,II,Dendrobium chrysotoxum,,DE,EC,,live,T,A
 2017,II,Dendrobium chrysotoxum,,DE,TH,,live,T,A
@@ -24190,7 +24190,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Dendrobium chrysotoxum,,FR,TH,,cultures,T,A
 2017,II,Dendrobium chrysotoxum,,FR,TH,,live,T,A
 2017,II,Dendrobium chrysotoxum,,GB,IN,,live,T,A
-2017,II,Dendrobium chrysotoxum,,JP,FR,358.570,cosmetics,T,A
+2017,II,Dendrobium chrysotoxum,,JP,FR,358.57,cosmetics,T,A
 2017,II,Dendrobium chrysotoxum,,TR,FR,14.675,cosmetics,T,A
 2017,II,Dendrobium cinnabarinum,,ES,MY,,live,T,A
 2017,II,Dendrobium compactum,,BQ,NL,40,live,,A
@@ -26144,7 +26144,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Orchis mascula,,JP,FR,98.56,cosmetics,T,A
 2017,II,Orchis mascula,,JP,FR,350,cosmetics,T,A
 2017,II,Orchis mascula,,JP,GB,41.036,extract,T,A
-2017,II,Orchis mascula,,RU,FR,50.10,extract,T,A
+2017,II,Orchis mascula,,RU,FR,50.1,extract,T,A
 2017,II,Orchis mascula,,TH,GB,249840,cosmetics,T,A
 2017,II,Orchis mascula,,TR,FR,0.3,extract,T,A
 2017,II,Orchis mascula,,TW,FR,120.45,extract,T,A
@@ -27282,7 +27282,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Vanda coerulea,,AU,EE,0.9394,cosmetics,T,A
 2017,II,Vanda coerulea,,BG,CH,,oil,T,A
 2017,II,Vanda coerulea,,CH,FR,135.38,cosmetics,T,A
-2017,II,Vanda coerulea,,CH,FR,632.10,cosmetics,T,A
+2017,II,Vanda coerulea,,CH,FR,632.1,cosmetics,T,A
 2017,II,Vanda coerulea,,CL,EE,1.6816,cosmetics,T,A
 2017,II,Vanda coerulea,,CN,FR,2152.8,cosmetics,T,A
 2017,II,Vanda coerulea,,CY,EE,0.044,cosmetics,T,A
@@ -27310,7 +27310,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Vanda coerulea,,MK,EE,0.068,cosmetics,T,A
 2017,II,Vanda coerulea,,MT,CH,,oil,T,A
 2017,II,Vanda coerulea,,NO,DE,3.09,derivatives,T,A
-2017,II,Vanda coerulea,,NO,DE,11.40,extract,T,A
+2017,II,Vanda coerulea,,NO,DE,11.4,extract,T,A
 2017,II,Vanda coerulea,,NO,DE,14,extract,T,A
 2017,II,Vanda coerulea,,NO,EE,0.0187,cosmetics,T,A
 2017,II,Vanda coerulea,,PL,CH,,oil,T,A
@@ -28079,7 +28079,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Cyclamen purpurascens,,CH,DE,4,roots,T,A
 2017,II,Cyclamen purpurascens,,CN,DE,0.0009,medicine,T,W
 2017,II,Cyclamen purpurascens,,GE,DE,0.0144,medicine,T,W
-2017,II,Cyclamen purpurascens,,IR,DE,0.0060,medicine,T,W
+2017,II,Cyclamen purpurascens,,IR,DE,0.006,medicine,T,W
 2017,II,Cyclamen purpurascens,,KG,DE,0.0206,medicine,T,W
 2017,II,Cyclamen purpurascens,,KI,DE,0.0044,medicine,T,W
 2017,II,Cyclamen purpurascens,,KY,DE,0.0023,medicine,T,W
@@ -29457,7 +29457,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Python bivittatus,Reptilia,CN,ES,4,leather products (small),,
 2017,II,Python bivittatus,Reptilia,CN,ES,10,skins,T,C
 2017,II,Python bivittatus,Reptilia,CN,FR,14,garments,T,C
-2017,II,Python bivittatus,Reptilia,CN,FR,759.30,leather products (small),T,C
+2017,II,Python bivittatus,Reptilia,CN,FR,759.3,leather products (small),T,C
 2017,II,Python bivittatus,Reptilia,CN,FR,8,skin pieces,T,C
 2017,II,Python bivittatus,Reptilia,CN,GB,14,leather products (small),T,C
 2017,II,Python bivittatus,Reptilia,CN,IT,1,leather products (small),P,C
@@ -30502,12 +30502,12 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Python reticulatus,Reptilia,CH,ES,2,leather products (small),T,C
 2017,II,Python reticulatus,Reptilia,CH,FR,2,carvings,T,W
 2017,II,Python reticulatus,Reptilia,CH,FR,8,garments,T,W
-2017,II,Python reticulatus,Reptilia,CH,FR,715.60,leather products (small),T,W
+2017,II,Python reticulatus,Reptilia,CH,FR,715.6,leather products (small),T,W
 2017,II,Python reticulatus,Reptilia,CH,FR,237.4,leather products (small),T,C
 2017,II,Python reticulatus,Reptilia,CH,FR,2,leather products (small),T,C
 2017,II,Python reticulatus,Reptilia,CH,FR,2,leather products (small),T,W
 2017,II,Python reticulatus,Reptilia,CH,FR,1,garments,T,C
-2017,II,Python reticulatus,Reptilia,CH,FR,1107.90,leather products (small),T,C
+2017,II,Python reticulatus,Reptilia,CH,FR,1107.9,leather products (small),T,C
 2017,II,Python reticulatus,Reptilia,CH,FR,1,skins,T,C
 2017,II,Python reticulatus,Reptilia,CH,FR,35,skin pieces,T,C
 2017,II,Python reticulatus,Reptilia,CH,GB,2,garments,T,W
@@ -31444,7 +31444,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Python reticulatus,Reptilia,US,FR,16,garments,T,W
 2017,II,Python reticulatus,Reptilia,US,FR,4,leather products (large),T,W
 2017,II,Python reticulatus,Reptilia,US,FR,6,leather products (small),T,C
-2017,II,Python reticulatus,Reptilia,US,FR,1791.20,leather products (small),T,W
+2017,II,Python reticulatus,Reptilia,US,FR,1791.2,leather products (small),T,W
 2017,II,Python reticulatus,Reptilia,US,FR,30,skins,T,W
 2017,II,Python reticulatus,Reptilia,US,FR,50,skin pieces,T,W
 2017,II,Python reticulatus,Reptilia,US,FR,352,leather products (small),T,C
@@ -32727,7 +32727,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Eudocimus ruber,Aves,VN,NL,20,live,T,C
 2017,II,Aquilaria crassna,,AE,DE,0.01,extract,T,A
 2017,II,Aquilaria crassna,,AE,FR,13.77,extract,T,A
-2017,II,Aquilaria crassna,,AE,FR,0.26730,extract,T,A
+2017,II,Aquilaria crassna,,AE,FR,0.2673,extract,T,A
 2017,II,Aquilaria crassna,,AE,FR,0.0025,extract,T,W
 2017,II,Aquilaria crassna,,AE,FR,1.98,oil,T,A
 2017,II,Aquilaria crassna,,AE,IT,0.78,extract,T,A
@@ -32772,7 +32772,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Aquilaria crassna,,FR,VN,,oil,T,A
 2017,II,Aquilaria crassna,,GB,TH,,oil,T,A
 2017,II,Aquilaria crassna,,IL,DE,0.00345,oil,T,A
-2017,II,Aquilaria crassna,,IN,FR,0.0180,oil,T,A
+2017,II,Aquilaria crassna,,IN,FR,0.018,oil,T,A
 2017,II,Aquilaria crassna,,KR,FR,0.002,oil,T,A
 2017,II,Aquilaria crassna,,KW,IT,0.24,extract,T,A
 2017,II,Aquilaria crassna,,NL,TH,,oil,T,A
@@ -32784,9 +32784,9 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,II,Aquilaria crassna,,QA,IT,0.334,extract,T,A
 2017,II,Aquilaria crassna,,SA,FR,0.00225,extract,T,W
 2017,II,Aquilaria crassna,,SA,FR,0.009,oil,T,A
-2017,II,Aquilaria crassna,,TR,FR,0.00750,extract,T,A
+2017,II,Aquilaria crassna,,TR,FR,0.0075,extract,T,A
 2017,II,Aquilaria crassna,,US,FR,27.21,oil,T,A
-2017,II,Aquilaria crassna,,US,FR,0.7850,oil,T,A
+2017,II,Aquilaria crassna,,US,FR,0.785,oil,T,A
 2017,II,Aquilaria crassna,,VN,FR,0.767,oil,T,A
 2017,II,Aquilaria crassna,,ZA,DE,0.0025,extract,T,A
 2017,II,Aquilaria filaria,,DE,JP,,chips,T,W
@@ -35001,7 +35001,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,III,Cedrela odorata,,CL,ES,0.008,sawn wood,T,W
 2017,III,Cedrela odorata,,CN,ES,6.709,sawn wood,T,O
 2017,III,Cedrela odorata,,CN,ES,2.814,sawn wood,T,W
-2017,III,Cedrela odorata,,CN,GH,80.380,logs,T,A
+2017,III,Cedrela odorata,,CN,GH,80.38,logs,T,A
 2017,III,Cedrela odorata,,CR,IN,,timber,T,A
 2017,III,Cedrela odorata,,CR,PR,,timber,T,A
 2017,III,Cedrela odorata,,CR,US,,sawn wood,T,A
@@ -35026,7 +35026,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,III,Cedrela odorata,,PT,BR,,sawn wood,T,W
 2017,III,Cedrela odorata,,PT,BR,,veneer,T,W
 2017,III,Cedrela odorata,,TW,GH,19.221,logs,T,A
-2017,III,Cedrela odorata,,US,ES,0.030,sawn wood,T,W
+2017,III,Cedrela odorata,,US,ES,0.03,sawn wood,T,W
 2017,III,Cedrela odorata,,US,GH,1232.298,logs,T,A
 2017,III,Cedrela odorata,,US,IT,1.8,sawn wood,T,W
 2017,III,Cedrela odorata,,VE,ES,0.011,sawn wood,T,W
@@ -35241,7 +35241,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2017,III,Daboia russelii,Reptilia,AU,FR,72,specimens,M,C
 2017,III,Daboia russelii,Reptilia,AU,FR,90,specimens,M,F
 2017,III,Daboia russelii,Reptilia,AU,IT,1,leather products (small),T,W
-2017,III,Daboia russelii,Reptilia,BA,DE,213.970,derivatives,T,F
+2017,III,Daboia russelii,Reptilia,BA,DE,213.97,derivatives,T,F
 2017,III,Daboia russelii,Reptilia,BA,DE,85.093,derivatives,T,C
 2017,III,Daboia russelii,Reptilia,BB,DE,20,derivatives,T,F
 2017,III,Daboia russelii,Reptilia,BB,DE,3,derivatives,T,C

@@ -1,4 +1,4 @@
-Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,Source
+Year,App.,Taxon,Class,Importer,Exporter,Exporter_reported_quantity,Term,Purpose,Source
 2001,I,Aquila spp.,Aves,FR,CA,,feathers,Q,O
 2001,I,Aquila heliaca,Aves,BE,AE,,live,P,C
 2001,I,Aquila heliaca,Aves,BE,KZ,,bodies,E,C
@@ -2959,7 +2959,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,I,Saussurea costus,,AT,CN,50,roots,T,A
 2001,I,Saussurea costus,,AU,CN,20,derivatives,T,D
 2001,I,Saussurea costus,,AU,CN,11.12,derivatives,T,A
-2001,I,Saussurea costus,,AU,CN,2.70,derivatives,T,D
+2001,I,Saussurea costus,,AU,CN,2.7,derivatives,T,D
 2001,I,Saussurea costus,,CA,CN,19000,derivatives,T,D
 2001,I,Saussurea costus,,CA,CN,30,derivatives,T,D
 2001,I,Saussurea costus,,CA,CN,,derivatives,T,A
@@ -4353,7 +4353,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,I,Loxodonta africana,Mammalia,FR,CI,8.5,ivory pieces,P,O
 2001,I,Loxodonta africana,Mammalia,FR,CI,7.8,ivory pieces,S,W
 2001,I,Loxodonta africana,Mammalia,FR,CI,33.55,tusks,P,O
-2001,I,Loxodonta africana,Mammalia,FR,CI,72.30,tusks,P,W
+2001,I,Loxodonta africana,Mammalia,FR,CI,72.3,tusks,P,W
 2001,I,Loxodonta africana,Mammalia,FR,CI,,tusks,P,O
 2001,I,Loxodonta africana,Mammalia,FR,CI,,tusks,P,W
 2001,I,Loxodonta africana,Mammalia,FR,CM,,ivory pieces,P,O
@@ -4562,7 +4562,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,I,Loxodonta africana,Mammalia,KE,UG,,live,N,W
 2001,I,Loxodonta africana,Mammalia,KR,GB,5,ivory carvings,T,O
 2001,I,Loxodonta africana,Mammalia,KW,GB,30,ivory carvings,T,O
-2001,I,Loxodonta africana,Mammalia,LB,CI,95.70,tusks,P,O
+2001,I,Loxodonta africana,Mammalia,LB,CI,95.7,tusks,P,O
 2001,I,Loxodonta africana,Mammalia,LB,GB,6,ivory carvings,T,O
 2001,I,Loxodonta africana,Mammalia,LV,DK,1,leather products (small),E,O
 2001,I,Loxodonta africana,Mammalia,LV,DK,2,skin pieces,E,O
@@ -7938,7 +7938,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,I,Physeter macrocephalus,Mammalia,GB,US,16,specimens,S,W
 2001,I,Physeter macrocephalus,Mammalia,GB,US,59,unspecified,E,W
 2001,I,Physeter macrocephalus,Mammalia,JP,ZZ,,skin pieces,S,W
-2001,I,Physeter macrocephalus,Mammalia,MY,LK,13.10,wax,T,W
+2001,I,Physeter macrocephalus,Mammalia,MY,LK,13.1,wax,T,W
 2001,I,Physeter macrocephalus,Mammalia,NO,NZ,1,teeth,P,W
 2001,I,Physeter macrocephalus,Mammalia,NZ,FJ,,teeth,P,W
 2001,I,Physeter macrocephalus,Mammalia,NZ,FJ,,teeth,,I
@@ -9783,7 +9783,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Acipenser baerii,Actinopteri,US,HU,,eggs,B,C
 2001,II,Acipenser baerii,Actinopteri,US,HU,2,eggs (live),T,C
 2001,II,Acipenser baerii,Actinopteri,US,IT,50000,eggs (live),S,R
-2001,II,Acipenser baerii,Actinopteri,US,RU,0.30,eggs (live),T,C
+2001,II,Acipenser baerii,Actinopteri,US,RU,0.3,eggs (live),T,C
 2001,II,Acipenser baerii,Actinopteri,US,RU,0.75,live,Q,F
 2001,II,Acipenser baerii,Actinopteri,US,UY,0.65,eggs,T,C
 2001,II,Acipenser baerii,Actinopteri,US,UY,,eggs,T,I
@@ -9798,7 +9798,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Acipenser fulvescens,Actinopteri,US,CA,17,specimens,S,W
 2001,II,Acipenser gueldenstaedtii,Actinopteri,AD,FR,1575,eggs,T,W
 2001,II,Acipenser gueldenstaedtii,Actinopteri,AD,FR,2.46,eggs,T,W
-2001,II,Acipenser gueldenstaedtii,Actinopteri,AE,RU,212.830,eggs,T,W
+2001,II,Acipenser gueldenstaedtii,Actinopteri,AE,RU,212.83,eggs,T,W
 2001,II,Acipenser gueldenstaedtii,Actinopteri,AN,FR,675,eggs,T,W
 2001,II,Acipenser gueldenstaedtii,Actinopteri,AR,DK,9,eggs,T,W
 2001,II,Acipenser gueldenstaedtii,Actinopteri,AT,CH,2,eggs,,W
@@ -9823,7 +9823,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Acipenser gueldenstaedtii,Actinopteri,CA,DK,13.5,eggs,T,W
 2001,II,Acipenser gueldenstaedtii,Actinopteri,CA,US,1,eggs,T,W
 2001,II,Acipenser gueldenstaedtii,Actinopteri,CH,AE,489.345,eggs,T,W
-2001,II,Acipenser gueldenstaedtii,Actinopteri,CH,AE,4.750,eggs,T,W
+2001,II,Acipenser gueldenstaedtii,Actinopteri,CH,AE,4.75,eggs,T,W
 2001,II,Acipenser gueldenstaedtii,Actinopteri,CH,DE,14.685,eggs,T,W
 2001,II,Acipenser gueldenstaedtii,Actinopteri,CH,DE,20.79,eggs,T,W
 2001,II,Acipenser gueldenstaedtii,Actinopteri,CH,DE,20.752,eggs,T,W
@@ -9932,7 +9932,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Acipenser gueldenstaedtii,Actinopteri,SA,DK,18.475,eggs,T,W
 2001,II,Acipenser gueldenstaedtii,Actinopteri,SG,AE,33.02,eggs,T,W
 2001,II,Acipenser gueldenstaedtii,Actinopteri,SG,DE,4.5,eggs,T,W
-2001,II,Acipenser gueldenstaedtii,Actinopteri,SG,FR,15.730,eggs,T,W
+2001,II,Acipenser gueldenstaedtii,Actinopteri,SG,FR,15.73,eggs,T,W
 2001,II,Acipenser gueldenstaedtii,Actinopteri,SG,HK,2.1,eggs,T,W
 2001,II,Acipenser gueldenstaedtii,Actinopteri,TR,KZ,,eggs,T,W
 2001,II,Acipenser gueldenstaedtii,Actinopteri,TR,US,16,eggs,T,W
@@ -9966,7 +9966,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Acipenser gueldenstaedtii,Actinopteri,US,RU,,eggs,T,W
 2001,II,Acipenser gueldenstaedtii,Actinopteri,US,RU,,eggs,T,I
 2001,II,Acipenser gueldenstaedtii,Actinopteri,US,RU,8776.042,eggs,T,W
-2001,II,Acipenser gueldenstaedtii,Actinopteri,US,RU,0.30,eggs (live),T,C
+2001,II,Acipenser gueldenstaedtii,Actinopteri,US,RU,0.3,eggs (live),T,C
 2001,II,Acipenser gueldenstaedtii,Actinopteri,US,RU,0.75,live,Q,F
 2001,II,Acipenser gueldenstaedtii,Actinopteri,US,RU,30000,live,T,C
 2001,II,Acipenser gueldenstaedtii,Actinopteri,US,RU,20000,meat,T,W
@@ -10042,7 +10042,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Acipenser persicus,Actinopteri,BR,FR,13.2,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,CA,BE,50.36,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,CA,DK,32.7,eggs,T,W
-2001,II,Acipenser persicus,Actinopteri,CA,FR,13.50,eggs,T,W
+2001,II,Acipenser persicus,Actinopteri,CA,FR,13.5,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,CG,FR,800,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,CH,BE,128.286,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,CH,DE,795.129,eggs,T,W
@@ -10051,7 +10051,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Acipenser persicus,Actinopteri,CH,IR,209,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,CH,IR,,meat,T,W
 2001,II,Acipenser persicus,Actinopteri,CH,JP,50.472,eggs,T,W
-2001,II,Acipenser persicus,Actinopteri,CH,LU,647.20,eggs,T,W
+2001,II,Acipenser persicus,Actinopteri,CH,LU,647.2,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,CI,FR,1.74,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,CL,DK,128,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,CL,FR,6,eggs,T,W
@@ -10103,7 +10103,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Acipenser persicus,Actinopteri,KH,FR,500,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,KR,DE,2.1,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,KR,FR,2280,eggs,T,W
-2001,II,Acipenser persicus,Actinopteri,KR,FR,15.630,eggs,T,W
+2001,II,Acipenser persicus,Actinopteri,KR,FR,15.63,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,LB,CH,2,eggs,,W
 2001,II,Acipenser persicus,Actinopteri,LB,FR,8.88,meat,T,W
 2001,II,Acipenser persicus,Actinopteri,LU,CH,2,eggs,,W
@@ -10113,7 +10113,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Acipenser persicus,Actinopteri,MU,FR,18620,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,MX,DK,18,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,MX,FR,49.741,eggs,T,W
-2001,II,Acipenser persicus,Actinopteri,NO,BE,7.050,eggs,T,W
+2001,II,Acipenser persicus,Actinopteri,NO,BE,7.05,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,NO,DE,30.589,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,NO,DK,1190,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,NO,GB,400,eggs,T,W
@@ -10139,7 +10139,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Acipenser persicus,Actinopteri,TH,FR,9,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,TT,DE,20.53,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,TW,CH,2.16,eggs,,W
-2001,II,Acipenser persicus,Actinopteri,TW,DK,138.90,eggs,T,W
+2001,II,Acipenser persicus,Actinopteri,TW,DK,138.9,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,US,BE,14.63,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,US,CH,,eggs,T,W
 2001,II,Acipenser persicus,Actinopteri,US,CH,250.922,eggs,,W
@@ -10204,7 +10204,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Acipenser schrenckii,Actinopteri,NO,BE,3,eggs,T,W
 2001,II,Acipenser schrenckii,Actinopteri,TR,DE,,eggs,T,W
 2001,II,Acipenser schrenckii,Actinopteri,US,CN,104,eggs,T,W
-2001,II,Acipenser schrenckii,Actinopteri,US,RU,1080.50,eggs,T,W
+2001,II,Acipenser schrenckii,Actinopteri,US,RU,1080.5,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,AD,ES,1700,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,AD,ES,2.56,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,AD,FR,800,eggs,T,W
@@ -10253,7 +10253,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Acipenser stellatus,Actinopteri,CA,US,38,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,CA,US,1,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,CG,FR,1.44,eggs,T,W
-2001,II,Acipenser stellatus,Actinopteri,CH,AE,1400.380,eggs,T,W
+2001,II,Acipenser stellatus,Actinopteri,CH,AE,1400.38,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,CH,AE,194,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,CH,BE,121.756,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,CH,DE,40.67,eggs,T,W
@@ -10329,7 +10329,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Acipenser stellatus,Actinopteri,HK,DE,1100,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,HK,DE,2.4,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,HK,FR,4685,eggs,T,W
-2001,II,Acipenser stellatus,Actinopteri,HK,FR,676.360,eggs,T,W
+2001,II,Acipenser stellatus,Actinopteri,HK,FR,676.36,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,HK,FR,120,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,HK,IR,168,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,HK,US,88,eggs,T,W
@@ -10339,7 +10339,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Acipenser stellatus,Actinopteri,IN,AE,80,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,IN,HK,1080,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,IR,AE,295,eggs,T,W
-2001,II,Acipenser stellatus,Actinopteri,IS,DE,20.480,eggs,T,W
+2001,II,Acipenser stellatus,Actinopteri,IS,DE,20.48,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,IS,LU,1500,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,IT,CH,750,eggs,,W
 2001,II,Acipenser stellatus,Actinopteri,IT,IR,349,eggs,T,W
@@ -10360,7 +10360,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Acipenser stellatus,Actinopteri,JP,DE,173,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,JP,DE,174.984,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,JP,FR,150,eggs,T,W
-2001,II,Acipenser stellatus,Actinopteri,JP,FR,283.50,eggs,T,W
+2001,II,Acipenser stellatus,Actinopteri,JP,FR,283.5,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,JP,FR,,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,JP,IR,2441,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,JP,MY,22.4,eggs,T,C
@@ -10397,7 +10397,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Acipenser stellatus,Actinopteri,NO,BE,5.45,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,NO,BE,1.5,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,NO,DE,500,eggs,T,W
-2001,II,Acipenser stellatus,Actinopteri,NO,DE,15.520,eggs,T,W
+2001,II,Acipenser stellatus,Actinopteri,NO,DE,15.52,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,NO,DE,8.064,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,NO,DE,19.096,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,NO,DK,500,eggs,T,W
@@ -10508,7 +10508,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Acipenser stellatus,Actinopteri,VE,US,1,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,VN,US,21,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,XX,CZ,715,eggs,T,W
-2001,II,Acipenser stellatus,Actinopteri,XX,CZ,3.490,eggs,T,W
+2001,II,Acipenser stellatus,Actinopteri,XX,CZ,3.49,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,XX,US,1,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,ZA,DE,37,eggs,T,W
 2001,II,Acipenser stellatus,Actinopteri,ZA,DE,38.83,eggs,T,W
@@ -10601,7 +10601,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Huso huso,Actinopteri,CA,BE,10,eggs,T,W
 2001,II,Huso huso,Actinopteri,CA,DE,4.544,eggs,T,W
 2001,II,Huso huso,Actinopteri,CA,US,1,eggs,T,W
-2001,II,Huso huso,Actinopteri,CH,AE,1131.420,eggs,T,W
+2001,II,Huso huso,Actinopteri,CH,AE,1131.42,eggs,T,W
 2001,II,Huso huso,Actinopteri,CH,BE,35.745,eggs,T,W
 2001,II,Huso huso,Actinopteri,CH,BG,12,eggs,T,W
 2001,II,Huso huso,Actinopteri,CH,DE,10.808,eggs,T,W
@@ -10627,7 +10627,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Huso huso,Actinopteri,DE,IR,7250,meat,T,W
 2001,II,Huso huso,Actinopteri,DE,IR,78,swim bladders,T,W
 2001,II,Huso huso,Actinopteri,DE,NO,1.62,eggs,T,W
-2001,II,Huso huso,Actinopteri,DE,RO,1091.220,eggs,T,W
+2001,II,Huso huso,Actinopteri,DE,RO,1091.22,eggs,T,W
 2001,II,Huso huso,Actinopteri,DE,RO,40,meat,T,W
 2001,II,Huso huso,Actinopteri,DE,RU,116.951,eggs,T,W
 2001,II,Huso huso,Actinopteri,DE,US,3,eggs,T,W
@@ -10680,7 +10680,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Huso huso,Actinopteri,KR,DE,5.188,eggs,T,W
 2001,II,Huso huso,Actinopteri,KR,DE,6.7,eggs,T,W
 2001,II,Huso huso,Actinopteri,KR,FR,8150,eggs,T,W
-2001,II,Huso huso,Actinopteri,KR,FR,2.50,eggs,T,W
+2001,II,Huso huso,Actinopteri,KR,FR,2.5,eggs,T,W
 2001,II,Huso huso,Actinopteri,KW,AE,125.542,eggs,T,W
 2001,II,Huso huso,Actinopteri,LB,FR,2,eggs,T,W
 2001,II,Huso huso,Actinopteri,LU,IR,201,eggs,T,W
@@ -10705,7 +10705,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Huso huso,Actinopteri,QA,AE,5.5,eggs,T,W
 2001,II,Huso huso,Actinopteri,SA,AE,6.5,eggs,T,W
 2001,II,Huso huso,Actinopteri,SA,CH,44,eggs,,W
-2001,II,Huso huso,Actinopteri,SA,DE,6.360,eggs,T,W
+2001,II,Huso huso,Actinopteri,SA,DE,6.36,eggs,T,W
 2001,II,Huso huso,Actinopteri,SA,DK,8.95,eggs,T,W
 2001,II,Huso huso,Actinopteri,SA,FR,750,eggs,T,W
 2001,II,Huso huso,Actinopteri,SA,FR,12.75,eggs,T,W
@@ -15873,7 +15873,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Panax quinquefolius,,CN,CA,,roots,T,A
 2001,II,Panax quinquefolius,,CN,CA,25758.7,dried plants,T,A
 2001,II,Panax quinquefolius,,CN,CA,1505,roots,T,A
-2001,II,Panax quinquefolius,,CN,CA,1562410.150,roots,T,A
+2001,II,Panax quinquefolius,,CN,CA,1562410.15,roots,T,A
 2001,II,Panax quinquefolius,,CN,CA,,roots,T,W
 2001,II,Panax quinquefolius,,CN,CA,9.07,roots,T,A
 2001,II,Panax quinquefolius,,CN,HK,,roots,T,A
@@ -15903,7 +15903,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Panax quinquefolius,,HK,CA,1237.46,roots,T,W
 2001,II,Panax quinquefolius,,HK,CA,102,roots,T,A
 2001,II,Panax quinquefolius,,HK,CN,11430.55,roots,T,A
-2001,II,Panax quinquefolius,,HK,FR,3644.30,roots,T,A
+2001,II,Panax quinquefolius,,HK,FR,3644.3,roots,T,A
 2001,II,Panax quinquefolius,,HK,SG,,roots,T,A
 2001,II,Panax quinquefolius,,HK,US,326255,roots,T,A
 2001,II,Panax quinquefolius,,HK,US,23536,roots,T,W
@@ -20728,7 +20728,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Lama guanicoe,Mammalia,RU,LV,1,live,Z,C
 2001,II,Lama guanicoe,Mammalia,US,CL,13,specimens,S,W
 2001,II,Lama guanicoe,Mammalia,US,CL,,specimens,S,W
-2001,II,Lama guanicoe,Mammalia,US,IT,38.80,cloth,T,W
+2001,II,Lama guanicoe,Mammalia,US,IT,38.8,cloth,T,W
 2001,II,Lama guanicoe,Mammalia,US,IT,,garments,P,W
 2001,II,Lama guanicoe,Mammalia,US,IT,,skins,T,W
 2001,II,Lama guanicoe,Mammalia,US,IT,,skin pieces,T,W
@@ -20789,7 +20789,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Vicugna vicugna,Mammalia,KR,CH,,cloth,T,W
 2001,II,Vicugna vicugna,Mammalia,KR,CH,1,garments,,W
 2001,II,Vicugna vicugna,Mammalia,KR,IT,,cloth,T,W
-2001,II,Vicugna vicugna,Mammalia,KR,IT,15.80,cloth,T,W
+2001,II,Vicugna vicugna,Mammalia,KR,IT,15.8,cloth,T,W
 2001,II,Vicugna vicugna,Mammalia,MX,IT,4.8,cloth,T,W
 2001,II,Vicugna vicugna,Mammalia,MX,IT,2,cloth,T,W
 2001,II,Vicugna vicugna,Mammalia,PE,DE,2,garments,T,W
@@ -22402,7 +22402,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Macaca fascicularis,Mammalia,DE,CH,1188,specimens,,C
 2001,II,Macaca fascicularis,Mammalia,DE,CN,,live,M,C
 2001,II,Macaca fascicularis,Mammalia,DE,CN,100,live,T,C
-2001,II,Macaca fascicularis,Mammalia,DE,CN,0.20,specimens,T,C
+2001,II,Macaca fascicularis,Mammalia,DE,CN,0.2,specimens,T,C
 2001,II,Macaca fascicularis,Mammalia,DE,HU,1,live,P,W
 2001,II,Macaca fascicularis,Mammalia,DE,MU,,live,M,F
 2001,II,Macaca fascicularis,Mammalia,DE,MU,100,live,S,C
@@ -22908,7 +22908,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Macaca mulatta,Mammalia,DE,CH,11,specimens,,C
 2001,II,Macaca mulatta,Mammalia,DE,CN,,live,M,C
 2001,II,Macaca mulatta,Mammalia,DE,CN,60,live,T,C
-2001,II,Macaca mulatta,Mammalia,DE,CN,0.150,specimens,T,C
+2001,II,Macaca mulatta,Mammalia,DE,CN,0.15,specimens,T,C
 2001,II,Macaca mulatta,Mammalia,DE,CZ,2,specimens,S,C
 2001,II,Macaca mulatta,Mammalia,DE,US,2,specimens,M,C
 2001,II,Macaca mulatta,Mammalia,DE,US,50,specimens,T,C
@@ -25657,7 +25657,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Crocodylus niloticus,Reptilia,HK,KR,27,leather products (small),T,C
 2001,II,Crocodylus niloticus,Reptilia,HK,SG,178,skins,T,R
 2001,II,Crocodylus niloticus,Reptilia,HK,SG,800,skins,T,C
-2001,II,Crocodylus niloticus,Reptilia,HK,SG,20.70,skins,T,C
+2001,II,Crocodylus niloticus,Reptilia,HK,SG,20.7,skins,T,C
 2001,II,Crocodylus niloticus,Reptilia,HK,SG,7,skins,T,R
 2001,II,Crocodylus niloticus,Reptilia,HK,SG,134,skins,T,C
 2001,II,Crocodylus niloticus,Reptilia,HK,SG,1009,skins,T,R
@@ -34288,7 +34288,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Pericopsis elata,,DE,CM,,sawn wood,T,W
 2001,II,Pericopsis elata,,DK,CM,26.56,sawn wood,T,W
 2001,II,Pericopsis elata,,FR,CD,82.845,timber,T,W
-2001,II,Pericopsis elata,,FR,CG,669.400,timber,T,W
+2001,II,Pericopsis elata,,FR,CG,669.4,timber,T,W
 2001,II,Pericopsis elata,,FR,CM,31.543,sawn wood,T,W
 2001,II,Pericopsis elata,,GB,CG,64.917,timber,T,W
 2001,II,Pericopsis elata,,GB,CM,36.984,sawn wood,T,W
@@ -65450,7 +65450,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Strombus gigas,Gastropoda,HT,CU,10000,meat,T,W
 2001,II,Strombus gigas,Gastropoda,JP,CO,823,pearls,T,W
 2001,II,Strombus gigas,Gastropoda,JP,HK,,shells,T,W
-2001,II,Strombus gigas,Gastropoda,JP,VN,45.80,shells,T,W
+2001,II,Strombus gigas,Gastropoda,JP,VN,45.8,shells,T,W
 2001,II,Strombus gigas,Gastropoda,JP,VN,,shells,T,W
 2001,II,Strombus gigas,Gastropoda,KR,NZ,1,shells,P,W
 2001,II,Strombus gigas,Gastropoda,KY,US,620,shells,T,W
@@ -65531,7 +65531,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Strombus gigas,Gastropoda,US,TC,,shells,T,C
 2001,II,Strombus gigas,Gastropoda,US,TC,,shells,T,R
 2001,II,Strombus gigas,Gastropoda,US,TC,,shells,T,R
-2001,II,Strombus gigas,Gastropoda,US,TT,1587.600,meat,T,W
+2001,II,Strombus gigas,Gastropoda,US,TT,1587.6,meat,T,W
 2001,II,Strombus gigas,Gastropoda,US,TT,,meat,T,W
 2001,II,Strombus gigas,Gastropoda,US,VC,,meat,T,W
 2001,II,Strombus gigas,Gastropoda,US,VN,0.4,shells,T,C
@@ -72715,8 +72715,8 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,II,Zamia furfuracea,,TW,MY,12000,live,T,A
 2001,II,Zamia furfuracea,,US,CR,5950,live,T,A
 2001,II,Zamia furfuracea,,US,DO,18045,live,T,A
-2001,II,Zamia furfuracea,,US,HN,1361.70,live,,A
-2001,II,Zamia furfuracea,,US,HN,1360.70,live,,W
+2001,II,Zamia furfuracea,,US,HN,1361.7,live,,A
+2001,II,Zamia furfuracea,,US,HN,1360.7,live,,W
 2001,II,Zamia furfuracea,,US,HN,,live,T,W
 2001,II,Zamia furfuracea,,US,HT,,live,T,U
 2001,II,Zamia furfuracea,,US,MX,20000,live,T,A
@@ -75018,7 +75018,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,III,Cedrela spp.,,MX,BO,293.67,sawn wood,T,W
 2001,III,Cedrela spp.,,PE,BO,40681.91,veneer,T,W
 2001,III,Cedrela spp.,,US,BO,1745.59,sawn wood,T,W
-2001,III,Cedrela spp.,,US,BO,3301.60,veneer,T,W
+2001,III,Cedrela spp.,,US,BO,3301.6,veneer,T,W
 2001,III,Cedrela odorata,,BB,PE,18.58,sawn wood,T,W
 2001,III,Cedrela odorata,,CA,US,,sawn wood,T,W
 2001,III,Cedrela odorata,,CA,US,15,sawn wood,T,W
@@ -75065,7 +75065,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,III,Swietenia macrophylla,,DK,BR,577.909,sawn wood,T,W
 2001,III,Swietenia macrophylla,,DK,BR,17.09,veneer,T,W
 2001,III,Swietenia macrophylla,,DK,PE,,sawn wood,T,W
-2001,III,Swietenia macrophylla,,DO,BO,1365.30,sawn wood,T,W
+2001,III,Swietenia macrophylla,,DO,BO,1365.3,sawn wood,T,W
 2001,III,Swietenia macrophylla,,DO,BR,1660.13,sawn wood,T,W
 2001,III,Swietenia macrophylla,,DO,BR,2.456,veneer,T,W
 2001,III,Swietenia macrophylla,,DO,GT,,sawn wood,T,W
@@ -75129,7 +75129,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,III,Swietenia macrophylla,,SE,PE,143.86,sawn wood,T,W
 2001,III,Swietenia macrophylla,,SG,MY,3,live,T,A
 2001,III,Swietenia macrophylla,,TW,BR,19.615,veneer,T,W
-2001,III,Swietenia macrophylla,,US,BO,5680.50,sawn wood,T,W
+2001,III,Swietenia macrophylla,,US,BO,5680.5,sawn wood,T,W
 2001,III,Swietenia macrophylla,,US,BR,,sawn wood,T,I
 2001,III,Swietenia macrophylla,,US,BR,26853.635,sawn wood,T,W
 2001,III,Swietenia macrophylla,,US,BR,2154.916,veneer,T,W
@@ -75147,7 +75147,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,III,Swietenia macrophylla,,US,MX,2190,timber,T,W
 2001,III,Swietenia macrophylla,,US,NI,,sawn wood,T,W
 2001,III,Swietenia macrophylla,,US,PA,,sawn wood,T,W
-2001,III,Swietenia macrophylla,,US,PA,1287.50,sawn wood,T,
+2001,III,Swietenia macrophylla,,US,PA,1287.5,sawn wood,T,
 2001,III,Swietenia macrophylla,,US,PE,28068.816,sawn wood,T,W
 2001,III,Swietenia macrophylla,,US,VE,,sawn wood,T,W
 2001,III,Swietenia macrophylla,,VE,BR,76.158,veneer,T,W
@@ -76241,14 +76241,14 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,III,Gonystylus spp.,,AU,MY,75.735,sawn wood,T,W
 2001,III,Gonystylus spp.,,BE,MY,282.802,sawn wood,T,W
 2001,III,Gonystylus spp.,,BE,MY,,sawn wood,T,W
-2001,III,Gonystylus spp.,,CH,MY,46.30,sawn wood,T,W
-2001,III,Gonystylus spp.,,CN,MY,6225.710,sawn wood,T,W
-2001,III,Gonystylus spp.,,DE,MY,1287.790,sawn wood,T,W
+2001,III,Gonystylus spp.,,CH,MY,46.3,sawn wood,T,W
+2001,III,Gonystylus spp.,,CN,MY,6225.71,sawn wood,T,W
+2001,III,Gonystylus spp.,,DE,MY,1287.79,sawn wood,T,W
 2001,III,Gonystylus spp.,,DK,MY,84.95,sawn wood,T,W
 2001,III,Gonystylus spp.,,DK,SG,,sawn wood,T,W
 2001,III,Gonystylus spp.,,DK,SG,,sawn wood,T,W
 2001,III,Gonystylus spp.,,ES,ID,,veneer,T,W
-2001,III,Gonystylus spp.,,ES,MY,17.290,sawn wood,T,W
+2001,III,Gonystylus spp.,,ES,MY,17.29,sawn wood,T,W
 2001,III,Gonystylus spp.,,ES,MY,,timber,T,W
 2001,III,Gonystylus spp.,,FR,MY,107.67,sawn wood,T,W
 2001,III,Gonystylus spp.,,GB,MY,467.399,sawn wood,T,W
@@ -76294,7 +76294,7 @@ Year,App.,Taxon,Class,Importer,Exporter,Exporter reported quantity,Term,Purpose,
 2001,III,Gonystylus bancanus,,JP,ID,2820.148,timber,T,W
 2001,III,Gonystylus bancanus,,JP,ID,,timber,T,W
 2001,III,Gonystylus bancanus,,JP,MY,,timber,T,W
-2001,III,Gonystylus bancanus,,KR,ID,653.580,timber,T,W
+2001,III,Gonystylus bancanus,,KR,ID,653.58,timber,T,W
 2001,III,Gonystylus bancanus,,LK,ID,16.429,timber,T,W
 2001,III,Gonystylus bancanus,,MY,ID,516.614,timber,T,W
 2001,III,Gonystylus bancanus,,NL,ID,243.285,timber,T,W
