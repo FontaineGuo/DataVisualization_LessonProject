@@ -142,6 +142,21 @@ def get_importer_quantity(countryCode, year, sciName):
     conn.close()
     return num
 
+def get_global_trade_quantity(year, sciName):
+    conn = sqlite3.connect(current_path + '\\DataSrc\\trade_data\\CitesTradeData.db')
+    cursor = conn.execute("SELECT sum(Exporter_reported_quantity)  from CitesTradeData where year ='"+
+                          year + "' and Taxon='" +
+                          sciName + "'")
+    num = 0
+    for item in cursor:
+        # print(item)
+        num =list(item)[0]
+    # print(num)
+    cursor.close()
+    conn.close()
+    return num
+
+
 def get_export_rank():
     conn = sqlite3.connect(current_path + '\\DataSrc\\trade_data\\CitesTradeData.db')
     cursor = conn.execute("SELECT Importer, count(Importer)  from CitesTradeData group by Importer order by count(Importer) desc limit 20")
@@ -301,11 +316,74 @@ def get_export_list_by_listing_by_country(countryCode, year):
     conn.close()
     return dict
 
-def get_global_purpose_list():
-    print()
+def get_global_purpose_list(year):
+    conn = sqlite3.connect(current_path + '\\DataSrc\\trade_data\\CitesTradeData.db')
+    cursor = conn.execute(
+        "SELECT Purpose, count(Purpose) from CitesTradeData where year ='" + year + "' group by Purpose order by count(Purpose) desc")
+    purpose_list = []
+    for item in cursor:
+        # print(item)
+        purpose_list.append(list(item))
+    # print(purpose_list)
+    cursor.close()
+    conn.close()
+    return purpose_list
 
-def get_global_list_by_listing():
-    print()
+def get_global_list_by_listing(year):
+    conn = sqlite3.connect(current_path + '\\DataSrc\\trade_data\\CitesTradeData.db')
+    cursor = conn.execute(
+        "SELECT App, Taxon, count(Taxon) from CitesTradeData where  year ='" + year + "'group by Taxon order by count(Taxon) desc")
+    one_export_list = []
+    two_export_list = []
+    three_export_list = []
+    n_export_list = []
+    one_index = 0
+    two_index = 0
+    three_index = 0
+    n_index = 0
+    for item in cursor:
+        # import_num = get_importer_quantity(countryCode, year, list(item)[1])
+        # export_num = get_exporter_quantity(countryCode, year, list(item)[1])
+        single = list(item)
+        if one_index == 7 and two_index == 7 and three_index == 7 and n_index == 7:
+            break;
+
+        if single[0] == 'I':
+            if one_index < 7:
+                one_export_list.append(single)
+                one_index = one_index + 1
+        elif single[0] == 'II':
+            if two_index < 7:
+                two_export_list.append(single)
+                two_index = two_index + 1
+        elif single[0] == 'III':
+            if three_index < 7:
+                three_export_list.append(single)
+                three_index = three_index + 1
+        elif single[0] == 'N':
+            if n_index <= 7:
+                n_export_list.append(single)
+                n_index = n_index + 1
+
+    dict = OrderedDict()
+    dict['I'] = one_export_list
+    dict['II'] = two_export_list
+    dict['III'] = three_export_list
+    dict['N'] = n_export_list
+    for item in dict.values():
+        for single_dict in item:
+            temp = single_dict
+            trade_num = get_global_trade_quantity(year, temp[1])
+            trade_num = (trade_num if trade_num != None else 0)
+            temp.append(int(trade_num))
+            single_dict = temp
+
+    # for item in dict.values():
+    #     for single_dict in item:
+    #         print(single_dict)
+    cursor.close()
+    conn.close()
+    return dict
 # test for get_country_data
 # get_country_data('AL')
 
@@ -325,8 +403,9 @@ def get_global_list_by_listing():
 # test for get_import_list__by_country(countryCode)
 # get_import_list_by_country('US', '2000')
 
-# test for get_purpose_list_by_country(countryCode)
-# get_purpose_list_by_country('US', '2000')
+# test for get_import_purpose_list_by_country
+# get_import_purpose_list_by_country('US', '2000')
+# get_export_purpose_list_by_country('US', '2000')
 
 # get_exporter_quantity('US', '2000', 'Loxodonta africana')
 
@@ -345,3 +424,12 @@ def get_global_list_by_listing():
 # test for get_import_list_by_listing_by_country
 # get_import_list_by_listing_by_country('US', '2000')
 # get_export_list_by_listing_by_country('US', '2000')
+
+# test for get_global_purpose_list
+# get_global_purpose_list('2000')
+
+# test for get_global_trade_quantity
+# get_global_trade_quantity('2000','Loxodonta africana')
+
+# test for get_global_list_by_listing
+# get_global_list_by_listing('2000')
