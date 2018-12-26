@@ -7,15 +7,19 @@ def get_country_data(code):
     conn = sqlite3.connect(current_path + '\\DataSrc\\countryCode_data\\country_info.db')
     cursor = conn.cursor()
     data = cursor.execute("SELECT * from geoinfo where geoinfo.Alpha2code='" + code +"'" )
+    info = []
     for item in data:
         info = list(item)
     nameData = cursor.execute("SELECT * from nameinfo where nameinfo.code='" + code + "'")
 
+    countryInfo = []
     for item in nameData:
         countryInfo = list(item)
 
     cursor.close()
     conn.close()
+    if len(countryInfo) == 0 or len(info) == 0:
+        return ['XX','未知','Unknown', 0,0]
     countryInfo.append(info[5])
     countryInfo.append(info[4])
     # print(countryInfo)
@@ -384,8 +388,22 @@ def get_global_list_by_listing(year):
     cursor.close()
     conn.close()
     return dict
+
+def get_purpose_info(purpose):
+    conn = sqlite3.connect(current_path + '\\DataSrc\\abbreviation_data\\PurSrc.db')
+    cursor = conn.execute(
+        "SELECT ChineseMeaning from purpose where  Code ='" + purpose + "'")
+    pur = ''
+
+    for item in cursor:
+        # print(item)
+        pur = list(item)[0]
+    return pur
+    cursor.close()
+    conn.close()
+
 # test for get_country_data
-# get_country_data('AL')
+# get_country_data('JP')
 
 # test for get_cites_list_data
 # get_cites_list_data('Bos gaurus')
@@ -404,7 +422,7 @@ def get_global_list_by_listing(year):
 # get_import_list_by_country('US', '2000')
 
 # test for get_import_purpose_list_by_country
-# get_import_purpose_list_by_country('US', '2000')
+get_import_purpose_list_by_country('US', '2000')
 # get_export_purpose_list_by_country('US', '2000')
 
 # get_exporter_quantity('US', '2000', 'Loxodonta africana')
@@ -433,3 +451,6 @@ def get_global_list_by_listing(year):
 
 # test for get_global_list_by_listing
 # get_global_list_by_listing('2000')
+
+# tesf for get_purpose_info
+# get_purpose_info('xx')
