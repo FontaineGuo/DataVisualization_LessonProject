@@ -145,7 +145,7 @@ def create_global_trade_data_json():
         temp_yearDict['purpose_info'] = purpose_list
         finalDict.append(temp_yearDict)
     j = json.dumps(finalDict)
-  
+
     with open(path, 'w') as f:
          f.write(j)
 
