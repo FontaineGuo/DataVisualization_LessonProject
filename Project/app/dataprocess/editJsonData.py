@@ -126,6 +126,7 @@ def create_global_trade_data_json():
     json_data = open(path).read()
     data = json.loads(json_data)
     for year in range(2000, 2018):
+        print('processing ' + str(year))
         temp_yearDict = OrderedDict()
         dict = data[str(year)]
         temp_yearDict['year'] = str(year)
@@ -133,6 +134,11 @@ def create_global_trade_data_json():
         temp_yearDict['I'] = tradedict['I']
         temp_yearDict['II'] = tradedict['II']
         temp_yearDict['III'] = tradedict['III']
+
+        temp_yearDict['I_num'] = getdbdata.get_global_trade_count_by_year(str(year), 'I')
+        temp_yearDict['II_num'] = getdbdata.get_global_trade_count_by_year(str(year), 'II')
+        temp_yearDict['III_num'] = getdbdata.get_global_trade_count_by_year(str(year), 'III')
+
 
 
         purpose_list = []
@@ -153,6 +159,5 @@ def create_global_trade_data_json():
          f.write(j)
 
 
-edit_import_country_list_json()
-edit_export_country_list_json()
+
 create_global_trade_data_json()

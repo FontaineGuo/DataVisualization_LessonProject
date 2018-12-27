@@ -422,6 +422,19 @@ def get_import_list_orderby_quantity_by_country(countryCode, year):
     conn.close()
     return export_list
 
+
+def get_global_trade_count_by_year(year, App):
+    conn = sqlite3.connect(current_path + '\\DataSrc\\trade_data\\CitesTradeData.db')
+    cursor = conn.execute(
+        "SELECT count(Taxon) from CitesTradeData where  year ='" + year + "' and App='" + App + "'")
+    item = cursor.fetchone()
+
+
+
+    cursor.close()
+    conn.close()
+    return list(item)[0]
+
 # test for get_country_data
 # get_country_data('JP')
 
@@ -482,3 +495,6 @@ def get_import_list_orderby_quantity_by_country(countryCode, year):
 # test for get_export_list_by_listing_by_country
 # get_export_list_by_listing_by_country('US', '2000')
 # get_import_list_by_listing_by_country('US', '2000')
+
+# test for get_global_trade_count_by_year(year, App):
+get_global_trade_count_by_year('2000', 'I')
