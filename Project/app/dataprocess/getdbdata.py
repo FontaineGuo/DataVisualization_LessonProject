@@ -203,54 +203,54 @@ def get_import_country_rank_by_year(year):
 
 def get_import_list_by_listing_by_country(countryCode, year):
     conn = sqlite3.connect(current_path + '\\DataSrc\\trade_data\\CitesTradeData.db')
-    cursor = conn.execute("SELECT App, Taxon, count(Taxon) from CitesTradeData where CitesTradeData.Importer='" + countryCode + "' and year ='" + year + "'group by Taxon order by count(Taxon) desc")
+    cursor = conn.execute(
+        "SELECT App, Taxon, count(Taxon), sum(Exporter_reported_quantity) from CitesTradeData where CitesTradeData.Importer='" + countryCode + "' and year ='" + year + "'group by Taxon order by sum(Exporter_reported_quantity) desc")
     one_export_list = []
     two_export_list = []
     three_export_list = []
-    n_export_list = []
+
     one_index = 0
     two_index = 0
     three_index = 0
-    n_index = 0
+
     for item in cursor:
         # import_num = get_importer_quantity(countryCode, year, list(item)[1])
         # export_num = get_exporter_quantity(countryCode, year, list(item)[1])
         single = list(item)
-        if one_index == 7 and two_index == 7 and three_index == 7 and n_index == 7:
+        if one_index == 5 and two_index == 5 and three_index == 5 :
             break;
 
         if single[0] == 'I':
-            if one_index < 7:
+            if one_index < 5:
                 one_export_list.append(single)
                 one_index = one_index + 1
         elif single[0] == 'II':
-            if two_index < 7:
+            if two_index < 5:
                 two_export_list.append(single)
                 two_index = two_index + 1
         elif single[0] == 'III':
-            if three_index < 7:
+            if three_index < 5:
                 three_export_list.append(single)
                 three_index = three_index + 1
-        elif single[0] == 'N':
-            if n_index <= 7:
-                n_export_list.append(single)
-                n_index = n_index + 1
+
 
     dict = OrderedDict()
     dict['I'] = one_export_list
     dict['II'] = two_export_list
     dict['III'] = three_export_list
-    dict['N'] = n_export_list
+
     for item in dict.values():
         for single_dict in item:
             temp = single_dict
-            import_num = get_importer_quantity(countryCode, year, temp[1])
+            # import_num = get_importer_quantity(countryCode, year, temp[1])
             export_num = get_exporter_quantity(countryCode, year, temp[1])
 
-            import_num = (import_num if import_num != None else 0)
+            # import_num = (import_num if import_num != None else 0)
             export_num = (export_num if export_num != None else 0)
-            temp.append(int(import_num))
+            # temp.append(int(import_num))
             temp.append(int(export_num))
+            temp[3] = (int(temp[3]) if temp[3] != None else 0)
+            temp.append(temp[3] + temp[4])
             single_dict = temp
 
     # for item in dict.values():
@@ -263,54 +263,52 @@ def get_import_list_by_listing_by_country(countryCode, year):
 
 def get_export_list_by_listing_by_country(countryCode, year):
     conn = sqlite3.connect(current_path + '\\DataSrc\\trade_data\\CitesTradeData.db')
-    cursor = conn.execute("SELECT App, Taxon, count(Taxon) from CitesTradeData where CitesTradeData.Exporter='" + countryCode + "' and year ='" + year + "'group by Taxon order by count(Taxon) desc")
+    cursor = conn.execute("SELECT App, Taxon, count(Taxon), sum(Exporter_reported_quantity) from CitesTradeData where CitesTradeData.Exporter='" + countryCode + "' and year ='" + year + "'group by Taxon order by sum(Exporter_reported_quantity) desc")
     one_export_list = []
     two_export_list = []
     three_export_list = []
-    n_export_list = []
+
     one_index = 0
     two_index = 0
     three_index = 0
-    n_index = 0
     for item in cursor:
         # import_num = get_importer_quantity(countryCode, year, list(item)[1])
         # export_num = get_exporter_quantity(countryCode, year, list(item)[1])
         single = list(item)
-        if one_index == 7 and two_index == 7 and three_index == 7 and n_index == 7:
+        if one_index == 5 and two_index == 5 and three_index == 5 :
             break;
 
         if single[0] == 'I':
-            if one_index < 7:
+            if one_index < 5:
                 one_export_list.append(single)
                 one_index = one_index + 1
         elif single[0] == 'II':
-            if two_index < 7:
+            if two_index < 5:
                 two_export_list.append(single)
                 two_index = two_index + 1
         elif single[0] == 'III':
-            if three_index < 7:
+            if three_index < 5:
                 three_export_list.append(single)
                 three_index = three_index + 1
-        elif single[0] == 'N':
-            if n_index <= 7:
-                n_export_list.append(single)
-                n_index = n_index + 1
+
 
     dict = OrderedDict()
     dict['I'] = one_export_list
     dict['II'] = two_export_list
     dict['III'] = three_export_list
-    dict['N'] = n_export_list
+
     for item in dict.values():
         for single_dict in item:
             temp = single_dict
             import_num = get_importer_quantity(countryCode, year, temp[1])
-            export_num = get_exporter_quantity(countryCode, year, temp[1])
+            # export_num = get_exporter_quantity(countryCode, year, temp[1])
 
             import_num = (import_num if import_num != None else 0)
-            export_num = (export_num if export_num != None else 0)
+            # export_num = (export_num if export_num != None else 0)
             temp.append(int(import_num))
-            temp.append(int(export_num))
+            # temp.append(int(export_num))
+            temp[3] = (int(temp[3]) if temp[3] != None else 0)
+            temp.append(temp[3]+temp[4])
             single_dict = temp
     #
     # for item in dict.values():
@@ -336,44 +334,40 @@ def get_global_purpose_list(year):
 def get_global_list_by_listing(year):
     conn = sqlite3.connect(current_path + '\\DataSrc\\trade_data\\CitesTradeData.db')
     cursor = conn.execute(
-        "SELECT App, Taxon, count(Taxon) from CitesTradeData where  year ='" + year + "'group by Taxon order by count(Taxon) desc")
+        "SELECT App, Taxon ,count(Taxon)from CitesTradeData where  year ='" + year + "'group by Taxon order by sum(Exporter_reported_quantity)  desc")
     one_export_list = []
     two_export_list = []
     three_export_list = []
-    n_export_list = []
+
     one_index = 0
     two_index = 0
     three_index = 0
-    n_index = 0
+
     for item in cursor:
         # import_num = get_importer_quantity(countryCode, year, list(item)[1])
         # export_num = get_exporter_quantity(countryCode, year, list(item)[1])
         single = list(item)
-        if one_index == 7 and two_index == 7 and three_index == 7 and n_index == 7:
+        if one_index == 5 and two_index == 5 and three_index == 5 :
             break;
 
         if single[0] == 'I':
-            if one_index < 7:
+            if one_index < 5:
                 one_export_list.append(single)
                 one_index = one_index + 1
         elif single[0] == 'II':
-            if two_index < 7:
+            if two_index < 5:
                 two_export_list.append(single)
                 two_index = two_index + 1
         elif single[0] == 'III':
-            if three_index < 7:
+            if three_index < 5:
                 three_export_list.append(single)
                 three_index = three_index + 1
-        elif single[0] == 'N':
-            if n_index <= 7:
-                n_export_list.append(single)
-                n_index = n_index + 1
+
 
     dict = OrderedDict()
     dict['I'] = one_export_list
     dict['II'] = two_export_list
     dict['III'] = three_export_list
-    dict['N'] = n_export_list
     for item in dict.values():
         for single_dict in item:
             temp = single_dict
@@ -402,6 +396,32 @@ def get_purpose_info(purpose):
     cursor.close()
     conn.close()
 
+
+
+def get_export_list_orderby_quantity_by_country(countryCode, year):
+    conn = sqlite3.connect(current_path + '\\DataSrc\\trade_data\\CitesTradeData.db')
+    cursor = conn.execute("SELECT Taxon, sum(Exporter_reported_quantity) from CitesTradeData where CitesTradeData.Exporter='" + countryCode + "' and year ='"+ year + "'group by Taxon order by sum(Exporter_reported_quantity) desc")
+    export_list = []
+    for item in cursor:
+        print(item)
+        export_list.append(list(item))
+    # print(export_list)
+    cursor.close()
+    conn.close()
+    return export_list
+
+def get_import_list_orderby_quantity_by_country(countryCode, year):
+    conn = sqlite3.connect(current_path + '\\DataSrc\\trade_data\\CitesTradeData.db')
+    cursor = conn.execute("SELECT Taxon, sum(Exporter_reported_quantity) from CitesTradeData where CitesTradeData.Importer='" + countryCode + "' and year ='"+ year + "'group by Taxon order by sum(Exporter_reported_quantity) desc")
+    export_list = []
+    for item in cursor:
+        print(item)
+        export_list.append(list(item))
+    # print(export_list)
+    cursor.close()
+    conn.close()
+    return export_list
+
 # test for get_country_data
 # get_country_data('JP')
 
@@ -422,7 +442,7 @@ def get_purpose_info(purpose):
 # get_import_list_by_country('US', '2000')
 
 # test for get_import_purpose_list_by_country
-get_import_purpose_list_by_country('US', '2000')
+# get_import_purpose_list_by_country('US', '2000')
 # get_export_purpose_list_by_country('US', '2000')
 
 # get_exporter_quantity('US', '2000', 'Loxodonta africana')
@@ -454,3 +474,11 @@ get_import_purpose_list_by_country('US', '2000')
 
 # tesf for get_purpose_info
 # get_purpose_info('xx')
+
+# test for get_export_list_orderby_quantity_by_country
+# get_export_list_orderby_quantity_by_country('US', '2000')
+# get_import_list_orderby_quantity_by_country('US', '2000')
+
+# test for get_export_list_by_listing_by_country
+# get_export_list_by_listing_by_country('US', '2000')
+# get_import_list_by_listing_by_country('US', '2000')

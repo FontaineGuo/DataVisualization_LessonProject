@@ -7,7 +7,7 @@ current_path = os.path.dirname(__file__)
 
 def edit_import_country_list_json():
     finalDict = OrderedDict()
-    for year in range(2000, 2018):
+    for year in range(2017, 2018):
         print('processing ' + str(year))
         path = current_path + '\\DataSrc\\jsonPreData\\Importer\\import_country_'+str(year)+'.json'
         json_data = open(path).read()
@@ -17,15 +17,12 @@ def edit_import_country_list_json():
             # print(index)
             tempDict = OrderedDict()
             dict = data[str(index)]
-
+            print('processing ' + dict['name'])
             tempDict['name'] = dict['name']
             tempDict['num'] = dict['num']
-            tempDict['import_src'] = dict['import_src']
-            tempDict['I'] = dict['I']
-            tempDict['II'] = dict['II']
-            tempDict['III'] = dict['III']
-            tempDict['N'] = dict['N']
-            tempDict['Purpose'] = dict['Purpose']
+
+
+
 
             mainCountryInfo = getdbdata.get_country_data(dict['name'])
             tempDict['coord'] = [mainCountryInfo[3], mainCountryInfo[4]]
@@ -56,6 +53,11 @@ def edit_import_country_list_json():
                     purpose_list.append([pur, p[1]])
             tempDict['purpose_info'] = purpose_list
 
+            trade_dict = getdbdata.get_import_list_by_listing_by_country(dict['name'], str(year))
+            tempDict['I'] = trade_dict['I']
+            tempDict['II'] = trade_dict['II']
+            tempDict['III'] = trade_dict['III']
+
             single_year_data_list.append(tempDict)
         j = json.dumps(single_year_data_list)
 
@@ -74,15 +76,10 @@ def edit_export_country_list_json():
             # print(index)
             tempDict = OrderedDict()
             dict = data[str(index)]
-
+            print('processing ' + dict['name'])
             tempDict['name'] = dict['name']
             tempDict['num'] = dict['num']
-            tempDict['export_tgt'] = dict['export_tgt']
-            tempDict['I'] = dict['I']
-            tempDict['II'] = dict['II']
-            tempDict['III'] = dict['III']
-            tempDict['N'] = dict['N']
-            tempDict['Purpose'] = dict['Purpose']
+
 
             mainCountryInfo = getdbdata.get_country_data(dict['name'])
             tempDict['coord'] = [mainCountryInfo[3], mainCountryInfo[4]]
@@ -112,6 +109,12 @@ def edit_export_country_list_json():
                 else:
                     purpose_list.append([pur, p[1]])
             tempDict['purpose_info'] = purpose_list
+
+            trade_dict = getdbdata.get_import_list_by_listing_by_country(dict['name'], str(year))
+            tempDict['I'] = trade_dict['I']
+            tempDict['II'] = trade_dict['II']
+            tempDict['III'] = trade_dict['III']
+
             single_year_data_list.append(tempDict)
         j = json.dumps(single_year_data_list)
         with open(path, 'w') as f:
@@ -126,11 +129,11 @@ def create_global_trade_data_json():
         temp_yearDict = OrderedDict()
         dict = data[str(year)]
         temp_yearDict['year'] = str(year)
-        temp_yearDict['purpose'] = dict['purpose']
-        temp_yearDict['I'] = dict['I']
-        temp_yearDict['II'] = dict['II']
-        temp_yearDict['III'] = dict['III']
-        temp_yearDict['N'] = dict['N']
+        tradedict = getdbdata.get_global_list_by_listing(str(year))
+        temp_yearDict['I'] = tradedict['I']
+        temp_yearDict['II'] = tradedict['II']
+        temp_yearDict['III'] = tradedict['III']
+
 
         purpose_list = []
         for p in dict['purpose']:
@@ -149,4 +152,7 @@ def create_global_trade_data_json():
     with open(path, 'w') as f:
          f.write(j)
 
+
+edit_import_country_list_json()
+edit_export_country_list_json()
 create_global_trade_data_json()

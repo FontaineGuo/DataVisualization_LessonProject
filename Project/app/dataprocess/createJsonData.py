@@ -19,7 +19,7 @@ def create_folder():
             os.mkdir(path)
 
 def create_import_country_list_json():
-    for year in range(2000, 2018):
+    for year in range(2017, 2018):
         print('processing ' + str(year))
         path = current_path + '\\DataSrc\\jsonPreData\\Importer\\import_country_'+str(year)+'.json'
         temp_yearDict = OrderedDict()
@@ -39,7 +39,7 @@ def create_import_country_list_json():
             single_country_dict['I'] = list_dict['I']
             single_country_dict['II'] = list_dict['II']
             single_country_dict['III'] = list_dict['III']
-            single_country_dict['N'] = list_dict['N']
+            # single_country_dict['N'] = list_dict['N']
             single_country_dict['Purpose'] = getdbdata.get_import_purpose_list_by_country(country[0], str(year))
             temp_yearDict[str(index)] = single_country_dict
             index = index+1
@@ -101,5 +101,5 @@ def create_global_trade_data_json():
 
     print('done')
 create_import_country_list_json()
-create_export_country_list_json()
+# create_export_country_list_json()
 # create_global_trade_data_json()
