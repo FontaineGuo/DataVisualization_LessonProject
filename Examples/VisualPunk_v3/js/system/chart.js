@@ -1679,7 +1679,7 @@ var option4 ={
         },
     },
     legend: {
-        data:['出口', '进口'],
+        data:['交易次数', '交易总量'],
         textStyle:{
             color:'#fff'
         }
@@ -1729,7 +1729,7 @@ var option4 ={
     ],
     series : [
         {
-            name:'进口',
+            name:'交易次数',
             type:'bar',
             stack: '总量',
             label: {
@@ -1740,7 +1740,7 @@ var option4 ={
             data:[]
         },
         {
-            name:'出口',
+            name:'交易总量',
             type:'bar',
             stack: '总量',
             label: {
