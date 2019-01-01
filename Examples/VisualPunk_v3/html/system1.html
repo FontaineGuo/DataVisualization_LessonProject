@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CITES贸易探索系统</title>
+    <link rel="shortcut icon" href="../img/topicon.ico" />
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/echarts/echarts.js"></script>
+    <script src="../js/map/world.js"></script>
+    <link rel="stylesheet" href="../css/system/menu.css"/>
+</head>
+<body bgcolor="#131824">
+    <!-- 标题栏 -->
+    <div id="menu" class="menuHolder">
+        <div class="menuWindow">
+            <ul class="p1">
+                <li class="s1"><a class="a1" href="">VP</a>
+                    <ul class="p2">
+                        <li class="s2"><a class="a2"><span>郭智溢</span></a></li>
+                        <li class="s2"><a class="a2"><span>万珂蓝</span></a></li>
+                        <li class="s2"><a class="a2"><span>王枫</span></a></li>
+                        <li class="s2"><a class="a2"><span>杨凯</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--图表容器-->
+    <div id="butt" class="butt">
+        <button id="in" class="b1" type="button" onclick="showin()">进口</button>
+        <button id="ex" class="b1" type="button" onclick="showex()">出口</button>
+    </div>
+    <div class="yeartime">
+        <button id="2000" class="b2" type="button" value="2000">2000</button>
+        <button id="2001" class="b2" type="button" value="2001">2001</button>
+        <button id="2002" class="b2" type="button" value="2002">2002</button>
+        <button id="2003" class="b2" type="button" value="2003">2003</button>
+        <button id="2004" class="b2" type="button" value="2004">2004</button>
+        <button id="2005" class="b2" type="button" value="2005">2005</button>
+        <button id="2006" class="b2" type="button" value="2006">2006</button>
+        <button id="2007" class="b2" type="button" value="2007">2007</button>
+        <button id="2008" class="b2" type="button" value="2008">2008</button>
+        <button id="2009" class="b2" type="button" value="2009">2009</button>
+        <button id="2010" class="b2" type="button" value="2010">2010</button>
+        <button id="2011" class="b2" type="button" value="2011">2011</button>
+        <button id="2012" class="b2" type="button" value="2012">2012</button>
+        <button id="2013" class="b2" type="button" value="2013">2013</button>
+        <button id="2014" class="b2" type="button" value="2014">2014</button>
+        <button id="2015" class="b2" type="button" value="2015">2015</button>
+        <button id="2016" class="b2" type="button" value="2016">2016</button>
+        <button id="2017" class="b2" type="button" value="2017">2017</button>
+    </div>
+
+    <div id="c1" class="chart1"></div>
+    <div id="c2" class="chart2"></div>
+    <div id="c3" class="chart3"></div>
+    <div id="c4" class="chart4"></div>
+    <div id="c5" class="chart5"></div>
+    <!--图表配置-->
+    <script src="../js/system/chart.js"></script>
+
+</body>
+</html>
