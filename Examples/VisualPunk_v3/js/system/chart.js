@@ -69,7 +69,7 @@ var planePath = 'path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0
 // 获取地图中起点和终点的坐标，以数组形式保存下来
 var convertData = function(data) {
     var res = [];
-    for(var i = 0; i < 20; i++) {
+    for(var i = 0; i < data.length; i++) {
         var fromCoord = data[i][1];
         var toCoord = data[i][2];
         if(fromCoord && toCoord) {
@@ -128,7 +128,8 @@ var yearchangedata = function () {
                 pielengend1.push(item.name);
                 piedata1.push({name:item.name,value:item.num,nameCN:item.nameCN});
                 airname1.push(item.nameCN);
-                for(var i = 0; i<20;i++) {
+                // console.log(Object.keys(item.import_src_info).length)
+                for(var i = 0; i<Object.keys(item.import_src_info).length;i++) {
                     airdata1.push([item.nameCN, item.import_src_info[i].coord, item.coord])
                 }
                 [airdata1].forEach(function(item, i) {
@@ -203,7 +204,7 @@ var yearchangedata = function () {
                 pielengend2.push(item.name);
                 piedata2.push({name: item.name, value: item.num, nameCN: item.nameCN});
                 airname2.push(item.nameCN);
-                for(var i = 0; i<20;i++) {
+                for(var i = 0; i<Object.keys(item.export_tgt_info).length;i++) {
                     airdata2.push([item.nameCN, item.coord, item.export_tgt_info[i].coord])
                 }
                 [airdata2].forEach(function(item, i) {
@@ -258,8 +259,8 @@ var yearchangedata = function () {
                 });
                 airdata2 = [];
             });
-            for(var i = 0;i < 20; i++){
-                for(var j = 0;j<20; j++){
+            for(var i = 0;i < pielengend1.length; i++){
+                for(var j = 0;j<pielengend2.length; j++){
                     if(pielengend1[i] === pielengend2[j]){
                         piedata3.push({name:pielengend1[i], value:piedata1[i].value+piedata2[i].value})
                     }
@@ -712,7 +713,7 @@ Chart1.on('click', function (params) {
                 //请求成功时执行该函数内容，result即为服务器返回的json对象
                 $.each(result, function (index, item) {
                     if(item.nameCN === params.name) {
-                        for (var i = 0; i < 5; i++) {
+                        for (var i = 0; i < Object.keys(item.I).length; i++) {
                             pielengend1.push(item.I[i][1]);
                             piedata1.push({name:item.I[i][1], value:item.I[i][3]});
                             piedata2.push({name:item.I[i][1], value:item.I[i][4]});
@@ -720,7 +721,7 @@ Chart1.on('click', function (params) {
                             barinport.push(item.I[i][3]);
                             barexport.push(item.I[i][5]);
                         }
-                        for (var i = 0; i < 5; i++) {
+                        for (var i = 0; i < Object.keys(item.II).length; i++) {
                             pielengend1.push(item.II[i][1]);
                             piedata1.push({name:item.II[i][1], value:item.II[i][3]});
                             piedata2.push({name:item.II[i][1], value:item.II[i][4]});
@@ -728,7 +729,7 @@ Chart1.on('click', function (params) {
                             barinport.push(item.II[i][3]);
                             barexport.push(item.II[i][5]);
                         }
-                        for (var i = 0; i < 5; i++) {
+                        for (var i = 0; i < Object.keys(item.III).length; i++) {
                             pielengend1.push(item.III[i][1]);
                             piedata1.push({name:item.III[i][1], value:item.III[i][3]});
                             piedata2.push({name:item.III[i][1], value:item.III[i][4]});
@@ -835,7 +836,7 @@ Chart1.on('click', function (params) {
                 //请求成功时执行该函数内容，result即为服务器返回的json对象
                 $.each(result, function (index, item) {
                     if(item.nameCN === params.name) {
-                        for (var i = 0; i < 5; i++) {
+                        for (var i = 0; i < Object.keys(item.I).length; i++) {
                             pielengend1.push(item.I[i][1]);
                             piedata1.push({name:item.I[i][1], value:item.I[i][3]});
                             piedata2.push({name:item.I[i][1], value:item.I[i][4]});
@@ -843,7 +844,7 @@ Chart1.on('click', function (params) {
                             barinport.push(item.I[i][3]);
                             barexport.push(item.I[i][5]);
                         }
-                        for (var i = 0; i < 5; i++) {
+                        for (var i = 0; i < Object.keys(item.II).length; i++) {
                             pielengend1.push(item.II[i][1]);
                             piedata1.push({name:item.II[i][1], value:item.II[i][3]});
                             piedata2.push({name:item.II[i][1], value:item.II[i][4]});
@@ -851,7 +852,7 @@ Chart1.on('click', function (params) {
                             barinport.push(item.II[i][3]);
                             barexport.push(item.II[i][5]);
                         }
-                        for (var i = 0; i < 5; i++) {
+                        for (var i = 0; i < Object.keys(item.III).length; i++) {
                             pielengend1.push(item.III[i][1]);
                             piedata1.push({name:item.III[i][1], value:item.III[i][3]});
                             piedata2.push({name:item.III[i][1], value:item.III[i][4]});
@@ -955,7 +956,7 @@ Chart1.on('click', function (params) {
                 //请求成功时执行该函数内容，result即为服务器返回的json对象
                 $.each(result, function (index, item) {
                     if(item.nameCN === params.name) {
-                        for (var i = 0; i < 5; i++) {
+                        for (var i = 0; i < Object.keys(item.I).length; i++) {
                             pielengend1.push(item.I[i][1]);
                             piedata1.push({name:item.I[i][1], value:item.I[i][3]});
                             piedata2.push({name:item.I[i][1], value:item.I[i][4]});
@@ -963,7 +964,7 @@ Chart1.on('click', function (params) {
                             barinport.push(item.I[i][3]);
                             barexport.push(item.I[i][5]);
                         }
-                        for (var i = 0; i < 5; i++) {
+                        for (var i = 0; i < Object.keys(item.II).length; i++) {
                             pielengend1.push(item.II[i][1]);
                             piedata1.push({name:item.II[i][1], value:item.II[i][3]});
                             piedata2.push({name:item.II[i][1], value:item.II[i][4]});
@@ -971,7 +972,7 @@ Chart1.on('click', function (params) {
                             barinport.push(item.II[i][3]);
                             barexport.push(item.II[i][5]);
                         }
-                        for (var i = 0; i < 5; i++) {
+                        for (var i = 0; i < Object.keys(item.III).length; i++) {
                             pielengend1.push(item.III[i][1]);
                             piedata1.push({name:item.III[i][1], value:item.III[i][3]});
                             piedata2.push({name:item.III[i][1], value:item.III[i][4]});
@@ -1076,7 +1077,7 @@ Chart1.on('click', function (params) {
                 //请求成功时执行该函数内容，result即为服务器返回的json对象
                 $.each(result, function (index, item) {
                     if(item.nameCN === params.name) {
-                        for (var i = 0; i < 5; i++) {
+                        for (var i = 0; i < Object.keys(item.I).length; i++) {
                             pielengend1.push(item.I[i][1]);
                             piedata1.push({name:item.I[i][1], value:item.I[i][3]});
                             piedata2.push({name:item.I[i][1], value:item.I[i][4]});
@@ -1084,7 +1085,7 @@ Chart1.on('click', function (params) {
                             barinport.push(item.I[i][3]);
                             barexport.push(item.I[i][5]);
                         }
-                        for (var i = 0; i < 5; i++) {
+                        for (var i = 0; i < Object.keys(item.II).length; i++) {
                             pielengend1.push(item.II[i][1]);
                             piedata1.push({name:item.II[i][1], value:item.II[i][3]});
                             piedata2.push({name:item.II[i][1], value:item.II[i][4]});
@@ -1092,7 +1093,7 @@ Chart1.on('click', function (params) {
                             barinport.push(item.II[i][3]);
                             barexport.push(item.II[i][5]);
                         }
-                        for (var i = 0; i < 5; i++) {
+                        for (var i = 0; i < Object.keys(item.III).length; i++) {
                             pielengend1.push(item.III[i][1]);
                             piedata1.push({name:item.III[i][1], value:item.III[i][3]});
                             piedata2.push({name:item.III[i][1], value:item.III[i][4]});
@@ -1199,7 +1200,7 @@ Chart1.on('click', function (params) {
                 //请求成功时执行该函数内容，result即为服务器返回的json对象
                 $.each(result, function (index, item) {
                     if(item.nameCN === params.name) {
-                        for (var i = 0; i < 5; i++) {
+                        for (var i = 0; i < Object.keys(item.I).length; i++) {
                             pielengend1.push(item.I[i][1]);
                             piedata1.push({name:item.I[i][1], value:item.I[i][3]});
                             piedata2.push({name:item.I[i][1], value:item.I[i][4]});
@@ -1207,7 +1208,7 @@ Chart1.on('click', function (params) {
                             barinport.push(item.I[i][3]);
                             barexport.push(item.I[i][5]);
                         }
-                        for (var i = 0; i < 5; i++) {
+                        for (var i = 0; i < Object.keys(item.II).length; i++) {
                             pielengend1.push(item.II[i][1]);
                             piedata1.push({name:item.II[i][1], value:item.II[i][3]});
                             piedata2.push({name:item.II[i][1], value:item.II[i][4]});
@@ -1215,7 +1216,7 @@ Chart1.on('click', function (params) {
                             barinport.push(item.II[i][3]);
                             barexport.push(item.II[i][5]);
                         }
-                        for (var i = 0; i < 5; i++) {
+                        for (var i = 0; i < Object.keys(item.III).length; i++) {
                             pielengend1.push(item.III[i][1]);
                             piedata1.push({name:item.III[i][1], value:item.III[i][3]});
                             piedata2.push({name:item.III[i][1], value:item.III[i][4]});
@@ -1319,7 +1320,7 @@ Chart1.on('click', function (params) {
                 //请求成功时执行该函数内容，result即为服务器返回的json对象
                 $.each(result, function (index, item) {
                     if(item.nameCN === params.name) {
-                        for (var i = 0; i < 5; i++) {
+                        for (var i = 0; i < Object.keys(item.I).length; i++) {
                             pielengend1.push(item.I[i][1]);
                             piedata1.push({name:item.I[i][1], value:item.I[i][3]});
                             piedata2.push({name:item.I[i][1], value:item.I[i][4]});
@@ -1327,7 +1328,7 @@ Chart1.on('click', function (params) {
                             barinport.push(item.I[i][3]);
                             barexport.push(item.I[i][5]);
                         }
-                        for (var i = 0; i < 5; i++) {
+                        for (var i = 0; i < Object.keys(item.II).length; i++) {
                             pielengend1.push(item.II[i][1]);
                             piedata1.push({name:item.II[i][1], value:item.II[i][3]});
                             piedata2.push({name:item.II[i][1], value:item.II[i][4]});
@@ -1335,7 +1336,7 @@ Chart1.on('click', function (params) {
                             barinport.push(item.II[i][3]);
                             barexport.push(item.II[i][5]);
                         }
-                        for (var i = 0; i < 5; i++) {
+                        for (var i = 0; i < Object.keys(item.III).length; i++) {
                             pielengend1.push(item.III[i][1]);
                             piedata1.push({name:item.III[i][1], value:item.III[i][3]});
                             piedata2.push({name:item.III[i][1], value:item.III[i][4]});
@@ -1777,7 +1778,7 @@ var import_data = function () {
                 pielengend1.push(item.name);
                 piedata1.push({name:item.name,value:item.num,nameCN:item.nameCN});
                 airname1.push(item.nameCN);
-                for(var i = 0; i<20;i++) {
+                for(var i = 0; i<Object.keys(item.import_src_info).length;i++) {
                     airdata1.push([item.nameCN, item.import_src_info[i].coord, item.coord])
                 }
                 [airdata1].forEach(function(item, i) {
@@ -1852,7 +1853,7 @@ var import_data = function () {
                 pielengend2.push(item.name);
                 piedata2.push({name: item.name, value: item.num, nameCN: item.nameCN});
                 airname2.push(item.nameCN);
-                for(var i = 0; i<20;i++) {
+                for(var i = 0; i<Object.keys(item.export_tgt_info).length;i++) {
                     airdata2.push([item.nameCN, item.coord,item.export_tgt_info[i].coord])
                 }
                 [airdata2].forEach(function(item, i) {
@@ -1907,8 +1908,8 @@ var import_data = function () {
                 });
                 airdata2 = [];
             });
-            for(var i = 0;i < 20; i++){
-                for(var j = 0;j<20; j++){
+            for(var i = 0;i < pielengend1.length; i++){
+                for(var j = 0;j<pielengend2.length; j++){
                     if(pielengend1[i] === pielengend2[j]){
                         piedata3.push({name:pielengend1[i], value:piedata1[i].value+piedata2[i].value})
                     }
