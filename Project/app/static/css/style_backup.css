@@ -4,7 +4,7 @@
 .menuHolder {width:50px; height:50px; margin:0px 0 200px 0px; position:relative;z-index:100;}
 .menuHolder ul {padding:0; margin:0; list-style:none; position:absolute; left:0; top:0; width:0; height:0;}
 .menuHolder ul li {border-radius:0 0 250px 0; width:0; height:0;}
-.menuHolder ul li a.a1 {color: #ffffff; text-decoration:none; font:bold 2px/30px arial, sans-serif; text-align: center; box-shadow:-1px 1px 1px rgba(20, 74, 116, 0.4);
+.menuHolder ul li a.a1 {color: #ffffff; text-decoration:none; font:bold 5px/55px arial, sans-serif; text-align: left; box-shadow:-1px 1px 1px rgba(20, 74, 116, 0.4);
     -webkit-transform-origin:0 0;
     -moz-transform-origin:0 0;
     -ms-transform-origin:0 0;
@@ -20,8 +20,8 @@
 }
 .menuHolder ul.p1 li {position:absolute; left:0; top:0;}
 .menuHolder ul.p2 {z-index:-1;}
-.menuHolder li.s1 > a {position:absolute; display:block; width:30px; height:30px; background: #11659a; border-radius:0 0 100px 0;}
-.menuHolder li.s2 > a {position:absolute; display:block; width:50px; padding-left:40px; height:50px; background: #3170a7; border-radius:0 0 90px 0;}
+.menuHolder li.s1 > a {position:absolute; display:block; width:64px; height:64px; background: #11659a; border-radius:0 0 100px 0;}
+.menuHolder li.s2 > a {position:absolute; display:block; width:70px; padding-left:60px; height:70px; background: #3170a7; border-radius:0 0 90px 0;}
 .menuHolder ul ul {
     -webkit-transform-origin:0 0;
     -moz-transform-origin:0 0;
@@ -93,68 +93,40 @@
 .menuHolder ~ img.close {width:0; height:0; position:fixed; z-index:-1; left:0; top:0;}
 .menuHolder:hover ~ img.close {width:100%; height:100%;}
 
-.butt{
-    z-index: 100;
-    width:5%;
-    height:4%;
-    left:0;
-    top:61%;
-    position: absolute;
-    background-color: #131824;
-}
-.yeartime{
-    z-index: 100;
-    width:46%;
-    height:4%;
-    left:9%;
-    top:61%;
-    position: absolute;
-    background-color: #131824;
-}
-.b1 {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
-.b2 {
-    background-color: #799baf; /* Green */
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 15px;
-}
-.chart1 {
-    width: 60%; height: 65%;
-    z-index: 10; magin:0px 0px 0px 0px;
+
+.sheet1 {width: 60%; height: 65%;
+    z-index: 10; margin:0 0 0 0;
     top:0; left:0; position:absolute;
     background-color: #131824;
 }
-.chart2 {
-    width: 60%; height: 35%;
-    z-index: 90; magin:0px 0px 0px 0px;
-    bottom: 0; left:0; position:absolute;
+.sheet2 {width: 22%; height: 32%;
+    z-index: 90; margin:0 0 0 0;
+    top:68%; left: 0; position: absolute;
     background-color: #131824;
 }
-.chart3 {
-    width: 40%; height: 58%;
+.sheet3 {width: 22%; height: 32%;
+    z-index: 90; margin:0 0 0 0;
+    top: 68%; left: 22%; position: absolute;
+    background-color: #131824;
+}
+.sheet4 {width: 18%; height: 32%;
+    z-index: 90; margin:0 0 0 0;
+    top: 68%; left: 44%; position: absolute;
+    background-color: #131824;
+}
+.sheet5 {width: 40%; height: 58%;
     z-index: 90; margin:0 0 0 0;
     top: 0; right: 0; position: absolute;
     background-color: #131824;
 }
-.chart4 {
-    width: 20%; height: 42%;
+.sheet6 {width: 20%; height: 42%;
     z-index: 90; margin:0 0 0 0;
     bottom: 0; right: 20%; position: absolute;
     background-color: #131824;
 }
-.chart5 {
-    width: 20%; height: 42%;
+.sheet7 {width: 20%; height: 42%;
     z-index: 90; margin:0 0 0 0;
     top:58%; right: 0; position: absolute;
     background-color: #131824;
 }
+
